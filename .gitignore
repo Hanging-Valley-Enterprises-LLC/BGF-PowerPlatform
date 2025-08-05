@@ -1,0 +1,21 @@
+﻿# Power Platform specific
+*.tmp
+*.log
+.pac/
+temp/
+*.msapp
+/src/
+
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+~$*
+*.bak
+*.swp
