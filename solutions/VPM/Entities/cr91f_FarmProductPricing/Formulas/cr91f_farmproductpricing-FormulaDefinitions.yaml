@@ -1,0 +1,3 @@
+cr91f_qbocustomerdisplayname: =cr91f_QBOCustomer.new_displayname
+cr91f_totalperpallet: =cr91f_palletlayer*cr91f_layersperpallet
+cr91f_unitprice: =cr91f_casepriceusd/cr91f_UnitofMeasureSelling.cr91f_multiplier

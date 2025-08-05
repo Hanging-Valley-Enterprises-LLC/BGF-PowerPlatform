@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{781c7d8e-83dd-49be-a107-d02eb46d7d12}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9c49564e-660c-4e77-b2b8-6cf298eb847a}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cc9db0af-1e73-4e12-8461-817e14f78f98}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6b25a27c-80be-4a8b-94e9-2c053cf0a099}">
+                        <labels>
+                          <label description="Bed Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bedname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_bedname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10188a01-5c77-46e8-89c5-468195ffe5be}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Bed Quickview Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

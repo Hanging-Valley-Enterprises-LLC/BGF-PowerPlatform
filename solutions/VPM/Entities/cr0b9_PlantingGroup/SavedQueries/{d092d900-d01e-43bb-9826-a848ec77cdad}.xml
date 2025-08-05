@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d092d900-d01e-43bb-9826-a848ec77cdad}</savedqueryid>
+    <layoutxml>
+      <grid name="cr0b9_plantinggroups" jump="cr0b9_plantinggroupname" select="1" icon="1" preview="0">
+        <row name="cr0b9_plantinggroup" id="cr0b9_plantinggroupid">
+          <cell name="cr0b9_plantinggroupname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr0b9_plantinggroup">
+          <attribute name="cr0b9_plantinggroupid" />
+          <attribute name="cr0b9_plantinggroupname" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Planting Group Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

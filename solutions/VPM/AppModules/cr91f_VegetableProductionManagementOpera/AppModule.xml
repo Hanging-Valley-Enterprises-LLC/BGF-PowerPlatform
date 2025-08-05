@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>cr91f_VegetableProductionManagementOpera</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>38811f8a-5b30-ef11-8409-000d3a5acddf</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <WelcomePageId>082454b3-5bc1-ef11-a72e-6045bdd96150</WelcomePageId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="cr0b9_family" />
+    <AppModuleComponent type="1" schemaName="cr0b9_farmproduct" />
+    <AppModuleComponent type="1" schemaName="cr0b9_fieldcorner" />
+    <AppModuleComponent type="1" schemaName="cr0b9_plantinggroup" />
+    <AppModuleComponent type="1" schemaName="cr91f_bgfemployee" />
+    <AppModuleComponent type="1" schemaName="cr91f_cropname" />
+    <AppModuleComponent type="1" schemaName="cr91f_equipment" />
+    <AppModuleComponent type="1" schemaName="cr91f_equipmenttype" />
+    <AppModuleComponent type="1" schemaName="cr91f_farmproductpricing" />
+    <AppModuleComponent type="1" schemaName="cr91f_field" />
+    <AppModuleComponent type="1" schemaName="cr91f_fieldplanting" />
+    <AppModuleComponent type="1" schemaName="cr91f_gearing" />
+    <AppModuleComponent type="1" schemaName="cr91f_geographicdirectionoption" />
+    <AppModuleComponent type="1" schemaName="cr91f_greenhouse" />
+    <AppModuleComponent type="1" schemaName="cr91f_greenhouserecord" />
+    <AppModuleComponent type="1" schemaName="cr91f_harvestinventorytype" />
+    <AppModuleComponent type="1" schemaName="cr91f_harvestmethod" />
+    <AppModuleComponent type="1" schemaName="cr91f_harvestrecord" />
+    <AppModuleComponent type="1" schemaName="cr91f_historicalproductpricingandyields" />
+    <AppModuleComponent type="1" schemaName="cr91f_insurancecarrier" />
+    <AppModuleComponent type="1" schemaName="cr91f_insurancepolicy" />
+    <AppModuleComponent type="1" schemaName="cr91f_materialinput" />
+    <AppModuleComponent type="1" schemaName="cr91f_materialinputmethod" />
+    <AppModuleComponent type="1" schemaName="cr91f_packrecorddetailoutput" />
+    <AppModuleComponent type="1" schemaName="cr91f_packrun" />
+    <AppModuleComponent type="1" schemaName="cr91f_packshedmethods" />
+    <AppModuleComponent type="1" schemaName="cr91f_plantingdepthoption" />
+    <AppModuleComponent type="1" schemaName="cr91f_plantingplanrecord" />
+    <AppModuleComponent type="1" schemaName="cr91f_plantingrecordindividual" />
+    <AppModuleComponent type="1" schemaName="cr91f_plate" />
+    <AppModuleComponent type="1" schemaName="cr91f_pricecategory" />
+    <AppModuleComponent type="1" schemaName="cr91f_productgrades" />
+    <AppModuleComponent type="1" schemaName="cr91f_salesorder" />
+    <AppModuleComponent type="1" schemaName="cr91f_salesorderheader" />
+    <AppModuleComponent type="1" schemaName="cr91f_seedingmethod" />
+    <AppModuleComponent type="1" schemaName="cr91f_seedinventorycount" />
+    <AppModuleComponent type="1" schemaName="cr91f_seedlot" />
+    <AppModuleComponent type="1" schemaName="cr91f_seedmethod" />
+    <AppModuleComponent type="1" schemaName="cr91f_stockingunitconversions" />
+    <AppModuleComponent type="1" schemaName="cr91f_transplantrecord" />
+    <AppModuleComponent type="1" schemaName="cr91f_traysizes" />
+    <AppModuleComponent type="1" schemaName="cr91f_unitofmeasure" />
+    <AppModuleComponent type="1" schemaName="cr91f_validfarmproductharvestuom" />
+    <AppModuleComponent type="1" schemaName="cr91f_validfarmproductsellinguom" />
+    <AppModuleComponent type="1" schemaName="cr91f_variety" />
+    <AppModuleComponent type="1" schemaName="cr91f_vendor" />
+    <AppModuleComponent type="1" schemaName="report" />
+    <AppModuleComponent type="60" id="{3a703469-7018-ef11-9f8a-000d3a3adac6}" />
+    <AppModuleComponent type="60" id="{adb64f50-7718-ef11-9f8a-000d3a3adac6}" />
+    <AppModuleComponent type="60" id="{a1d70746-39b1-4767-a90d-4cab2a662520}" />
+    <AppModuleComponent type="60" id="{047ad0c7-8cc1-ef11-a72e-7c1e5200f15b}" />
+    <AppModuleComponent type="60" id="{76ae2edc-8cc1-ef11-a72e-7c1e5200f15b}" />
+    <AppModuleComponent type="60" id="{5e626149-c7c3-ef11-a72e-7c1e5200f15b}" />
+    <AppModuleComponent type="60" id="{80284cfa-8e50-f011-877b-7c1e5249e84a}" />
+    <AppModuleComponent type="60" id="{fe3d63e7-8cc1-ef11-a72e-7c1e52587592}" />
+    <AppModuleComponent type="60" id="{0a21ffe4-c7c3-ef11-a72e-7c1e52587592}" />
+    <AppModuleComponent type="60" id="{91d9567f-5a1b-f011-998a-7c1e52649e3a}" />
+    <AppModuleComponent type="60" id="{ef5995cf-8a06-42aa-bb69-9db5fbf8bb93}" />
+    <AppModuleComponent type="60" id="{ef9d3da4-f572-4942-9ce0-b45eb85c41d7}" />
+    <AppModuleComponent type="60" id="{a0a5bc97-a7ba-4341-ad66-d06593f3ffd5}" />
+    <AppModuleComponent type="60" id="{30ec0f60-a89d-4953-8460-d82bbe2d6a1f}" />
+    <AppModuleComponent type="62" schemaName="cr91f_VegetableProductionManagementOpera" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+    <Role id="{7362c00b-cb4d-ee11-be6e-000d3a32f410}" />
+    <Role id="{45f25e39-0b26-f011-8c4d-7c1e5249e84a}" />
+    <Role id="{8b2eb26b-edc8-ed11-b597-00224806f127}" />
+    <Role id="{00b22870-eec8-ed11-b597-00224806f127}" />
+    <Role id="{53aab5ea-ebc8-ed11-b597-00224806f127}" />
+    <Role id="{0b8b49db-ecc8-ed11-b597-00224806f127}" />
+    <Role id="{22f1f9ce-e7c8-ed11-b597-00224806f127}" />
+    <Role id="{d58407f2-48d5-e711-a82c-000d3a37c848}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Vegetable Production Management Operating System" languagecode="1033" />
+  </LocalizedNames>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AllowNotificationsEarlyAccess">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="EnableLockTabsOnMobile2022">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="MobileCommandingImprovements2022">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="NativeMobileDateTime">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="NativeMobileInputs">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

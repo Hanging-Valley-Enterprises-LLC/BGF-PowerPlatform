@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="cr91f_unitperrowft" localizedName="Unit Per RowFt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Unit Per RowFt" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="460610000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="lbs/rowft" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="bu/rowft" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="heads/rowft" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

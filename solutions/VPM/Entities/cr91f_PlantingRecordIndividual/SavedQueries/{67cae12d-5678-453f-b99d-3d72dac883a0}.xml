@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{67cae12d-5678-453f-b99d-3d72dac883a0}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_plantingrecordindividuals" jump="cr91f_plantingrecordid" select="1" icon="1" preview="0">
+        <row name="cr91f_plantingrecordindividual" id="cr91f_plantingrecordindividualid">
+          <cell name="cr91f_productionplanrecordlookup" width="221" />
+          <cell name="cr91f_plantingrecordid" width="300" />
+          <cell name="cr91f_datetimestart" width="126" />
+          <cell name="cr91f_bedfeetdecimal" width="148" />
+          <cell name="cr91f_qtybedsplanted" width="138" />
+          <cell name="cr91f_plantingdate" width="117" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_plantingrecordindividual">
+          <attribute name="cr91f_plantingrecordindividualid" />
+          <attribute name="cr91f_plantingrecordid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_productionplanrecordlookup" />
+          <attribute name="cr91f_plantingdate" />
+          <attribute name="cr91f_datetimestart" />
+          <attribute name="cr91f_bedfeetdecimal" />
+          <attribute name="cr91f_qtybedsplanted" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Planting Record - Individual Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

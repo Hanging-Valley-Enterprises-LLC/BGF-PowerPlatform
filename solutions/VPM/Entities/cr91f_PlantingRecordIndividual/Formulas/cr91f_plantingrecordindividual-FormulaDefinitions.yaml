@@ -1,0 +1,6 @@
+cr91f_elapsedtime: =DateDiff(cr91f_datetimestart,cr91f_datetimeend)
+cr91f_farmproductname: =cr91f_ProductionPlanRecord.cr91f_farmproductlookup
+cr91f_productionplanlookupconcatenation: =cr91f_ProductionPlanRecord.cr91f_lookupviewconcatenation
+cr91f_productionplanrecordlookup: =cr91f_ProductionPlanRecord.cr91f_planrecordid
+cr91f_succession: =cr91f_ProductionPlanRecord.cr91f_Succession.cr91f_successionname
+cr91f_variety: =cr91f_ProductionPlanRecord.cr91f_Variety.cr91f_varietyname

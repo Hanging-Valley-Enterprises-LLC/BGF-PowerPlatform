@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ed2460db-a31e-ef11-840b-000d3a3adac6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_plantingrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingrecordindividualid">
+          <cell name="cr91f_plantingrecordid" width="140" />
+          <cell name="cr91f_productionplanrecord" width="174" />
+          <cell name="a_b261d9229a7741f791baa35b2224f7fa.cr91f_farmproduct" width="264" />
+          <cell name="cr91f_farmproductlookup" width="164" />
+          <cell name="a_b261d9229a7741f791baa35b2224f7fa.cr91f_variety" width="228" />
+          <cell name="cr91f_varietylookup" width="128" />
+          <cell name="cr91f_succession" width="103" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_qtybedsplanted" width="138" />
+          <cell name="cr91f_bedfeetdecimal" width="148" />
+          <cell name="cr91f_rollinggear" width="114" />
+          <cell name="cr91f_weeknumber" width="121" />
+          <cell name="cr91f_plandateload" width="132" />
+          <cell name="cr91f_plantingdate" width="117" />
+          <cell name="cr91f_seeder" width="100" />
+          <cell name="cr91f_numberofrows" width="137" />
+          <cell name="cr91f_notes" width="100" />
+          <cell name="cr91f_bednumber" width="112" />
+          <cell name="a_b261d9229a7741f791baa35b2224f7fa.cr91f_succession" width="249" />
+          <cell name="cr91f_bedwidthin" width="125" />
+          <cell name="cr91f_rowsperbed" width="120" />
+          <cell name="cr91f_farmproductload" width="154" />
+          <cell name="cr91f_cropload" width="105" />
+          <cell name="cr91f_varietyload" width="118" />
+          <cell name="cr91f_actualdateload" width="145" />
+          <cell name="cr91f_seederload" width="116" />
+          <cell name="cr91f_fieldload" width="106" />
+          <cell name="cr91f_plannedbedsload" width="154" />
+          <cell name="cr91f_seedsperftload" width="147" />
+          <cell name="cr91f_datetimestart" width="126" />
+          <cell name="cr91f_datetimeend" width="122" />
+          <cell name="cr91f_elapsedtime" width="117" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingrecordindividual">
+          <attribute name="cr91f_plantingrecordindividualid" />
+          <attribute name="cr91f_plantingrecordid" />
+          <attribute name="createdon" />
+          <attribute name="cr91f_productionplanrecord" />
+          <attribute name="cr91f_plantingdate" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_bednumber" />
+          <attribute name="cr91f_numberofrows" />
+          <attribute name="cr91f_notes" />
+          <attribute name="cr91f_bedwidthin" />
+          <filter type="and">
+            <condition attribute="cr91f_plantingseason" operator="eq" value="2024" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity alias="a_b261d9229a7741f791baa35b2224f7fa" name="cr91f_plantingplanrecord" to="cr91f_productionplanrecord" from="cr91f_plantingplanrecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_farmproduct" />
+            <attribute name="cr91f_variety" />
+            <attribute name="cr91f_succession" />
+          </link-entity>
+          <order attribute="cr91f_plantingrecordid" descending="true" />
+          <attribute name="cr91f_bedfeetdecimal" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_cropload" />
+          <attribute name="cr91f_varietyload" />
+          <attribute name="cr91f_seeder" />
+          <attribute name="cr91f_seederload" />
+          <attribute name="cr91f_qtybedsplanted" />
+          <attribute name="cr91f_actualdateload" />
+          <attribute name="cr91f_farmproductload" />
+          <attribute name="cr91f_farmproductlookup" />
+          <attribute name="cr91f_fieldload" />
+          <attribute name="cr91f_plandateload" />
+          <attribute name="cr91f_plannedbedsload" />
+          <attribute name="cr91f_seedsperftload" />
+          <attribute name="cr91f_rollinggear" />
+          <attribute name="cr91f_rowsperbed" />
+          <attribute name="cr91f_weeknumber" />
+          <attribute name="cr91f_varietylookup" />
+          <attribute name="cr91f_datetimestart" />
+          <attribute name="cr91f_datetimeend" />
+          <attribute name="cr91f_elapsedtime" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active 2024 Planting Records - Individuals" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

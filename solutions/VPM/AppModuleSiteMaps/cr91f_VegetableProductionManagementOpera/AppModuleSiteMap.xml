@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>cr91f_VegetableProductionManagementOpera</SiteMapUniqueName>
+  <EnableCollapsibleGroups>True</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_3182c9d7" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Planning Records" />
+      </Titles>
+      <Group Id="group_6bdb7907" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Planting Plan Management" />
+        </Titles>
+        <SubArea Id="subarea_2d74255a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_plantingplanrecord" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_eff87af0" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/reports/79328d94-8604-40b7-b7b9-1e766d4509c2/0df1e4b9bddd083079be?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Production Plan Analysis Report (PBI)" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="group_92f632d1" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Seeding and Transplanting Data Entry Forms" />
+        </Titles>
+        <SubArea Id="subarea_3efa0f04" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/a7e8484c-e03e-4cd2-b5b8-5c9e6e2c1b7c?experience=power-bi&amp;redirectedFromSignup=1" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Greenhouse Seeding Schedule and Data Entry Form - PBI Paginated" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_c886d7a6" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/69d4ca6a-5b45-4ab0-b88b-27ab14be2e51?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Greenhouse Seeding Plan Data Entry Form with Actuals" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_4a57420b" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/e5cedd69-bc32-4556-a3cd-f05b74cf0da8?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Direct to Field - Data Entry Log and Actuals - Consolidated Field Plantings" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_e9a867fb" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/793f195f-c49b-4fdc-b5a6-7b715c2599b1?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Seeding Driven Transplant Data Entry Form" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_b67f3703" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/b5baf601-2e32-4908-b04d-590df36be447?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Transplant Data Entry Log with Actuals - Consolidated Field Plantings" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="group_a4247b4c" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Older Versions - DNU" />
+        </Titles>
+        <SubArea Id="subarea_2ef1caba" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/d508e6be-2e68-4974-ab07-0a10eee3f404?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Direct to Field Plan Data Entry Form with Actuals" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_dc79d462" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/0241e25d-6f20-4a7a-ac00-1d22d796cba2?experience=power-bi&amp;redirectedFromSignup=1" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Direct to Field Seeding Plan and Log (PBI Paginated Report)" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_aa11c416" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/3e83076d-a74d-490b-a393-0909bc21d252/rdlreports/9101a25b-dade-48ff-be62-61cdc5391bea?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Plan Driven Transplant Data Entry Form" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+    <Area Id="area_e7b96453" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Seeding and Planting Records" />
+      </Titles>
+      <Group Id="group_b36a3fe3" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Seeding and Planting Data Input Management" />
+        </Titles>
+        <SubArea Id="subarea_0e386780" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_greenhouserecord" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_adf5c613" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_fieldplanting" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_206a87cc" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_materialinput" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_237fe774" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Older Versions - DNU" />
+        </Titles>
+        <SubArea Id="subarea_e05b6f9d" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_transplantrecord" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_4ac0434a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_plantingrecordindividual" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_fba0000f" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Seeds Inventory Management" />
+      </Titles>
+      <Group Id="group_919cbfd1" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Seed Stock Management" />
+        </Titles>
+        <SubArea Id="subarea_d8ef76ee" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_seedlot" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_be34d15c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_seedinventorycount" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_b3919766" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Harvest and Post-Harvest Records" />
+      </Titles>
+      <Group Id="group_cf890fbc" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Harvest and Sales Records" />
+        </Titles>
+        <SubArea Id="subarea_db6236f5" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_harvestrecord" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest Records - Plan View" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_3451f1e9" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/3d5355f2-770d-47df-b259-10664dbab62e?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest Record Data Entry Form with Actuals by Field and Farm Product (PBI Paginated Report)" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_9764de73" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/c722a291-8358-4f60-abc9-58537011d60d?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest Records with Actuals by Harvest Date" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_dd5c1d8f" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_packrun" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_ad6c4bee" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_packrecorddetailoutput" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_4430c73f" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Order Management" />
+      </Titles>
+      <Group Id="group_d2f00272" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Orders" />
+        </Titles>
+        <SubArea Id="subarea_a36ed515" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_salesorderheader" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Sales Orders" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_7d8c5a85" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/8a171169-84ac-4c68-b4da-9764233608f5?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Print Shipping Labels for Invoice" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_57cc04eb" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/a5e9a070-af35-41b4-bd36-120e4236537a?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Print an Invoice" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_f82de00c" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/reports/e3ed5a6c-cd39-457b-8fde-23e8e7a925aa?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest, Sales and QBO Estimates Online Reporting (PBI)" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_6a54f7b0" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_38be2d5e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_farmproductpricing" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_a6a08bb7" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_historicalproductpricingandyields" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_8e64010e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_pricecategory" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_efc6d0c8" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Product Data Management" />
+      </Titles>
+      <Group Id="group_e4190563" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Farm Commodities" />
+        </Titles>
+        <SubArea Id="subarea_fdbb49d3" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr0b9_farmproduct" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_47eb78d0" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_variety" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_acc7f840" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Crop Categorization" />
+        </Titles>
+        <SubArea Id="subarea_6c46a903" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr0b9_family" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_9da52748" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_cropname" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_105b97b7" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr0b9_plantinggroup" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_1457a126" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Valid Units of Measure" />
+        </Titles>
+        <SubArea Id="subarea_32cb046a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_validfarmproductharvestuom" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_d44955ac" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_validfarmproductsellinguom" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_f1d3eada" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_productgrades" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_6b57dfc4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_unitofmeasure" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_f49b7258" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_stockingunitconversions" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_c02f8305" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Farm Infrastructure" />
+      </Titles>
+      <Group Id="group_a0909917" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Land" />
+        </Titles>
+        <SubArea Id="subarea_ad16f8ec" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_field" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_433b9904" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr0b9_fieldcorner" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_feb11629" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Equipment and Buildings" />
+        </Titles>
+        <SubArea Id="subarea_a3d3446f" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_equipment" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_3b83da20" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_greenhouse" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_938ee8cb" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_plate" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_90d57206" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_gearing" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_d7c6fc85" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Insurance" />
+        </Titles>
+        <SubArea Id="subarea_80f26926" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_insurancecarrier" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_9ebdfa92" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_insurancepolicy" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="area_80dbe24b" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Reference" />
+      </Titles>
+      <Group Id="group_8458ff8a" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Categories and Classifications" />
+        </Titles>
+        <SubArea Id="subarea_86012c2e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_equipmenttype" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_3e0cd62a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_plantingdepthoption" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_e6615cc6" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_geographicdirectionoption" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_4fc894e9" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_traysizes" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_60cd7659" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_harvestinventorytype" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_380a9949" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_bgfemployee" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_beddba75" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Methods" />
+        </Titles>
+        <SubArea Id="subarea_9428fbf4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_seedmethod" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_85183f06" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_harvestmethod" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_b8202741" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_packshedmethods" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_fd99858c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_seedingmethod" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_25c9ad5c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_materialinputmethod" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_bee93e06" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Individuals and Organizations" />
+        </Titles>
+        <SubArea Id="subarea_6d92632f" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_vendor" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_dce8fafe" Icon="/_imgs/imagestrips/transparent_spacer.gif" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="cr91f_page1_23c18">
+          <Titles>
+            <Title LCID="1033" Title="Test Embedded Canvas App" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+    <Area Id="area_9d6e6380" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Reports and Printouts" />
+      </Titles>
+      <Group Id="group_e85b3730" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Plans and Schedules" />
+        </Titles>
+        <SubArea Id="subarea_de8f7eee" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="76ae2edc-8cc1-ef11-a72e-7c1e5200f15b" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+          <Titles>
+            <Title LCID="1033" Title="Bed Ft Planning" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_0faa47e4" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="fe3d63e7-8cc1-ef11-a72e-7c1e52587592" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+          <Titles>
+            <Title LCID="1033" Title="Seed Planning" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_3875e6e7" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="047ad0c7-8cc1-ef11-a72e-7c1e5200f15b" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+          <Titles>
+            <Title LCID="1033" Title="Greenhouse Seeding Schedule and Data Entry Form - PBI Paginated" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_8fc439e8" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="5e626149-c7c3-ef11-a72e-7c1e5200f15b" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+          <Titles>
+            <Title LCID="1033" Title="Production Planning " />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_d7957955" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="0a21ffe4-c7c3-ef11-a72e-7c1e52587592" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+          <Titles>
+            <Title LCID="1033" Title="Production Plan PBI Report" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Vegetable Production Management Operating System" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

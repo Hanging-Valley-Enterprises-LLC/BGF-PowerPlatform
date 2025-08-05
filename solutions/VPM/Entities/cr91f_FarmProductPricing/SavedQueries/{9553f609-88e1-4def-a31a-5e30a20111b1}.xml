@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9553f609-88e1-4def-a31a-5e30a20111b1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_pricingid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_farmproductpricingid">
+          <cell name="cr91f_pricingid" width="87" />
+          <cell name="cr91f_qbocustomer" width="128" />
+          <cell name="cr91f_qbocustomerdisplayname" width="208" />
+          <cell name="cr91f_customer" width="100" />
+          <cell name="cr91f_pricingcategory" width="130" />
+          <cell name="cr91f_farmproduct" width="147" />
+          <cell name="cr91f_unitofmeasureselling" width="184" />
+          <cell name="cr91f_productgrade" width="122" />
+          <cell name="cr91f_casepriceusd" width="131" />
+          <cell name="cr91f_unitprice" width="100" />
+          <cell name="cr91f_palletlayer" width="109" />
+          <cell name="cr91f_layersperpallet" width="135" />
+          <cell name="cr91f_totalperpallet" width="126" />
+          <cell name="cr91f_availability" width="106" />
+          <cell name="cr91f_currentqtyavailable" width="165" />
+          <cell name="cr91f_notes" width="100" />
+          <cell name="cr91f_effectivestartdate" width="151" />
+          <cell name="cr91f_effectiveenddate" width="148" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_farmproductpricing">
+          <attribute name="cr91f_farmproductpricingid" />
+          <attribute name="cr91f_pricingid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_customer" />
+          <attribute name="cr91f_unitofmeasureselling" />
+          <attribute name="cr91f_effectivestartdate" />
+          <attribute name="cr91f_effectiveenddate" />
+          <order attribute="cr91f_farmproduct" descending="false" />
+          <order attribute="cr91f_customer" descending="false" />
+          <order attribute="cr91f_unitofmeasureselling" descending="false" />
+          <order attribute="cr91f_effectivestartdate" descending="false" />
+          <attribute name="cr91f_pricingcategory" />
+          <attribute name="cr91f_currentqtyavailable" />
+          <attribute name="cr91f_availability" />
+          <attribute name="cr91f_layersperpallet" />
+          <attribute name="cr91f_palletlayer" />
+          <attribute name="cr91f_totalperpallet" />
+          <attribute name="cr91f_notes" />
+          <attribute name="cr91f_unitprice" />
+          <attribute name="cr91f_casepriceusd" />
+          <attribute name="cr91f_qbocustomer" />
+          <attribute name="cr91f_qbocustomerdisplayname" />
+          <attribute name="cr91f_productgrade" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Farm Product Pricings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

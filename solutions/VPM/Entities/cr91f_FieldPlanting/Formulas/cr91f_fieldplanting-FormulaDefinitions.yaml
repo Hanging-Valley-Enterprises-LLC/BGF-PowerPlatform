@@ -1,0 +1,29 @@
+cr91f_elapsedtime: =DateDiff(cr91f_datetimestart,cr91f_datetimeend)
+cr91f_farmproduct: =cr91f_PlantingPlanID.cr91f_FarmProduct.cr0b9_farmproductname
+cr91f_fieldtarget: =""
+cr91f_harvestinventorytype: =cr91f_PlantingPlanID.cr91f_FarmProduct.cr91f_HarvestInventoryType.cr91f_harvestinventorytypename
+cr91f_lookupconcatentation: |-
+    =cr91f_PlantingPlanID.cr91f_lookupviewconcatenation & " - " & " Bed Ft: " & If(IsBlank(cr91f_bedftactual), " ", Text(cr91f_bedftactual, "0"))
+cr91f_plantingdateplan: |-
+    =/*If('Planting Type'.Name="Direct Seed", 'Planting Plan ID'.'Target Seeding Date','Planting Plan ID'.'Target Transplant Date')*/
+    cr91f_datetimestart
+cr91f_plantinggroup: |-
+    =/*'Planting Plan ID'.'Planting Group'*/
+    ""
+cr91f_plantingtype: =cr91f_PlantingPlanID.cr91f_Method.cr91f_seedingmethodname
+cr91f_plantingweek: |-
+    =/*RoundDown((DateDiff('Planting Plan ID'.'Plan Year Start Date','Planting Date - Plan',TimeUnit.Days)/7), 0) */
+    0
+cr91f_productoagricolaespanol: =cr91f_PlantingPlanID.cr91f_FarmProduct.cr91f_farmproductnamespanish
+cr91f_ptpplan: |-
+    =/*'Planting Plan ID'.'PtP Plan'*/
+    0
+cr91f_rowsperbedplan: |-
+    =/*'Planting Plan ID'.'Rows per Bed Plan'*/
+    0
+cr91f_seedsrequiredplanms: |-
+    =/*'Planting Plan ID'.'Plan Seeds Needed (M)'*/
+    0
+cr91f_succession: |
+    =cr91f_PlantingPlanID.cr91f_Succession.cr91f_successionname
+cr91f_variety: =cr91f_PlantingPlanID.cr91f_Variety.cr91f_varietyname

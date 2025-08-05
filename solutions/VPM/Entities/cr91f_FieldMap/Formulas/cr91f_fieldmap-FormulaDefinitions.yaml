@@ -1,0 +1,5 @@
+cr91f_farmproduct: =cr91f_ProductionPlanID.cr91f_FarmProduct.cr0b9_farmproductname
+cr91f_field: =cr91f_ProductionPlanID.cr91f_Field.cr91f_fieldname
+cr91f_seedingmethod: =cr91f_ProductionPlanID.cr91f_Method.cr91f_seedingmethodname
+cr91f_succession: =cr91f_ProductionPlanID.cr91f_Succession.cr91f_successionname
+cr91f_variety: =cr91f_ProductionPlanID.cr91f_Variety.cr91f_varietyname

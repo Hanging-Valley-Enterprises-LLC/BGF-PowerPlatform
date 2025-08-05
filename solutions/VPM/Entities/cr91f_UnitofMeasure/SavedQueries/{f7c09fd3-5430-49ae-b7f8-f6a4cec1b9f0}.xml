@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f7c09fd3-5430-49ae-b7f8-f6a4cec1b9f0}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_unitofmeasures" jump="cr91f_uomname" select="1" icon="1" preview="0">
+        <row name="cr91f_unitofmeasure" id="cr91f_unitofmeasureid">
+          <cell name="cr91f_uomname" width="300" />
+          <cell name="cr91f_stockingyn" width="118" />
+          <cell name="cr91f_validseeduom" width="134" />
+          <cell name="cr91f_plantingyn" width="115" />
+          <cell name="cr91f_harvestyn" width="112" />
+          <cell name="cr91f_sellingyn" width="108" />
+          <cell name="cr91f_multiplier" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_unitofmeasure">
+          <attribute name="cr91f_unitofmeasureid" />
+          <attribute name="cr91f_uomname" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_stockingyn" />
+          <attribute name="cr91f_validseeduom" />
+          <attribute name="cr91f_sellingyn" />
+          <attribute name="cr91f_multiplier" />
+          <attribute name="cr91f_plantingyn" />
+          <attribute name="cr91f_harvestyn" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Unit of Measure Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1bd428e3-63ad-4cce-b4a1-a251b9a7187d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_seedlotidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_seedlotid">
+          <cell name="cr91f_seedlotidentifier" width="177" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_crop" width="100" />
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_vendor" width="100" />
+          <cell name="cr91f_vendorlotnumber" width="153" />
+          <cell name="cr91f_packagingdescription" width="168" />
+          <cell name="cr91f_seedcountseedslb" width="163" />
+          <cell name="cr91f_receiptdate" width="100" />
+          <cell name="cr91f_receivedby" width="100" />
+          <cell name="cr91f_receivingqtyuom" width="100" />
+          <cell name="cr91f_originalqtyreceived" width="100" />
+          <cell name="cr91f_expirationdate" width="100" />
+          <cell name="cr91f_germpercent" width="100" />
+          <cell name="cr91f_germtestdate" width="100" />
+          <cell name="cr91f_germtestnotes" width="100" />
+          <cell name="cr91f_seedingnotes" width="162" />
+          <cell name="cr91f_seedlotlookup" width="138" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="104" />
+          <cell name="modifiedby" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_seedlot">
+          <attribute name="cr91f_seedlotid" />
+          <attribute name="cr91f_seedlotidentifier" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_seedlotidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_vendor" />
+          <attribute name="cr91f_receiptdate" />
+          <attribute name="cr91f_receivedby" />
+          <attribute name="cr91f_receivingqtyuom" />
+          <attribute name="cr91f_originalqtyreceived" />
+          <attribute name="cr91f_expirationdate" />
+          <attribute name="cr91f_germpercent" />
+          <attribute name="cr91f_germtestdate" />
+          <attribute name="cr91f_germtestnotes" />
+          <attribute name="cr91f_seedingnotes" />
+          <attribute name="cr91f_vendorlotnumber" />
+          <attribute name="cr91f_seedlotlookup" />
+          <attribute name="createdby" />
+          <attribute name="modifiedby" />
+          <attribute name="cr91f_packagingdescription" />
+          <attribute name="cr91f_seedcountseedslb" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_crop" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Seed Lots" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>cr91f_AccountManagementtest</UniqueName>
+  <IntroducedVersion>1.0.0.7</IntroducedVersion>
+  <WebResourceId>38811f8a-5b30-ef11-8409-000d3a5acddf</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="cr0b9_farmproduct" />
+    <AppModuleComponent type="1" schemaName="cr91f_equipment" />
+    <AppModuleComponent type="1" schemaName="cr91f_equipmenttype" />
+    <AppModuleComponent type="1" schemaName="cr91f_farmproductpricing" />
+    <AppModuleComponent type="1" schemaName="cr91f_insurancecarrier" />
+    <AppModuleComponent type="1" schemaName="cr91f_insurancepolicy" />
+    <AppModuleComponent type="1" schemaName="cr91f_salesorderheader" />
+    <AppModuleComponent type="1" schemaName="cr91f_shippingmethod" />
+    <AppModuleComponent type="1" schemaName="cr91f_stockingunitconversions" />
+    <AppModuleComponent type="1" schemaName="cr91f_unitofmeasure" />
+    <AppModuleComponent type="60" id="{3a703469-7018-ef11-9f8a-000d3a3adac6}" />
+    <AppModuleComponent type="60" id="{ef9d3da4-f572-4942-9ce0-b45eb85c41d7}" />
+    <AppModuleComponent type="62" schemaName="cr91f_AccountManagementtest" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Sales Order and Account Management" languagecode="1033" />
+  </LocalizedNames>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

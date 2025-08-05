@@ -1,0 +1,34 @@
+cr91f_bedwidthvariety: =cr91f_Variety.cr91f_bedwidth
+cr91f_calculated90percentgrossperacre: =cr91f_calculated90percentperbedft*43560/cr0b9_bedwidth
+cr91f_calculated90percentperbedft: =cr91f_calculatedgrossat85percent/cr91f_bedlengthdecimal
+cr91f_calculatedacres: =cr0b9_bedwidth*cr91f_bedlengthdecimal/43560
+cr91f_calculatedestimatedannualgross: =cr91f_calculatedestimatedyield*cr91f_FarmProduct.cr91f_estimatedprice
+cr91f_calculatedestimatedyield: |
+    =cr91f_bedlengthdecimal*cr91f_rowsperbedplan*cr91f_FarmProduct.cr91f_estimatedyield
+cr91f_calculatedgrossat85percent: |
+    =cr91f_calculatedestimatedannualgross*.90
+cr91f_cropname: =cr91f_FarmProduct.cr91f_CropName.cr91f_cropname
+cr91f_farmproductlookup: =cr91f_FarmProduct.cr0b9_farmproductname
+cr91f_lookupbedfeet: |-
+    ="Bed Length: " & Text(cr91f_bedlengthdecimal,"######")
+cr91f_lookupbedqty: |-
+    ="Bed Qty: " & Text(cr91f_bedqty,"######")
+cr91f_lookupviewconcatenation: =cr91f_farmproductlookup & " - " & cr91f_Variety.cr91f_varietyname & " - "& Left(cr91f_Succession.cr91f_successionname,3) & " - " &cr91f_Field.cr91f_fieldname &" - " & cr91f_planyear
+cr91f_plannednumberofplants: =If(cr91f_ptpplan>= 12, 12/cr91f_ptpplan*cr91f_rowsperbedplan*cr91f_bedlengthdecimal,cr91f_bedlengthdecimal*cr91f_rowsperbedplan*12/cr91f_ptpplan)
+cr91f_plannedseedsneeded: =cr91f_plannednumberofplants*(1+(cr91f_contingencyfactor/100))*cr91f_seedspercell
+cr91f_plannedtrayqty: =If(cr91f_Method.cr91f_seedingmethodname="BGF Greenhouse",cr91f_plannedseedsneeded/cr91f_PlanTraySize.cr91f_numberofcells/cr91f_seedspercell,"")
+cr91f_planseedsneededm: |
+    =cr91f_plannedseedsneeded/1000
+cr91f_plantinggroup: =cr91f_FarmProduct.cr91f_PlantingGroup.cr0b9_plantinggroupname
+cr91f_plantingweek: =RoundDown((DateDiff(cr91f_planyearstartdate,cr91f_targettransplantdate,TimeUnit.Days)/7), 0) 
+cr91f_plantsourcevariety: =cr91f_Variety.cr91f_PlantSource.cr91f_seedingmethodname
+cr91f_ptpvariety: =cr91f_Variety.cr91f_ptp
+cr91f_rowsperbedvariety: =cr91f_Variety.cr91f_rowsperbed
+cr91f_seedingweek: =RoundDown((DateDiff(cr91f_planyearstartdate,cr91f_targetseedingdate,TimeUnit.Days)/7), 0) 
+cr91f_seedspercellvariety: =cr91f_Variety.cr0b9_seedspercell
+cr91f_seedsperftvariety: =cr91f_Variety.cr91f_seedsperftcalc
+cr91f_targetgerminationdate: =DateAdd(cr91f_targetplantingdate,-cr91f_estdaystotransplant,TimeUnit.Days)
+cr91f_targettransplantdate: =DateAdd(cr91f_targetseedingdate,cr91f_estdaystotransplant,TimeUnit.Days)
+cr91f_targettransplantweek: =RoundDown((DateDiff(cr91f_planyearstartdate,cr91f_targettransplantdate,TimeUnit.Days)/7), 0) 
+cr91f_traysizevariety: =cr91f_Variety.cr91f_TraySize.cr91f_traysizename
+cr91f_varietynamelookup: =cr91f_Variety.cr91f_varietyname

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1152178e-6413-f011-9989-6045bddb18c3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_lookupviewconcatenation" width="201" />
+          <cell name="cr91f_plantinggroup" width="200" />
+          <cell name="cr91f_cropname" width="200" />
+          <cell name="cr91f_method" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingplanrecord">&lt;attribute name="cr91f_targettransplantdate" /&gt;&lt;attribute name="cr91f_calculatedestimatedyield" /&gt;&lt;attribute name="cr91f_plantinggroup" /&gt;&lt;attribute name="cr91f_cropname" /&gt;&lt;attribute name="cr91f_plannednumberofplants" /&gt;
+        <attribute name="cr91f_plantinggroup" /><attribute name="cr91f_cropname" /><attribute name="cr91f_plantingplanrecordid" /><attribute name="cr91f_lookupviewconcatenation" /><attribute name="cr91f_method" /><filter type="and"><condition attribute="statecode" operator="eq" value="0" /><condition attribute="cr91f_planyear" operator="eq" value="2025" /><condition attribute="cr91f_method" operator="eq" value="{0c799729-4154-ef11-bfe3-000d3a100e2b}" uiname="Direct to Field" uitype="cr91f_seedingmethod" /></filter></entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Production Plan Record 2025 - Direct Seed Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

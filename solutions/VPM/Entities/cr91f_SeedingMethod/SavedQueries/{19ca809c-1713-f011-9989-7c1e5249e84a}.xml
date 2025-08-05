@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{19ca809c-1713-f011-9989-7c1e5249e84a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_seedingmethodname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_seedingmethodid">
+          <cell name="cr91f_seedingmethodname" width="200" />
+          <cell name="statuscode" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="cr91f_seedingmethod">&lt;attribute name="createdon" /&gt;&lt;attribute name="modifiedon" /&gt;&lt;attribute name="cr91f_seedingmethodname" /&gt;&lt;attribute name="owningbusinessunit" /&gt;&lt;attribute name="statuscode" /&gt;
+        
+        
+        
+        <attribute name="cr91f_seedingmethodname" /><attribute name="statuscode" /><attribute name="cr91f_seedingmethodid" /><filter type="and"><condition attribute="cr91f_seedingmethodid" operator="ne" value="{92df0c2b-4154-ef11-bfe3-6045bda80974}" uiname="BGF Greenhouse" uitype="cr91f_seedingmethod" /></filter></entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Field Planting Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

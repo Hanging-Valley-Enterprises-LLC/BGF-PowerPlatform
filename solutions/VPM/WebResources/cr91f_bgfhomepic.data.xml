@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{38811f8a-5b30-ef11-8409-000d3a5acddf}</WebResourceId>
+  <Name>cr91f_bgfhomepic</Name>
+  <DisplayName>BGFHome</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.13</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/cr91f_bgfhomepic38811F8A-5B30-EF11-8409-000D3A5ACDDF</FileName>
+</WebResource>

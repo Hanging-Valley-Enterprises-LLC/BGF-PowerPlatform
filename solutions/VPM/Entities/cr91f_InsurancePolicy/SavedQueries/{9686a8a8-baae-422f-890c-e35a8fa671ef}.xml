@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9686a8a8-baae-422f-890c-e35a8fa671ef}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_policynumberorid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_insurancepolicyid">
+          <cell name="cr91f_insurancecarrier" width="138" />
+          <cell name="cr91f_policynumberorid" width="163" />
+          <cell name="cr91f_policydescription" width="145" />
+          <cell name="cr91f_policystartdate" width="136" />
+          <cell name="cr91f_policyenddate" width="132" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_insurancepolicy">
+          <attribute name="cr91f_insurancepolicyid" />
+          <attribute name="cr91f_policynumberorid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_insurancecarrier" />
+          <attribute name="cr91f_policystartdate" />
+          <attribute name="cr91f_policyenddate" />
+          <order attribute="cr91f_insurancecarrier" descending="false" />
+          <order attribute="cr91f_policynumberorid" descending="false" />
+          <attribute name="cr91f_policydescription" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Insurance Policies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

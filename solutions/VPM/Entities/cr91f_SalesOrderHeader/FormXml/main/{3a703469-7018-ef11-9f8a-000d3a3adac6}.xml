@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3a703469-7018-ef11-9f8a-000d3a3adac6}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{3935c0e6-1a18-47c7-8e80-11d4a420d42a}" IsUserDefined="1" labelid="{e23d4d91-6347-4a6b-a86d-401b2a4d1384}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="null_section_4" id="1cd400bf-8261-4ec8-b41d-7b15b85747bb" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Sales Order Header" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{98dbed0b-1746-47b2-971a-dd8fd5d29070}" labelid="{20aaa5ec-e7fa-46f1-8a7d-f64dc07c8871}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sales Order Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_salesordernumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_salesordernumber" disabled="true" />
+                      </cell>
+                      <cell id="{5a065008-dd76-4522-87d4-9a64d1668034}" locklevel="0" colspan="1" rowspan="1" labelid="{449a2b26-17da-4a52-8406-84daa129d0f7}">
+                        <labels>
+                          <label description="Order DateTime" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_orderdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_orderdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{7e4cf8c8-f1dc-4332-8b00-ff929f630cb2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b9fb74e2-dbf4-4e4e-9c15-26376a3d52ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Due DateTime" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_duedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_duedate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9bcb570b-5b72-4465-b825-8a00f9053a32}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="QBO Customer" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_qbocustomer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_qbocustomer" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{47d282e0-ab0e-4a65-86e6-647ceedab324}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{03667270-2b7c-4b80-8274-6ec7e1747603}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="QBO Customer DisplayName" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_qbocustomerdisplayname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_qbocustomerdisplayname" disabled="false" />
+                      </cell>
+                      <cell id="{9eac56aa-c5ec-4265-af14-c452d914e04a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pick Up DateTime" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_pickupdatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_pickupdatetime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e0a15bc-a6c1-4b61-b0e2-17016fb13b66}" locklevel="0" colspan="1" rowspan="1" labelid="{c2342fe6-6542-4412-90ca-450cbb901f9e}">
+                        <labels>
+                          <label description="PO Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_ponumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_ponumber" disabled="false" />
+                      </cell>
+                      <cell id="{712ed3f5-0a88-446f-a03a-d9e85cc5fead}" locklevel="0" colspan="1" rowspan="1" labelid="{8b7728bc-11eb-4d66-9148-5ea90db9ba35}">
+                        <labels>
+                          <label description="Shipping Method" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_shippingmethod" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_shippingmethod" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="ffd94e1a-0308-4454-819e-1ed24c269e4d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Sales Order Line Items" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{308ff247-1784-4a01-89d8-bd7608e51bf9}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1719175452266" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr91f_salesorder</TargetEntityType>
+                            <ViewId>{8126A260-6418-EF11-9F8A-000D3A3ADAC6}</ViewId>
+                            <ViewIds>{F083387E-AAA2-4965-8DCD-A2ADCD45AC45},{8126A260-6418-EF11-9F8A-000D3A3ADAC6},{61D5E1C0-9027-EF11-840A-000D3A5ACDDF}</ViewIds>
+                            <RelationshipName>cr91f_salesorder_SalesOrderNo_cr91f_salesorderh</RelationshipName>
+                            <VisualizationId>{FEEE4D2A-9427-EF11-840A-000D3A5ACDDF}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="null_section_5" id="a9f2f53e-5bee-4742-b094-e0b3b936ce81" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Sales Order Data Status" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{204d1328-633d-4e3f-82b9-35606dd6c3e8}" locklevel="0" colspan="1" rowspan="1" labelid="{e0c2c438-3b0b-4670-9129-76ec77bd8b9e}" visible="false">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                      <cell id="{5c354805-e5a3-4c33-a36a-e0c8b918194c}" colspan="1" rowspan="1" visible="false" labelid="{d965c442-f49e-4f2c-842e-bd9888c99a17}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{916eb289-00f2-4c18-84fc-c901c527685b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5fc22295-9b74-48cd-a28c-bf26f7186da1}" showlabel="false" labelid="{9b2cd500-8b13-4a54-8a32-32c5bb0429e4}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{921ad83d-d5c1-496e-9830-504541992bc3}" showlabel="false" labelid="{57424b2f-08b1-46ef-85be-d88fc23b66c3}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9d70e1df-a6b3-40c9-bbae-835449381d0c}" showlabel="false" labelid="{a667b496-fb8f-4120-9d83-21e9f0169df8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e0647102-5122-4971-b7e4-5075c64a6a2b}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="header_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+            </cell>
+            <cell id="{d4623867-45c3-473b-91a0-31d8311a57c7}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{da9cb053-d86e-4b7a-a540-22aac68eb4b5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5f78a835-d7b9-4149-878f-5981615bee87}" showlabel="false" labelid="{c3e85038-24c8-401c-b4b4-728a0bf6075c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ff866ed8-3b8d-4e14-8ae7-898132fbdb3a}" showlabel="false" labelid="{cfbf1de0-b53b-4dd1-a757-663a0d711044}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8a76b3b3-9ef7-4630-be63-6fc3aa687203}" showlabel="false" labelid="{ebef8dca-bfd6-4afd-8279-3ff7aafbcdee}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Sales Order Header Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

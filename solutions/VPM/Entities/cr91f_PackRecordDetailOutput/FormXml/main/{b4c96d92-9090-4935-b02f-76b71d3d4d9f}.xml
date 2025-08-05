@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b4c96d92-9090-4935-b02f-76b71d3d4d9f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{e9739112-8907-4a10-b7da-bc4c320ad0f0}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{000d55b0-1072-446a-a58a-8191d369c443}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cdfbf0a7-44fc-4256-b800-cb1834527a40}">
+                        <labels>
+                          <label description="Lot Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_lotnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_lotnumber" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{29a6e3be-97b3-4cb1-ad15-92ee56c5d93c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pack Run" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_packrun" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_packrun" disabled="true">
+                          <parameters>
+                            <DependentAttributeName>cr91f_packrun.cr91f_lotnumbersource</DependentAttributeName>
+                            <DependentAttributeType>cr91f_packrecorddetailoutput</DependentAttributeType>
+                            <FilterRelationshipName>cr91f_packrun_LotNumberSource_cr91f_packrecorddetailoutput</FilterRelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="ba220f0a-c509-4daa-a896-311bcdbe5b9d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Product Output Detail" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{ac03cabe-c27d-4f50-b776-ae58aabe9a77}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product - Final" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductfinal" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproductfinal" disabled="false" />
+                      </cell>
+                      <cell id="{5d98462a-e0d4-4eda-b71a-01ee19fef1b5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pack Size - UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_packsizeuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_packsizeuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{618da901-5227-454d-ac11-e611ba4c44a7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Product Grade" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productgrade" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_productgrade" disabled="false" />
+                      </cell>
+                      <cell id="{8af1bc6f-d862-4b22-a067-ac53c35a4b88}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity Produced" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_quantityproduced" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_quantityproduced" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c5ef5a5-4779-4e2a-9b54-dc7c698dcdd7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lot Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_lotnotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_lotnotes" disabled="false" />
+                      </cell>
+                      <cell id="{e4870316-1209-49f5-b2ac-0ad35c6b0ab5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sales Order Line Item" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_salesorderlineitem" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_salesorderlineitem" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ba28d6bb-425d-48b0-ab96-38ca6f595b48}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{291b1e54-c281-4171-81a3-02c52d9b5691}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Storage Location" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_storagelocation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_storagelocation" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="ca50bd85-7e07-4fcc-9ff3-1e9406cae75d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{19aabdec-ba79-48bd-a4c5-9f9688b8592f}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{fa3919bc-9113-4cd9-a373-4e395ef16010}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{129b2e20-06f0-45dc-8f8f-4d1a895e29c9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{7f7c3954-71c6-4327-8bd5-2ea488fe3f49}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{71e19af5-c5d8-4dfd-bcf2-24bacac1d344}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{97c1a4b6-19d4-41a8-9e82-0242f52daee8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8d1ebb7b-b918-4134-9aa5-bfdffa2bf824}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a2227646-349f-4c2e-ac31-15073515b7b3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{23cef8a7-f6ee-4bd6-a8cd-725c24c94e44}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a2e3a050-641b-4777-b996-ea932eb087c1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{d9fc069c-0c37-4513-94ac-d324678477ac}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1982bd08-ed0d-4793-8f22-9a8d00544c51}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2c3c8c64-6d69-4d74-ab4e-b65518e94d65}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e7522e5c-09ec-4020-9980-ae4ff3754130}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Pack Record Detail Output" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

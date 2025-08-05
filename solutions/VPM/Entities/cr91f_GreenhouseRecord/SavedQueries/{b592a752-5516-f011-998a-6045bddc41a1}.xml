@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b592a752-5516-f011-998a-6045bddc41a1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_greenhouserecordidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_greenhouserecordid">
+          <cell name="cr91f_greenhouserecordlookupconcatenation" width="283" />
+          <cell name="cr91f_greenhouserecordidentifier" width="200" />
+          <cell name="cr91f_productionplanrecord" width="174" />
+          <cell name="cr91f_dateseededforlookup" width="170" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="cr91f_greenhouserecord">
+          <attribute name="cr91f_greenhouserecordidentifier" />
+          <attribute name="cr91f_greenhouserecordid" />
+          <attribute name="cr91f_greenhouserecordlookupconcatenation" />
+          <attribute name="cr91f_productionplanrecord" />
+          <attribute name="cr91f_dateseededforlookup" />
+          <order attribute="cr91f_greenhouserecordlookupconcatenation" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="LookUp Greenhouse Record by Concatenation" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

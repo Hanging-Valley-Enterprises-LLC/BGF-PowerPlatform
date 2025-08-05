@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{067ca524-d8c4-4abf-a2f6-b3b6db2e21c1}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{bb547e86-370e-4ba1-94db-0975a4682968}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cbd12c9a-c1c0-48bd-b06b-b048d845cf08}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1a7bb1a1-8905-4c73-b4ca-93277b5817af}">
+                        <labels>
+                          <label description="Valid Farm Product Harvest UoM ReferenceID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_validfarmproductharvestuomreferenceid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_validfarmproductharvestuomreferenceid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{49da8354-7278-4188-a542-d2294552d513}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0502dd5d-d360-44bb-963a-ae69f6221069}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Harvest UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_harvestuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_harvestuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c54148c-f2de-4adb-8e1c-d13294861783}" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Valid Farm Product - Harvest UoM QuickView" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

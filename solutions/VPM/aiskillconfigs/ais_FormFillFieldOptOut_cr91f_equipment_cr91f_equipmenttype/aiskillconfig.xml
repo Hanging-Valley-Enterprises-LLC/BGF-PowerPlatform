@@ -1,0 +1,15 @@
+<aiskillconfig uniquename="ais_FormFillFieldOptOut_cr91f_equipment_cr91f_equipmenttype">
+  <aiskill>FormFillFieldOptOut</aiskill>
+  <attribute>
+    <entityid.logicalname>cr91f_equipment</entityid.logicalname>
+    <logicalname>cr91f_equipmenttype</logicalname>
+  </attribute>
+  <description>cr91f_Equipment - Equipment Type Form fill opt out</description>
+  <entity>
+    <logicalname>cr91f_equipment</logicalname>
+  </entity>
+  <iscustomizable>1</iscustomizable>
+  <scope>1</scope>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</aiskillconfig>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{50300ea3-5f8c-4084-94d6-a76b5907198c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_fieldplantingidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_fieldplantingid">
+          <cell name="cr91f_lookupconcatentation" width="172" />
+          <cell name="cr91f_fieldplantingidentifier" width="92" />
+          <cell name="cr91f_plantingplanid" width="134" />
+          <cell name="cr91f_plantingtype" width="118" />
+          <cell name="cr91f_ghseedingrecord" width="153" />
+          <cell name="a_b434c1968d9141cda3b4b14988526417.cr91f_farmproduct" width="100" />
+          <cell name="a_b434c1968d9141cda3b4b14988526417.cr91f_varietynamelookup" width="98" />
+          <cell name="a_b434c1968d9141cda3b4b14988526417.cr91f_successionid" width="128" />
+          <cell name="cr91f_fieldactual" width="118" />
+          <cell name="cr91f_datetimestart" width="134" />
+          <cell name="cr91f_datetimeend" width="130" />
+          <cell name="a_74d69b75ebd94fdb9bdcae72560765d1.cr91f_dateseededforlookup" width="296" />
+          <cell name="cr91f_bedftactual" width="127" />
+          <cell name="cr91f_bedsplantedactual" width="163" />
+          <cell name="cr91f_plantinglead" width="119" />
+          <cell name="cr91f_harvestready" width="123" />
+          <cell name="cr91f_harvestcomplete" width="142" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_fieldplanting">
+          <attribute name="cr91f_fieldplantingid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_fieldplantingidentifier" />
+          <attribute name="cr91f_plantingplanid" />
+          <attribute name="cr91f_ghseedingrecord" />
+          <link-entity alias="a_b434c1968d9141cda3b4b14988526417" name="cr91f_plantingplanrecord" to="cr91f_plantingplanid" from="cr91f_plantingplanrecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_farmproduct" />
+            <attribute name="cr91f_varietynamelookup" />
+            <attribute name="cr91f_successionid" />
+          </link-entity>
+          <attribute name="cr91f_fieldactual" />
+          <attribute name="cr91f_datetimestart" />
+          <attribute name="cr91f_datetimeend" />
+          <attribute name="cr91f_bedsplantedactual" />
+          <attribute name="cr91f_bedftactual" />
+          <attribute name="cr91f_plantinglead" />
+          <link-entity alias="a_74d69b75ebd94fdb9bdcae72560765d1" name="cr91f_greenhouserecord" to="cr91f_ghseedingrecord" from="cr91f_greenhouserecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_dateseededforlookup" />
+          </link-entity>
+          <attribute name="cr91f_plantingtype" />
+          <attribute name="cr91f_lookupconcatentation" />
+          <attribute name="cr91f_harvestready" />
+          <attribute name="cr91f_harvestcomplete" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Field Plantings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

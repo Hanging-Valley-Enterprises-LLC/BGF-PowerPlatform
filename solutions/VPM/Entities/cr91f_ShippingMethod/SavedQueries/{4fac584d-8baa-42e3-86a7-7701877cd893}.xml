@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4fac584d-8baa-42e3-86a7-7701877cd893}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_shippingmethod" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_shippingmethodid">
+          <cell name="cr91f_shippingmethod" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_shippingmethod">
+          <attribute name="cr91f_shippingmethodid" />
+          <attribute name="cr91f_shippingmethod" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_shippingmethod" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Shipping Methods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

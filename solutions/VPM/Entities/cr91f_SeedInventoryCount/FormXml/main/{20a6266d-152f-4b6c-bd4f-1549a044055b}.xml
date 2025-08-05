@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{20a6266d-152f-4b6c-bd4f-1549a044055b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{e545a5d9-3edb-4836-8959-f528fab0ece6}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cf5e1345-1d75-4faa-bb26-fa73c0642cf0}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{243fe473-d045-4268-84d0-0dd4f2e27cb4}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Count Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedcountidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_seedcountidentifier" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bbd5928-9a86-403a-bba3-20649a0dc4c8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Lot" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedlot" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_seedlot" disabled="false">
+                          <parameters>
+                            <DependentAttributeName>cr91f_seedinventorycount.cr91f_countedby</DependentAttributeName>
+                            <DependentAttributeType>cr91f_bgfemployee</DependentAttributeType>
+                            <FilterRelationshipName>cr91f_cr91f_seedlot_ReceivedBy_cr91f_bgfemploye</FilterRelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{01ef3324-aa85-46d5-9936-5bf2e48156fe}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Count Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_countdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_countdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59e22390-749c-443f-96bc-edc0a41f7aa4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Grams Remaining" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_gramsremaining" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_gramsremaining" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68f4163a-6e34-4711-bc69-3196ac0a0816}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Qty Counted (inferred in M)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedqtycountedinferredinm" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_seedqtycountedinferredinm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16cdd157-dbd9-43dd-bc65-040b2cf9f0c8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Count Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedcountnotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_seedcountnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0235174a-fce3-4412-81bb-3cdbce0b8f16}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_190" id="90253bcc-2b4d-4374-9418-3832b0f702be" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{06a74136-051e-4c81-8f10-34d0bf8f2252}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1734473911551" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1734473911551" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="cr91f_seedlot">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="cr91f_seedlot"&gt;b958d395-95d5-4f7b-8366-5da4303b60d1&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{763fd050-e959-4ba5-9979-27f75a62f52f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{630a46c9-124c-46de-8b7c-a29b75749d87}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{49546971-d62a-48f6-b2a8-7fd46ab20e43}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2bc4aa74-fbad-45d3-b23c-436b516bf527}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{68755b0d-23e2-4d99-bc13-8b397ca9c689}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0f289b26-787f-460d-95a9-f57981f20498}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5aca69a5-d1ed-4e58-92e1-d15406eb3c94}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c680681a-0257-4d0f-9cf3-755050823995}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Seed Inventory Count" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

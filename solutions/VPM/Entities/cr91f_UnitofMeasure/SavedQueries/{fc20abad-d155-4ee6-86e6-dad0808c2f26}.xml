@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fc20abad-d155-4ee6-86e6-dad0808c2f26}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_uomname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_unitofmeasureid">
+          <cell name="cr91f_uomname" width="300" />
+          <cell name="cr91f_stockingyn" width="118" />
+          <cell name="cr91f_validseeduom" width="134" />
+          <cell name="cr91f_plantingyn" width="115" />
+          <cell name="cr91f_harvestyn" width="112" />
+          <cell name="cr91f_sellingyn" width="108" />
+          <cell name="cr91f_multiplier" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_unitofmeasure">
+          <attribute name="cr91f_unitofmeasureid" />
+          <attribute name="cr91f_uomname" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_uomname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_uomname" operator="like" value="{0}" />
+            <condition attribute="cr91f_sellingyn" operator="like" value="{0}" />
+            <condition attribute="cr91f_stockingyn" operator="like" value="{0}" />
+            <condition attribute="cr91f_validseeduom" operator="like" value="{0}" />
+            <condition attribute="cr91f_harvestyn" operator="like" value="{0}" />
+            <condition attribute="cr91f_plantingyn" operator="like" value="{0}" />
+          </filter>
+          <attribute name="cr91f_stockingyn" />
+          <attribute name="cr91f_validseeduom" />
+          <attribute name="cr91f_sellingyn" />
+          <attribute name="cr91f_multiplier" />
+          <attribute name="cr91f_plantingyn" />
+          <attribute name="cr91f_harvestyn" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Units of Measure" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

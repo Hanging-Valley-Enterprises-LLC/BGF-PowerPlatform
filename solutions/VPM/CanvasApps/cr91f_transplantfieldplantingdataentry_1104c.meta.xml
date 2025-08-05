@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr91f_transplantfieldplantingdataentry_1104c</Name>
+  <AppVersion>2025-07-22T21:51:45Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.25073.3.0</CreatedByClientVersion>
+  <MinClientVersion>3.25073.3.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","showStatusBar":"false","publisherVersion":"3.25073.3","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250203T185141Z-3.25014.13.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Phone - Transplant Field Planting Data Entry</DisplayName>
+  <Description>Revised to use Field Plantings instead of Transplant Records</Description>
+  <CommitMessage>Save app with description provided in publish dialog.</CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Production Plan Records":{"entitySetName":"cr91f_plantingplanrecords","logicalName":"cr91f_plantingplanrecord"},"BGF Employees":{"entitySetName":"cr91f_bgfemployees","logicalName":"cr91f_bgfemployee"},"Farm Products":{"entitySetName":"cr0b9_farmproducts","logicalName":"cr0b9_farmproduct"},"Varieties":{"entitySetName":"cr91f_varieties","logicalName":"cr91f_variety"},"Successions":{"entitySetName":"cr91f_successions","logicalName":"cr91f_succession"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Gearings":{"entitySetName":"cr91f_gearings","logicalName":"cr91f_gearing"},"Tray Sizes":{"entitySetName":"cr91f_traysizeses","logicalName":"cr91f_traysizes"},"Fields":{"entitySetName":"cr91f_fields","logicalName":"cr91f_field"},"Greenhouse Records":{"entitySetName":"cr91f_greenhouserecords","logicalName":"cr91f_greenhouserecord"},"Plant Sources":{"entitySetName":"cr91f_seedingmethods","logicalName":"cr91f_seedingmethod"},"Geographic Direction Options":{"entitySetName":"cr91f_geographicdirectionoptions","logicalName":"cr91f_geographicdirectionoption"},"Field Plantings":{"entitySetName":"cr91f_fieldplantings","logicalName":"cr91f_fieldplanting"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr91f_plantingplanrecord","componenttype":1},{"logicalname":"cr91f_bgfemployee","componenttype":1},{"logicalname":"cr0b9_farmproduct","componenttype":1},{"logicalname":"cr91f_variety","componenttype":1},{"logicalname":"cr91f_succession","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"cr91f_gearing","componenttype":1},{"logicalname":"cr91f_traysizes","componenttype":1},{"logicalname":"cr91f_field","componenttype":1},{"logicalname":"cr91f_greenhouserecord","componenttype":1},{"logicalname":"cr91f_seedingmethod","componenttype":1},{"logicalname":"cr91f_geographicdirectionoption","componenttype":1},{"logicalname":"cr91f_fieldplanting","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr91f_transplantfieldplantingdataentry_1104c_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr91f_transplantfieldplantingdataentry_1104c_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/cr91f_transplantfieldplantingdataentry_1104c_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>

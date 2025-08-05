@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d7decf83-2268-f011-bec1-7c1e52004d5f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_farmproductsellinguomreferenceid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_validfarmproductsellinguomid">
+          <cell name="cr91f_sellinguom" width="113" />
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_farmproductsellinguomreferenceid" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_validfarmproductsellinguom">
+          <attribute name="cr91f_validfarmproductsellinguomid" />
+          <attribute name="cr91f_farmproductsellinguomreferenceid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_sellinguom" />
+          <order attribute="cr91f_sellinguom" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Valid Farm Product Selling UoMs SubGrid" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

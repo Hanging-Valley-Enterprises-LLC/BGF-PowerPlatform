@@ -1,0 +1,103 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr91f_sharedcommondataserviceforapps_39671"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "When_the_Quantity_Harvested_is_Updated": {
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "cr91f_harvestrecord",
+              "subscriptionRequest/scope": 3,
+              "subscriptionRequest/filteringattributes": "cr91f_quantityharvested"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "conditions": [
+            {
+              "expression": "@and(not(equals(triggerOutputs()?['body/cr91f_quantityharvested'], null)), not(equals(triggerOutputs()?['body/cr91f_quantityharvested'], 0)))"
+            }
+          ],
+          "metadata": {
+            "operationMetadataId": "af245494-357a-4466-8542-066557be1e26"
+          }
+        }
+      },
+      "actions": {
+        "Get_the_Updated_Harvest_Record": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr91f_harvestrecords",
+              "recordId": "@triggerOutputs()?['body/cr91f_harvestrecordid']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "c5969c44-945e-4772-8479-47c9ecb16eee"
+          }
+        },
+        "Add_a_Pack_Run": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr91f_packruns",
+              "item/cr91f_HarvestRecordSource@odata.bind": "cr91f_harvestrecords(@{outputs('Get_the_Updated_Harvest_Record')?['body/cr91f_harvestrecordid']})",
+              "item/cr91f_quantityrequired": "@triggerOutputs()?['body/cr91f_quantityharvested']",
+              "item/cr91f_quantitysource": "@outputs('Get_the_Updated_Harvest_Record')?['body/cr91f_targetharvestqty']",
+              "item/cr91f_targetpackdatetime": "@outputs('Get_the_Updated_Harvest_Record')?['body/cr91f_targetharvestdate']",
+              "item/cr91f_UoMRequired@odata.bind": "cr91f_unitofmeasures(@{outputs('Get_the_Updated_Harvest_Record')?['body/_cr91f_harvestqtyunitofmeasure_value']})"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "CreateRecord",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "runAfter": {
+            "Get_the_Updated_Harvest_Record": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "08df2b3f-6822-431e-8d0d-7e9ee2b5d7ae"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

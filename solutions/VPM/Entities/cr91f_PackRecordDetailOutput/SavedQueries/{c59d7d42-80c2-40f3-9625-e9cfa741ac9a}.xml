@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c59d7d42-80c2-40f3-9625-e9cfa741ac9a}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_packrecorddetailoutputs" jump="cr91f_lotnumber" select="1" icon="1" preview="1">
+        <row name="cr91f_packrecorddetailoutput" id="cr91f_packrecorddetailoutputid">
+          <cell name="cr91f_lotnumber" width="300" />
+          <cell name="cr91f_farmproductfinal" width="158" />
+          <cell name="cr91f_packsizeuom" width="137" />
+          <cell name="cr91f_productgrade" width="122" />
+          <cell name="cr91f_quantityproduced" width="146" />
+          <cell name="cr91f_salesorderlineitem" width="165" />
+          <cell name="cr91f_storagelocation" width="137" />
+          <cell name="cr91f_lotnotes" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_packrecorddetailoutput">
+          <attribute name="cr91f_packrecorddetailoutputid" />
+          <attribute name="cr91f_lotnumber" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_lotnumber" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_farmproductfinal" />
+          <attribute name="cr91f_packsizeuom" />
+          <attribute name="cr91f_productgrade" />
+          <attribute name="cr91f_quantityproduced" />
+          <attribute name="cr91f_salesorderlineitem" />
+          <attribute name="cr91f_storagelocation" />
+          <attribute name="cr91f_lotnotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Pack Record Detail Output Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

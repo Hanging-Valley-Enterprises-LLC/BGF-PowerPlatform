@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Seed Planning" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{fe3d63e7-8cc1-ef11-a72e-7c1e52587592}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="powerbi">
+      <form>
+        <tabs>
+          <tab showlabel="false" verticallayout="true" id="{81c0e669-91f6-40e6-b4c9-757b4f0ccca0}">
+            <labels>
+              <label description="" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section showlabel="false" showbar="false" columns="111" id="{09fad4ff-1bd4-40e1-92eb-0461149d222d}">
+                    <labels>
+                      <label description="" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="3" rowspan="24" showlabel="false" id="{42fa834a-09d2-4bc4-9847-3300a95cc15d}" availableforphone="false">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                          <control id="8f43a8f4-45d8-4293-9856-123546f029c7" classid="{8C54228C-1B25-4909-A12A-F2B968BB0D62}">
+                            <parameters>
+                              <PowerBIGroupId>3e83076d-a74d-490b-a393-0909bc21d252</PowerBIGroupId>
+                              <PowerBIDashboardId>ab738694-f7b0-44d5-8661-af699cc47c92</PowerBIDashboardId>
+                              <TileUrl>https://app.powerbi.com/dashboardEmbed?config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVVTLVdFU1QyLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0IiwiZW1iZWRGZWF0dXJlcyI6e319&amp;groupId=3e83076d-a74d-490b-a393-0909bc21d252&amp;dashboardId=ab738694-f7b0-44d5-8661-af699cc47c92</TileUrl>
+                              <Type>1</Type>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.18</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

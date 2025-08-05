@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{14be0bc1-3865-4abb-8704-5130428b0468}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_plantingrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingrecordindividualid">
+          <cell name="cr91f_plantingrecordid" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_bedfeetdecimal" width="148" />
+          <cell name="cr91f_bednumber" width="112" />
+          <cell name="cr91f_bedwidthin" width="125" />
+          <cell name="cr91f_farmproductname" width="154" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_notes" width="100" />
+          <cell name="cr91f_numberofrows" width="137" />
+          <cell name="cr91f_plantingdate" width="117" />
+          <cell name="cr91f_productionplanrecord" width="174" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_succession" width="103" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_plantingrecordindividual">
+          <attribute name="cr91f_plantingrecordindividualid" />
+          <attribute name="cr91f_plantingrecordid" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_plantingrecordid" descending="false" />
+          <attribute name="cr91f_bedfeetdecimal" />
+          <attribute name="cr91f_bednumber" />
+          <attribute name="cr91f_bedwidthin" />
+          <attribute name="cr91f_farmproductname" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_notes" />
+          <attribute name="cr91f_numberofrows" />
+          <attribute name="cr91f_plantingdate" />
+          <attribute name="cr91f_productionplanrecord" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_succession" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Planting Record - Individual Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

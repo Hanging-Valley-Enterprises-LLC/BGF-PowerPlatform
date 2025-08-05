@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1673a429-1b31-f011-8c4c-6045bddb18c3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_historicalpricingandyieldidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_historicalproductpricingandyieldsid">
+          <cell name="cr91f_historicalpricingandyieldidentifier" width="200" />
+          <cell name="cr91f_productionyear" width="131" />
+          <cell name="cr91f_averageunitprice" width="148" />
+          <cell name="cr91f_averageyieldperbedft" width="180" />
+          <cell name="cr91f_averageyieldperrowft" width="184" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="cr91f_historicalproductpricingandyields">
+          <attribute name="cr91f_historicalpricingandyieldidentifier" />
+          <attribute name="cr91f_historicalproductpricingandyieldsid" />
+          <attribute name="cr91f_averageunitprice" />
+          <attribute name="cr91f_averageyieldperbedft" />
+          <attribute name="cr91f_averageyieldperrowft" />
+          <attribute name="cr91f_productionyear" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <roledisplayconditionsxml>
+      <DisplayConditions>
+        <Role Id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+        <Role Id="{7362C00B-CB4D-EE11-BE6E-000D3A32F410}" />
+        <Role Id="{45F25E39-0B26-F011-8C4D-7C1E5249E84A}" />
+        <Role Id="{8B2EB26B-EDC8-ED11-B597-00224806F127}" />
+        <Role Id="{00B22870-EEC8-ED11-B597-00224806F127}" />
+        <Role Id="{53AAB5EA-EBC8-ED11-B597-00224806F127}" />
+        <Role Id="{0B8B49DB-ECC8-ED11-B597-00224806F127}" />
+        <Role Id="{2D31C3E3-BA6B-EF11-A670-000D3A18D76D}" />
+        <Role Id="{22F1F9CE-E7C8-ED11-B597-00224806F127}" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </roledisplayconditionsxml>
+    <LocalizedNames>
+      <LocalizedName description="Subgrid for Display in Farm Product" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

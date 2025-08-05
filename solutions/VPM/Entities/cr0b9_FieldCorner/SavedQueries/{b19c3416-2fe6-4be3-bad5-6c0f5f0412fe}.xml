@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b19c3416-2fe6-4be3-bad5-6c0f5f0412fe}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr0b9_cornerid" select="1" icon="1" preview="1">
+        <row name="result" id="cr0b9_fieldcornerid">
+          <cell name="cr0b9_cornerid" width="123" />
+          <cell name="cr0b9_fieldid" width="100" />
+          <cell name="cr0b9_cornerlatitude" width="100" />
+          <cell name="cr0b9_cornerlongitude" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr0b9_fieldcorner">
+          <attribute name="cr0b9_fieldcornerid" />
+          <attribute name="cr0b9_cornerid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr0b9_cornerlatitude" />
+          <attribute name="cr0b9_cornerlongitude" />
+          <attribute name="cr0b9_fieldid" />
+          <order attribute="cr0b9_fieldid" descending="false" />
+          <order attribute="cr0b9_cornerid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Field Corners" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr91f_fielddataentry_5de9e</Name>
+  <AppVersion>2025-03-11T18:17:55Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.25032.4.0</CreatedByClientVersion>
+  <MinClientVersion>3.25032.4.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","showStatusBar":"false","publisherVersion":"3.25032.4","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250311T181755Z-3.25032.4.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Phone - Greenhouse Seeding Data Entry</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Greenhouse Records":{"entitySetName":"cr91f_greenhouserecords","logicalName":"cr91f_greenhouserecord"},"Production Plan Records":{"entitySetName":"cr91f_plantingplanrecords","logicalName":"cr91f_plantingplanrecord"},"Tray Sizes":{"entitySetName":"cr91f_traysizeses","logicalName":"cr91f_traysizes"},"BGF Employees":{"entitySetName":"cr91f_bgfemployees","logicalName":"cr91f_bgfemployee"},"Farm Products":{"entitySetName":"cr0b9_farmproducts","logicalName":"cr0b9_farmproduct"},"Varieties":{"entitySetName":"cr91f_varieties","logicalName":"cr91f_variety"},"Successions":{"entitySetName":"cr91f_successions","logicalName":"cr91f_succession"},"Greenhouses":{"entitySetName":"cr91f_greenhouses","logicalName":"cr91f_greenhouse"},"Seed Methods":{"entitySetName":"cr91f_seedmethods","logicalName":"cr91f_seedmethod"},"Seed Lots":{"entitySetName":"cr91f_seedlots","logicalName":"cr91f_seedlot"},"Microsoft Entra IDs":{"entitySetName":"aadusers","logicalName":"aaduser"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr91f_greenhouserecord","componenttype":1},{"logicalname":"cr91f_plantingplanrecord","componenttype":1},{"logicalname":"cr91f_traysizes","componenttype":1},{"logicalname":"cr91f_bgfemployee","componenttype":1},{"logicalname":"cr0b9_farmproduct","componenttype":1},{"logicalname":"cr91f_variety","componenttype":1},{"logicalname":"cr91f_succession","componenttype":1},{"logicalname":"cr91f_greenhouse","componenttype":1},{"logicalname":"cr91f_seedmethod","componenttype":1},{"logicalname":"cr91f_seedlot","componenttype":1},{"logicalname":"aaduser","componenttype":1},{"logicalname":"systemuser","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr91f_fielddataentry_5de9e_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr91f_fielddataentry_5de9e_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/cr91f_fielddataentry_5de9e_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>

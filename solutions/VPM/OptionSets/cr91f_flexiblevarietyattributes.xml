@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="cr91f_flexiblevarietyattributes" localizedName="Flexible Variety Attributes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Flexible Variety Attributes" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="460610000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Storage" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Bunch" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="MIxed or Unspecified" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

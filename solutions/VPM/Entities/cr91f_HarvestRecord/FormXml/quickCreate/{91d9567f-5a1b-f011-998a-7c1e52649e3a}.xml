@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{91d9567f-5a1b-f011-998a-7c1e52649e3a}</formid>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{07d7fe56-6796-4448-bf2c-39f09235bde5}" showlabel="false" name="New Tab" labelid="{edc21a3c-b993-475c-b43b-2ae8dbca5c31}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{074f69db-8aea-4e44-ae22-f5161a29a54f}" name="tab_1_column_1_section_1" labelid="{72c13fca-c467-4b80-bef6-fa5ca81ef41b}">
+                  <labels>
+                    <label description="From Which Planting and When" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{233375e7-58da-4fbf-9791-7db1f2efe672}" locklevel="0" colspan="1" rowspan="1" labelid="{3a9908e6-1d0a-4e16-a6e3-7f0d179aa610}">
+                        <labels>
+                          <label description="Field Planting" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_fieldplanting" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_fieldplanting" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53954d88-8a86-4c94-82d8-e8131904251f}" colspan="1" rowspan="1" labelid="{590001cf-d8a5-4166-9b7c-c79e9bfe4d02}">
+                        <labels>
+                          <label description="Target Harvest Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_targetharvestdate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_targetharvestdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{218ee3f2-39ed-4996-88f3-0855ac454e7b}" locklevel="0" colspan="1" rowspan="1" labelid="{23d591e8-217b-4de0-ace8-5ea8487ddaac}">
+                        <labels>
+                          <label description="Sales Order Line" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_salesorderline" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_salesorderline" disabled="false">
+                          <parameters>
+                            <DependentAttributeName>cr91f_salesorder.cr91f_harvestrecord</DependentAttributeName>
+                            <DependentAttributeType>cr91f_harvestrecord</DependentAttributeType>
+                            <FilterRelationshipName>cr91f_salesorder_HarvestRecord_cr91f_harvestrecord</FilterRelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{ff2b205a-5fd0-446e-aeab-394f87a860b4}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{deafb245-8695-40b1-b533-66723616336d}">
+                  <labels>
+                    <label description="What to Harvest" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0ca237b6-cbcf-4db7-a775-423bfe521971}" locklevel="0" colspan="1" rowspan="1" labelid="{9ba50634-8f62-44cd-a96b-654ee72cc755}">
+                        <labels>
+                          <label description="Harvest Qty Unit of Measure" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_harvestqtyunitofmeasure" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_harvestqtyunitofmeasure" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e96b798-fb38-4bb3-979f-3434c2c969df}" locklevel="0" colspan="1" rowspan="1" labelid="{d12a8703-ef7d-4f99-8c1f-754c8ec427ab}">
+                        <labels>
+                          <label description="Target Harvest Qty" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_targetharvestqty" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_targetharvestqty" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{b8aa5954-7e11-40f6-be58-8183ed11c8ac}" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{dfaf7ae0-5d66-4cc4-8ff1-4e7c44021b3a}">
+                  <labels>
+                    <label description="Other Harvest Info" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eef7f9b5-df9c-4034-921d-93c0f7993588}" colspan="1" rowspan="1" labelid="{ffd72be3-a399-43bb-87da-eb2d12500021}">
+                        <labels>
+                          <label description="Harvest Team Lead" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_harvestteamlead" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_harvestteamlead" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c626970a-1cc3-48ae-9f38-e395a7b89354}" colspan="1" rowspan="1" labelid="{500c978e-55a4-4586-afd9-01e1638e3dae}">
+                        <labels>
+                          <label description="Customer Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_customernotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_customernotes" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d151650-2bf6-401b-a19d-8ce3f80007d2}" locklevel="0" colspan="1" rowspan="1" labelid="{d93cbeb1-1cdc-435b-b5c6-a599cc89595c}">
+                        <labels>
+                          <label description="Storage Location" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_storagelocation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_storagelocation" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Harvest Record Quick Create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

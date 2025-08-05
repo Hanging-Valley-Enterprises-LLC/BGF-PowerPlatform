@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2ae8beeb-6d72-441d-9d35-f37426156185}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{253f2d72-b894-4f07-923e-8b1d857e0aef}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{72ee1f03-b6db-4c87-b6ef-785e1f41bc8b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{826644f7-d9e8-495a-b73b-338e97fe98d4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="FieldID" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_fieldid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr0b9_fieldid" disabled="false">
+                          <parameters>
+                            <DependentAttributeName>cr0b9_fieldcorner.ownerid</DependentAttributeName>
+                            <DependentAttributeType>owner</DependentAttributeType>
+                            <FilterRelationshipName>owner_cr91f_field</FilterRelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3951fbee-5a91-4112-b749-77e28e08ed5d}">
+                        <labels>
+                          <label description="CornerID" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_cornerid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr0b9_cornerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{186ee20f-3422-4d07-a766-c94a572e6f58}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Corner Latitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_cornerlatitude" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr0b9_cornerlatitude" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bf98ba4-d5df-4afa-9cb2-aac9dd3a86b6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Corner Longitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_cornerlongitude" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr0b9_cornerlongitude" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ff02c4b-8fe0-48f4-a588-afaa5264c8b9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dfd233a8-573d-4dba-b317-d1a5025e550e}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{65706a4e-28da-4328-8127-8e2349d3cbed}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ee220a31-75bf-4b4e-b44f-44e8667ea152}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{64ecabe6-b6d6-44ca-a1ec-cf6d3a878fc6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b12bdff0-cea1-4a62-9552-586a0526ca27}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{782b95e3-0e63-4ff3-b52b-f8fa5fb7a5a1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{87d94a68-5a21-4d17-b1f7-a545f0165a0a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2b929e52-821c-4318-86f1-209b1fa82b3b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2711b8c1-575b-44ac-8c8e-1f17603fb947}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

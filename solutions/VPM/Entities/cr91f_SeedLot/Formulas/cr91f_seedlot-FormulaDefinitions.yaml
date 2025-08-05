@@ -1,0 +1,3 @@
+cr91f_crop: =cr91f_Variety.cr0b9_FarmProduct.cr91f_CropName.cr91f_cropname
+cr91f_farmproduct: =cr91f_Variety.cr0b9_FarmProduct.cr0b9_farmproductname
+cr91f_seedlotlookup: =cr91f_Variety.cr0b9_FarmProduct.cr0b9_farmproductname & " -" & cr91f_Variety.cr91f_varietyname & " - " & cr91f_seedlotidentifier & " - " & cr91f_Vendor.cr91f_vendorname & " - " & cr91f_vendorlotnumber

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{52e3df3c-a591-4a02-863e-9ac8ff00b801}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_fieldmaprecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_fieldmapid">
+          <cell name="cr91f_fieldmaprecordid" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_fieldmap">
+          <attribute name="cr91f_fieldmapid" />
+          <attribute name="cr91f_fieldmaprecordid" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_fieldmaprecordid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Field Maps" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b958d395-95d5-4f7b-8366-5da4303b60d1}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{291f3c9a-6efa-45e9-b2ab-d8f0704d4c8f}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d470e03b-726f-41df-bb7e-89599c83da80}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b2b29e15-7b06-483b-84a0-95010420efce}">
+                        <labels>
+                          <label description="Seed Lot Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedlotidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_seedlotidentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0563c703-c81d-44e6-97ce-e77daa64d0ad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Variety" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_variety" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_variety" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22757718-66ec-4850-b676-11192824468d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Crop" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_crop" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_crop" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{951faae0-b3af-47a9-97d6-ad2bb66dc4f3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d1f8c637-8296-4f99-83ec-89c0ac065ad0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Packaging Description" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_packagingdescription" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_packagingdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{06465f36-f042-4614-8626-8d948d97dc73}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_vendor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_vendor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{112a1df9-e0b2-4f65-a13c-a383bc812ced}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Vendor Lot Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_vendorlotnumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_vendorlotnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{77c57e15-a251-4845-b383-42973ddb3adf}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Count (seeds/lb)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedcountseedslb" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_seedcountseedslb" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb0d3dc8-a04d-4cdb-b238-733d64b0033d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Receipt Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_receiptdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_receiptdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ab3303c-940c-4432-9cb9-ff7ac8e958c6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Receiving Qty UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_receivingqtyuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_receivingqtyuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2f13c2c3-2dda-40dc-94f9-8c8ad7ca4aaa}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Original Qty Received" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_originalqtyreceived" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_originalqtyreceived" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d8261bd-264d-4df6-ab3b-9abce6bb28ca}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Seed Lot - Quickview" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

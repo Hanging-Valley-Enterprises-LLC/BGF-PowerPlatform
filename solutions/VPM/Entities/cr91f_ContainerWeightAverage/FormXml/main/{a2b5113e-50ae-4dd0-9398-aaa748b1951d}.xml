@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a2b5113e-50ae-4dd0-9398-aaa748b1951d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{0be338c6-66fb-4f19-8b9c-b7ad8871f950}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4f61c452-e24d-4239-82d3-474534d8bfd0}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8e1a4834-4954-41ac-a45f-855654653c89}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7d092eb-1127-43e1-8c9f-f38170b37810}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8e64a1ee-7fa5-45e9-973c-6bc3c84ab5c1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date Recorded" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_daterecorded" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_daterecorded" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69ce5ebf-b426-406b-8b49-0bb817aa6ad4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproductname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5a84c5d6-56a0-43b2-9986-e2f264b73e6e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unit of Measure, Single" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_unitofmeasuresingle" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_unitofmeasuresingle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ffa9f4b-38cb-4aee-926a-f80b4afd2f2a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Weight (lbs)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_weightlbs" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_weightlbs" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{56569cfd-ad76-41e7-9c6d-238e25ad53c7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product (load)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductload" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_farmproductload" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a86e165-9925-4b8a-8214-f51999ec754c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="UOM (load)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_uomload" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_uomload" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{1e482a97-0c0a-44ef-96bf-b4adece6fab5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{63a1f537-c34f-4b04-bfcc-a29b63bd2ed8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b3a6f102-f0ee-43ae-ac05-ca9844fd7cbf}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d576915-bf63-4619-a790-e1d62e7af035}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{fbc2af73-dd71-4472-804f-6a5a54932b57}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7f2b906f-0c1e-4767-9ca8-9a7d8c028f52}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ec465343-f5a1-4645-9628-665293d72c4f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8cd6dffb-bb93-4c20-ba99-c6ba47a99379}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Container Weight, Average Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

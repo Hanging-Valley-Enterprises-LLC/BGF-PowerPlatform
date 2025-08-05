@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d67e44ba-a339-46d2-ad11-03f54e123ed8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_lotnumber" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_packrecorddetailoutputid">
+          <cell name="cr91f_lotnumber" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_packrecorddetailoutput">
+          <attribute name="cr91f_packrecorddetailoutputid" />
+          <attribute name="cr91f_lotnumber" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_lotnumber" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Pack Record Detail Outputs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

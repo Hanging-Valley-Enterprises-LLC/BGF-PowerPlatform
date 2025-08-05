@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8126a260-6418-ef11-9f8a-000d3a3adac6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_salesordernumber" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_salesorderid">
+          <cell name="cr91f_salesordernumber" width="169" />
+          <cell name="cr91f_farmproductordered" width="166" />
+          <cell name="cr91f_quantity" width="100" />
+          <cell name="cr91f_orderuom" width="109" />
+          <cell name="cr91f_unitprice" width="100" />
+          <cell name="cr91f_extendedprice" width="126" />
+          <cell name="cr91f_lotnumberoriginal" width="166" />
+          <cell name="cr91f_notes" width="100" />
+          <cell name="cr91f_targetfieldplantingforharvest" width="225" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_salesorder">
+          <attribute name="cr91f_salesorderid" />
+          <attribute name="cr91f_salesordernumber" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_quantity" />
+          <attribute name="cr91f_orderuom" />
+          <attribute name="cr91f_farmproductordered" />
+          <attribute name="cr91f_notes" />
+          <attribute name="cr91f_targetfieldplantingforharvest" />
+          <attribute name="cr91f_unitprice" />
+          <attribute name="cr91f_extendedprice" />
+          <order attribute="cr91f_farmproductordered" descending="false" />
+          <attribute name="cr91f_lotnumberoriginal" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Sales Orders  Line Item Entry" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

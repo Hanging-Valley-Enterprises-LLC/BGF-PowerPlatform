@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fcce72a0-2068-f011-bec1-6045bdeb2011}</formid>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{a7e0d0d7-67ea-4a14-9003-d0866c14a7d9}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{c94edb70-751c-43ed-a0cd-a0d591fc7aa8}">
+                  <labels>
+                    <label description="Farm Product - Selling UoM Link" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="542FBFBE-0E4C-496C-8012-555DE6581923" labelid="{9a421426-26c3-4fd5-8dee-58ad2fa1857f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2265ae7a-db53-4c49-86c6-f8482d9af300}" locklevel="0" colspan="1" rowspan="1" labelid="{1d0e8459-6db4-45fd-a72d-62cf47ffb791}">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{083f7b6a-2a72-4753-88bf-5b6865bf23b8}" locklevel="0" colspan="1" rowspan="1" labelid="{e4975127-06f3-40b4-98e8-25753e3973a6}">
+                        <labels>
+                          <label description="Selling UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_sellinguom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_sellinguom" disabled="false">
+                          <parameters>
+                            <DefaultViewId>{40873754-1868-F011-BEC1-6045BDEB2011}</DefaultViewId>
+                            <AvailableViewIds>{8325B3D3-1B68-F011-BEC1-6045BDEB2C34},{E6553601-1C68-F011-BEC1-6045BDEB2011},{0130E9FF-12BF-EF11-A72E-6045BDD96150},{40873754-1868-F011-BEC1-6045BDEB2011},{1D9D812B-1868-F011-BEC1-7C1E52004D5F},{5B67B77E-FD6B-407D-BB60-1AE135CE5273},{F97E91D3-C87E-4F92-96EA-8DFA133542A6},{F7C09FD3-5430-49AE-B7F8-F6A4CEC1B9F0}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{f19b8f10-85a7-4c07-ac2c-de6f5e962447}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{d4a959d1-fe63-489a-a5b9-4ad704b3e30b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{6b1637be-c5e9-49a9-b547-293bf5a100c2}">
+                  <labels>
+                    <label description="Record Metadata" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{6c459046-d458-4066-b515-0548550a340b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67eeef51-ff44-49bb-9179-c50b2a046a9a}" locklevel="0" colspan="1" rowspan="1" labelid="{0a6a8695-a698-4253-bf47-7a3ee295db58}">
+                        <labels>
+                          <label description="Farm Product Selling UoM ReferenceID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductsellinguomreferenceid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_farmproductsellinguomreferenceid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e5ea4ae-6f8d-448e-8d9e-cc1cd184786f}" locklevel="0" colspan="1" rowspan="1" labelid="{5b536d46-6ef9-4475-b42e-3c3dfa3f5797}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Valid Farm Product Selling UoM QuickCreate" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

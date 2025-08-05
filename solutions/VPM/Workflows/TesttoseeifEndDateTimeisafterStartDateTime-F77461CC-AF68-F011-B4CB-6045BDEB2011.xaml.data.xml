@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{f77461cc-af68-f011-b4cb-6045bdeb2011}" Name="Test to see if End DateTime is after Start DateTime" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TesttoseeifEndDateTimeisafterStartDateTime-F77461CC-AF68-F011-B4CB-6045BDEB2011.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.18</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <ModernFlowType>0</ModernFlowType>
+  <PrimaryEntity>cr91f_HarvestRecord</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Test to see if End DateTime is after Start DateTime" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{e4fda4cb-4621-4533-85c0-fc0e33575f46}">
+      <label languagecode="1033" description="The End Date/Time should be after the Start Date/Time" />
+    </steplabels>
+    <steplabels id="{aaa6c244-2e18-4b62-bd30-95da7623ab74}">
+      <label languagecode="1033" description="La fecha y hora de finalización debe ser posterior a la fecha y hora de inicio.&#xA;The End DateTime must be after the Start DateTime." />
+    </steplabels>
+  </labels>
+</Workflow>

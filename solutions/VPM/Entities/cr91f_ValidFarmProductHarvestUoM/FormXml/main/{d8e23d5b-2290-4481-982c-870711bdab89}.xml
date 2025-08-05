@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d8e23d5b-2290-4481-982c-870711bdab89}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{a3791968-3da9-4a2f-9ebf-d22da9293920}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4e1660e3-4524-47ce-8384-2ae209a78757}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e990646c-4e45-4891-a0d8-290a7e57b4a7}">
+                        <labels>
+                          <label description="Valid Farm Product Harvest UoM ReferenceID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_validfarmproductharvestuomreferenceid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_validfarmproductharvestuomreferenceid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7307a90-c249-4161-861e-af823a8cbf4d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb7192db-df00-4cf8-839c-3885d42997f9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Harvest UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_harvestuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_harvestuom" disabled="false">
+                          <parameters>
+                            <DefaultViewId>{8325B3D3-1B68-F011-BEC1-6045BDEB2C34}</DefaultViewId>
+                            <AvailableViewIds>{8325B3D3-1B68-F011-BEC1-6045BDEB2C34},{E6553601-1C68-F011-BEC1-6045BDEB2011},{0130E9FF-12BF-EF11-A72E-6045BDD96150},{40873754-1868-F011-BEC1-6045BDEB2011},{1D9D812B-1868-F011-BEC1-7C1E52004D5F},{5B67B77E-FD6B-407D-BB60-1AE135CE5273},{F97E91D3-C87E-4F92-96EA-8DFA133542A6},{F7C09FD3-5430-49AE-B7F8-F6A4CEC1B9F0}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{0224892f-dbde-41c9-a970-08ad04d7ff00}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{557cf28d-3139-4790-8b41-ef69ac50e6fb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a70b0b07-eb59-470a-9f7a-cdb4a7884af1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9a9238a2-71c8-4feb-9885-684d4f290ba7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d0d87a55-266e-4756-aa9d-85b3a752e401}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{6f8ca25c-b3c5-4669-ada8-bb7f682ca3c1}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{a4143659-9478-4940-8e24-119649bd60cd}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{2ba2535d-8b20-45c7-8b6d-93ba90613a34}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ff5160c5-cd61-49bf-97c4-fdcb81340cad}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ce031eb9-f7dc-48b2-a03b-5e79acd2dfbe}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0d19ede8-6260-4164-a3b0-e9e7da3951ce}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Valid Farm Product - Harvest UoM" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{61d5e1c0-9027-ef11-840a-000d3a5acddf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_salesordernumber" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_salesorderid">
+          <cell name="cr91f_salesordernumber" width="169" />
+          <cell name="cr91f_farmproductordered" width="166" />
+          <cell name="cr91f_quantity" width="100" />
+          <cell name="cr91f_orderuom" width="109" />
+          <cell name="cr91f_unitprice" width="100" />
+          <cell name="cr91f_extendedprice" width="126" />
+          <cell name="cr91f_notes" width="100" />
+          <cell name="cr91f_salesorderno" width="127" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr91f_salesorder">
+          <attribute name="cr91f_salesorderid" />
+          <attribute name="cr91f_salesordernumber" />
+          <filter type="and">
+            <condition attribute="cr91f_salesorderdate" operator="on-or-after" value="2024-01-01" />
+          </filter>
+          <attribute name="cr91f_quantity" />
+          <attribute name="cr91f_orderuom" />
+          <attribute name="cr91f_salesorderno" />
+          <attribute name="cr91f_notes" />
+          <attribute name="cr91f_farmproductordered" />
+          <attribute name="cr91f_unitprice" />
+          <attribute name="cr91f_extendedprice" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="2024 Active Sales Order Lines" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

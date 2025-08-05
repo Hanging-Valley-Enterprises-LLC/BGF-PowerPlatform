@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fbb42168-b09f-47ae-ad6e-a926f89f713e}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_varieties" jump="cr91f_varietyname" select="1" icon="1" preview="0">
+        <row name="cr91f_variety" id="cr91f_varietyid">
+          <cell name="cr91f_varietylookup" width="300" />
+          <cell name="a_f845c825f55e40a38144afb47507ece1.cr91f_cropname" width="195" />
+          <cell name="cr0b9_farmproduct" width="117" />
+          <cell name="cr91f_varietyname" width="300" />
+          <cell name="a_f845c825f55e40a38144afb47507ece1.cr91f_family" width="170" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_variety">
+          <attribute name="cr91f_varietyid" />
+          <attribute name="cr91f_varietyname" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_varietylookup" />
+          <attribute name="cr0b9_farmproduct" />
+          <link-entity alias="a_f845c825f55e40a38144afb47507ece1" name="cr0b9_farmproduct" to="cr0b9_farmproduct" from="cr0b9_farmproductid" link-type="outer" visible="false">
+            <attribute name="cr91f_cropname" />
+            <attribute name="cr91f_family" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Variety Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

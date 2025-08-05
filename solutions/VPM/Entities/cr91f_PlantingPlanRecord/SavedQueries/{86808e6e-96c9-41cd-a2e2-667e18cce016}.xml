@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{86808e6e-96c9-41cd-a2e2-667e18cce016}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_lookupviewconcatenation" width="300" />
+          <cell name="cr91f_lookupbedqty" width="135" />
+          <cell name="cr91f_lookupbedfeet" width="153" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingplanrecord">
+          <attribute name="cr91f_plantingplanrecordid" />
+          <attribute name="createdon" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_planrecordid" operator="like" value="{0}" />
+            <condition attribute="cr91f_variety" operator="like" value="{0}" />
+            <condition attribute="cr91f_farmproduct" operator="like" value="{0}" />
+            <condition attribute="cr91f_succession" operator="like" value="{0}" />
+            <condition attribute="cr91f_lookupviewconcatenation" operator="like" value="{0}" />
+          </filter>
+          <attribute name="cr91f_lookupviewconcatenation" />
+          <attribute name="cr91f_lookupbedqty" />
+          <attribute name="cr91f_lookupbedfeet" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="cr91f_planyear" operator="eq" value="2025" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Production Plan Quick Find 2024 Active Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

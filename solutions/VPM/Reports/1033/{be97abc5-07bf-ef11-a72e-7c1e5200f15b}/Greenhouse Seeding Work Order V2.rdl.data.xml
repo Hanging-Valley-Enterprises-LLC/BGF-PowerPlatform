@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <name>Greenhouse Seeding Work Order V2</name>
+  <defaultfilter>
+    <ReportFilter>
+      <ReportEntity paramname="CRM_Filteredcr91f_PlantingPlanRecord" donotconvert="1">
+        <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+          <entity name="cr91f_plantingplanrecord">
+            <all-attributes />
+            <filter type="and">
+              <condition attribute="cr91f_method" operator="eq" uiname="BGF Greenhouse" uitype="cr91f_seedingmethod" value="{92df0c2b-4154-ef11-bfe3-6045bda80974}" />
+              <condition attribute="cr91f_planyear" operator="eq" value="2025" />
+            </filter>
+          </entity>
+        </fetch>
+      </ReportEntity>
+      <ReportEntity paramname="CRM_" donotconvert="1">
+        <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+          <entity name="userentityinstancedata">
+            <all-attributes />
+          </entity>
+        </fetch>
+      </ReportEntity>
+    </ReportFilter>
+  </defaultfilter>
+  <iscustomreport>1</iscustomreport>
+  <filename>Greenhouse Seeding Work Order V2.rdl</filename>
+  <languagecode>1033</languagecode>
+  <reportid>{be97abc5-07bf-ef11-a72e-7c1e5200f15b}</reportid>
+  <reporttypecode>1</reporttypecode>
+  <IntroducedVersion>1.0.0.18</IntroducedVersion>
+  <createdinmajorversion>9</createdinmajorversion>
+  <iscustomizable>1</iscustomizable>
+  <ExportedFileName>/Reports/GreenhouseSeedingWorkOrderV2rdlbe97abc5-07bf-ef11-a72e-7c1e5200f15b.wdl</ExportedFileName>
+  <ReportCategories />
+  <ReportVisibilities>
+    <ReportVisbility>2</ReportVisbility>
+    <ReportVisbility>3</ReportVisbility>
+    <ReportVisbility>1</ReportVisbility>
+  </ReportVisibilities>
+  <ReportEntities>
+    <ReportEntity>cr91f_plantingplanrecord</ReportEntity>
+  </ReportEntities>
+</Report>

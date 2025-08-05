@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{738bb918-3e5c-4873-9634-b739edda2ec8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{0f1f455f-a178-4039-b1ac-f0a5fb044705}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e10c5d67-cce0-4a82-b558-ca0bd600228a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d11df1df-e77c-46eb-995f-b62ce5fdf4f7}">
+                        <labels>
+                          <label description="Policy Number or ID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_policynumberorid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_policynumberorid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d4df9e0-342d-46da-8d89-f1b19faea2db}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Insurance Carrier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_insurancecarrier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_insurancecarrier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b05c99ea-27f0-49d4-8ff1-472150ecee74}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Policy Description" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_policydescription" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_policydescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36c08a86-f5b1-46d1-8040-e982e997cbad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Policy Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_policystartdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_policystartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50f38323-9d70-4e76-8f3f-f44fabba750a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Policy End Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_policyenddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_policyenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f144b420-2af9-45d5-8838-6223ece5041a}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{7516a26c-7ba6-48c7-a612-186ab02c30b1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b8f1b6ab-d657-44f4-95f4-fc703eba8d6c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{184dc92e-68d9-4f14-850e-c24b87b69415}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b281512b-68a2-476a-84a4-84039ba424cc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{7d35ea67-e756-42c1-9596-d755c6740544}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{08482652-f8c8-4215-b7bb-410430ad9c94}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d2eba31-e1b7-40bb-98d7-584cbfb7d4c8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a7e1bab3-29d7-4e52-8a52-181a09a228df}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

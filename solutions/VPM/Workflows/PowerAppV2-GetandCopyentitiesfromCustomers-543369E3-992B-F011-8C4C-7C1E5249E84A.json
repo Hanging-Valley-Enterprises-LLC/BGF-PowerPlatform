@@ -1,0 +1,195 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_cdata-20bgf-20qbo-20-2d-20production-5f9324ab0d-e09134bebb77213a": {
+        "api": {
+          "name": "shared_cdata-20bgf-20qbo-20-2d-20production-5f9324ab0d-e09134bebb77213a"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_QBO"
+        },
+        "runtimeSource": "invoker"
+      },
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr91f_sharedcommondataserviceforapps_39671"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "boolean": {
+                  "title": "Yes/No",
+                  "type": "boolean",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please select yes or no",
+                  "x-ms-content-hint": "BOOLEAN"
+                }
+              },
+              "required": [
+                "boolean"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "66bf24e3-e4f7-4475-8472-2076407db4b1"
+          }
+        }
+      },
+      "actions": {
+        "Get_entities_from_Customers": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_cdata-20bgf-20qbo-20-2d-20production-5f9324ab0d-e09134bebb77213a",
+              "operationId": "ListCustomers",
+              "connectionName": "shared_cdata-20bgf-20qbo-20-2d-20production-5f9324ab0d-e09134bebb77213a"
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "74d42534-e0eb-4b1e-9b5d-008a9438f15a"
+          }
+        },
+        "InitializeNumberOfCustomers": {
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "NumberOfCustomers",
+                "type": "integer",
+                "value": "@length(outputs('Get_entities_from_Customers')?['body/value'])"
+              }
+            ]
+          },
+          "runAfter": {
+            "Get_entities_from_Customers": [
+              "Succeeded"
+            ]
+          }
+        },
+        "Initialize_Counter": {
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Counter",
+                "type": "integer",
+                "value": 0
+              }
+            ]
+          },
+          "runAfter": {
+            "InitializeNumberOfCustomers": [
+              "Succeeded"
+            ]
+          }
+        },
+        "For_each": {
+          "type": "Foreach",
+          "foreach": "@outputs('Get_entities_from_Customers')?['body/value']",
+          "actions": {
+            "Add_a_new_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "new_qbocustomers",
+                  "item/new_qbocustomeridentifier": "@items('For_each')?['Id']",
+                  "item/new_alternatephonefreeform": "@items('For_each')?['AlternatePhone_FreeFormNumber']",
+                  "item/new_balance": "@items('For_each')?['Balance']",
+                  "item/new_balancewithjobs": "@items('For_each')?['BalanceWithJobs']",
+                  "item/new_billaddrcity": "@items('For_each')?['BillAddr_City']",
+                  "item/new_billaddrcountry": "@items('For_each')?['BillAddr_Country']",
+                  "item/new_billaddrcountrysubdivisioncode": "@items('For_each')?['BillAddr_CountrySubDivisionCode']",
+                  "item/new_billaddrid": "@items('For_each')?['BillAddr_Id']",
+                  "item/new_billaddrlat": "@items('For_each')?['BillAddr_Lat']",
+                  "item/new_billaddrline1": "@items('For_each')?['BillAddr_Line1']",
+                  "item/new_billaddrline2": "@items('For_each')?['BillAddr_Line2']",
+                  "item/new_billaddrline3": "@items('For_each')?['ShipAddr_Line3']",
+                  "item/new_billaddrline4": "@items('For_each')?['BillAddr_Line4']",
+                  "item/new_billaddrline5": "@items('For_each')?['BillAddr_Line5']",
+                  "item/new_billaddrlong": "@items('For_each')?['BillAddr_Long']",
+                  "item/new_billaddrpostalcode": "@items('For_each')?['BillAddr_PostalCode']",
+                  "item/new_currencyref": "@items('For_each')?['CurrencyRef']",
+                  "item/new_currencyrefname": "@items('For_each')?['CurrencyRef_Name']",
+                  "item/new_customertyperef": "@items('For_each')?['CustomerTypeRef']",
+                  "item/new_defaulttaxcoderef": "@items('For_each')?['DefaultTaxCodeRef']",
+                  "item/new_displayname": "@items('For_each')?['DisplayName']",
+                  "item/new_familyname": "@items('For_each')?['FamilyName']",
+                  "item/new_faxfreeform": "@items('For_each')?['Fax_FreeFormNumber']",
+                  "item/new_fullyqualifiedname": "@items('For_each')?['FullyQualifiedName']",
+                  "item/new_givenname": "@items('For_each')?['GivenName']",
+                  "item/new_level": "@items('For_each')?['Level']",
+                  "item/new_middlename": "@items('For_each')?['MiddleName']",
+                  "item/new_mobilephonefreeform": "@items('For_each')?['Mobile_FreeFormNumber']",
+                  "item/new_notes": "@if(or(equals(coalesce(items('For_each')?['Notes'], ''), ''), equals(items('For_each')?['Notes'], '')), '', substring(items('For_each')?['Notes'], 0, min(100, length(items('For_each')?['Notes']))))",
+                  "item/new_openbalancedate": "@items('For_each')?['OpenBalanceDate']",
+                  "item/new_paymentmethodref": "@items('For_each')?['PaymentMethodRef']",
+                  "item/new_preferreddeliverymethod": "@items('For_each')?['PreferredDeliveryMethod']",
+                  "item/new_primaryemailaddr": "@items('For_each')?['PrimaryEmailAddr_Address']",
+                  "item/new_primaryphonefreeform": "@items('For_each')?['PrimaryPhone_FreeFormNumber']",
+                  "item/new_printoncheckname": "@items('For_each')?['PrintOnCheckName']",
+                  "item/new_resalenum": "@items('For_each')?['ResaleNum']",
+                  "item/new_salestermref": "@items('For_each')?['SalesTermRef']",
+                  "item/new_shipaddrcity": "@items('For_each')?['ShipAddr_City']",
+                  "item/new_shipaddrcountry": "@items('For_each')?['ShipAddr_Country']",
+                  "item/new_shipaddrcountrysubdivisioncode": "@items('For_each')?['ShipAddr_CountrySubDivisionCode']",
+                  "item/new_shipaddrid": "@items('For_each')?['ShipAddr_Id']",
+                  "item/new_shipaddrlat": "@items('For_each')?['ShipAddr_Lat']",
+                  "item/new_shipaddrline1": "@items('For_each')?['ShipAddr_Line1']",
+                  "item/new_shipaddrline2": "@items('For_each')?['ShipAddr_Line2']",
+                  "item/new_shipaddrline3": "@items('For_each')?['ShipAddr_Line3']",
+                  "item/new_shipaddrline4": "@items('For_each')?['ShipAddr_Line4']",
+                  "item/new_shipaddrline5": "@items('For_each')?['ShipAddr_Line5']",
+                  "item/new_shipaddrlong": "/@{items('For_each')?['ShipAddr_Long']}",
+                  "item/new_shipaddrnote": "@items('For_each')?['ShipAddr_Note']",
+                  "item/new_shipaddrpostalcode": "@items('For_each')?['ShipAddr_PostalCode']",
+                  "item/new_suffix": "@items('For_each')?['Suffix']",
+                  "item/new_taxexemptionreasonid": "@items('For_each')?['TaxExemptionReasonId']",
+                  "item/new_title": "@items('For_each')?['Title']",
+                  "item/new_webaddruri": "@items('For_each')?['WebAddr_URI']"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Initialize_Counter": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

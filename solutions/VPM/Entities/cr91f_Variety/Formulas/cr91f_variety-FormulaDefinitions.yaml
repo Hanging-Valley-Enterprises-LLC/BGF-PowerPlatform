@@ -1,0 +1,2 @@
+cr91f_seedsperftcalc: =1/cr91f_ptp*12
+cr91f_varietylookup: =cr91f_varietyname& " - "& cr0b9_FarmProduct.cr0b9_farmproductname & " - " & cr0b9_FarmProduct.cr91f_CropName.cr91f_cropname

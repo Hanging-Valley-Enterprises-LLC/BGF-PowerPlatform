@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9209adea-83c3-45ba-a02c-4bc28bcfde41}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_greenhouserecordidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_greenhouserecordid">
+          <cell name="cr91f_greenhouserecordidentifier" width="203" />
+          <cell name="a_747524e310fe4a2f86d06f71f85ffd21.cr91f_planrecordid" width="170" />
+          <cell name="cr91f_plantingseason" width="130" />
+          <cell name="a_747524e310fe4a2f86d06f71f85ffd21.cr91f_farmproduct" width="264" />
+          <cell name="a_747524e310fe4a2f86d06f71f85ffd21.cr91f_variety" width="228" />
+          <cell name="a_747524e310fe4a2f86d06f71f85ffd21.cr91f_succession" width="249" />
+          <cell name="cr91f_dateseededforlookup" width="170" />
+          <cell name="cr91f_datetimeend" width="122" />
+          <cell name="cr91f_greenhouse" width="118" />
+          <cell name="cr91f_greenhouselocation" width="181" />
+          <cell name="cr91f_startdatetime" width="126" />
+          <cell name="cr91f_tagcolor" width="100" />
+          <cell name="cr91f_productionplanrecord" width="174" />
+          <cell name="cr91f_traysize" width="100" />
+          <cell name="cr91f_traysseeded" width="116" />
+          <cell name="cr91f_seedspercell" width="100" />
+          <cell name="cr91f_seedingmethod" width="133" />
+          <cell name="cr91f_seeddepth" width="105" />
+          <cell name="cr91f_seedlot" width="100" />
+          <cell name="cr91f_seedteamlead" width="134" />
+          <cell name="cr91f_seedteamsize" width="147" />
+          <cell name="cr91f_elapsedtime" width="117" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_greenhouserecordlookupconcatenation" width="283" />
+          <cell name="cr91f_seedingnotes" width="122" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_greenhouserecord">
+          <attribute name="cr91f_greenhouserecordid" />
+          <attribute name="cr91f_greenhouserecordidentifier" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_greenhouserecordidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_greenhouse" />
+          <attribute name="cr91f_greenhouselocation" />
+          <attribute name="cr91f_tagcolor" />
+          <attribute name="cr91f_seedteamsize" />
+          <attribute name="cr91f_seedspercell" />
+          <link-entity alias="a_747524e310fe4a2f86d06f71f85ffd21" name="cr91f_plantingplanrecord" to="cr91f_productionplanrecord" from="cr91f_plantingplanrecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_farmproduct" />
+            <attribute name="cr91f_variety" />
+            <attribute name="cr91f_succession" />
+            <attribute name="cr91f_planrecordid" />
+          </link-entity>
+          <attribute name="cr91f_productionplanrecord" />
+          <attribute name="cr91f_traysseeded" />
+          <attribute name="cr91f_startdatetime" />
+          <attribute name="cr91f_datetimeend" />
+          <attribute name="cr91f_elapsedtime" />
+          <attribute name="cr91f_greenhouserecordlookupconcatenation" />
+          <attribute name="cr91f_dateseededforlookup" />
+          <attribute name="cr91f_seedteamlead" />
+          <attribute name="cr91f_seedingmethod" />
+          <attribute name="cr91f_seedlot" />
+          <attribute name="cr91f_traysize" />
+          <attribute name="cr91f_plantingseason" />
+          <attribute name="cr91f_seeddepth" />
+          <attribute name="cr91f_seedingnotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Greenhouse Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

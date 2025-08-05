@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0806e36e-2631-418e-9f6f-2d0d07a4fa5b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_materialinputrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_materialinputid">
+          <cell name="cr91f_materialinputrecordid" width="300" />
+          <cell name="cr91f_materialinputmethod" width="168" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_materialinputstartdatetime" width="210" />
+          <cell name="cr91f_applicationunitofmeasure" width="202" />
+          <cell name="cr91f_volumeorweightapplied" width="191" />
+          <cell name="cr91f_productionplanrecord" width="174" />
+          <cell name="cr91f_greenhouseseedingrecord" width="200" />
+          <cell name="cr91f_directseedplantingrecord" width="200" />
+          <cell name="cr91f_transplantrecord" width="144" />
+          <cell name="cr91f_materialinputweather" width="171" />
+          <cell name="cr91f_airtemperature" width="133" />
+          <cell name="cr91f_ambienthumidity" width="147" />
+          <cell name="cr91f_soiltemperature" width="137" />
+          <cell name="cr91f_teamlead" width="103" />
+          <cell name="cr91f_materialinputnotes" width="157" />
+          <cell name="cr91f_materialinputenddatetime" width="206" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_materialinput">
+          <attribute name="cr91f_materialinputid" />
+          <attribute name="cr91f_materialinputrecordid" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_materialinputrecordid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_materialinputmethod" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_materialinputstartdatetime" />
+          <attribute name="cr91f_applicationunitofmeasure" />
+          <attribute name="cr91f_volumeorweightapplied" />
+          <attribute name="cr91f_airtemperature" />
+          <attribute name="cr91f_materialinputweather" />
+          <attribute name="cr91f_ambienthumidity" />
+          <attribute name="cr91f_soiltemperature" />
+          <attribute name="cr91f_productionplanrecord" />
+          <attribute name="cr91f_greenhouseseedingrecord" />
+          <attribute name="cr91f_directseedplantingrecord" />
+          <attribute name="cr91f_transplantrecord" />
+          <attribute name="cr91f_teamlead" />
+          <attribute name="cr91f_materialinputnotes" />
+          <attribute name="cr91f_materialinputenddatetime" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Material Inputs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

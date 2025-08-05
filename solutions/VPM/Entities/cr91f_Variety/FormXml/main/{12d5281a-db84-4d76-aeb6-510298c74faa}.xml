@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{12d5281a-db84-4d76-aeb6-510298c74faa}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{4aa0e325-a0b9-487b-81c4-9c4f67ce736c}" IsUserDefined="1" name="Planting Information">
+          <labels>
+            <label description="Planting Info" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{fc657c8e-d074-4886-82fa-a6e15318e481}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8fddd847-6cc7-414a-a941-719683c5c4b1}">
+                        <labels>
+                          <label description="Variety Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_varietyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_varietyname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{294c36a0-95f0-4b0d-93e9-8d837edc09e7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr0b9_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{950277ea-940e-48de-a594-74e9a3335e0d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Flexible Variety Attribute" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_flexiblevarietyattribute" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr91f_flexiblevarietyattribute" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d77ef843-416f-4a25-b022-b4e7996e6ee0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Plant Source" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantsource" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_plantsource" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Seeding Information" id="8d8ad643-bcdd-4c25-bad4-9bebf3698d87" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Greenhouse Seeding Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{4c51e513-e8f6-47cc-bb63-23dd3e767809}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tray Size" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_traysize" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_traysize" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f80b893-a34f-4e9c-b579-46328d5ae3f9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seeds per Cell" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_seedspercell" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr0b9_seedspercell" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="e9f98f77-83b0-4af3-9930-0f21ac314ff2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Field Planting Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{ec5c6a83-b93d-4bf8-92ec-ad7d6a83eec2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="PtP" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_ptp" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_ptp" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{adeea72e-832f-4b5a-9902-70e453deaac5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Rows per Bed" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_rowsperbed" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_rowsperbed" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08dd01bd-9e5f-4d93-ac3a-e9c1977d8f4c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bed Width" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bedwidth" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_bedwidth" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc2837d6-cc57-4283-8577-7f457c516337}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Planting Method" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantingmethod" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_plantingmethod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{960228e5-139d-4ee4-81be-8f1635dcb8cc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Planting Machine  (DNU)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantingmachine" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_plantingmachine" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a8765f3f-9cfe-4517-8b3c-722ba921c3cb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Planting Machine Gearing" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantingmachinegearing" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_plantingmachinegearing" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b05e132-d968-4e20-9ea1-c2ef8aea0342}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Planting Machine Plate" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantingmachineplate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_plantingmachineplate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a725d30-4aa9-47c8-9547-c44166ca8938}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seeds per Ft (Calc)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedsperftcalc" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_seedsperftcalc" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Planting Information_section_6" id="fde2e9dd-84bb-40ce-8b0d-dd7c1d4baaea" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Post Harvest Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{348e7ef1-3fbd-46e5-b442-3a30c48439e4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Storage Optimum (Days)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_storageoptimumdays" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_storageoptimumdays" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42ad959e-dbde-4225-9cd2-07aa9ed16716}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Storage Maximum (Days)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_storagemaximumdays" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_storagemaximumdays" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="b950882b-dc30-450c-a876-d5dc4eb512bb" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Production Plan Records" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{d797eec4-9621-4270-a697-12aa39570bdc}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Production Plan Records" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr91f_plantingplanrecord</TargetEntityType>
+                            <ViewId>{E2A8558F-BA12-4571-8424-358911423CE0}</ViewId>
+                            <ViewIds>{E2A8558F-BA12-4571-8424-358911423CE0}</ViewIds>
+                            <VisualizationId>{AE4302B2-86C7-ED11-B597-00224806F127}</VisualizationId>
+                            <RelationshipName>cr91f_cr91f_plantingplanrecord_Variety_cr91f_va</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{44ec860d-265b-4643-aace-26cadf699970}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{29c7ffe6-39b6-4fe4-8bbf-1b58648c6bb4}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{acfc7b54-aed9-4c5c-b932-6e56ada02411}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b3dba672-d0da-4bd1-a6bc-26a06f4498cc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{af32b8f9-e7e6-4169-b54c-f77611b9ebc7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4659b3ff-5afa-4d9f-96d7-f3a8a4c8e836}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{f87f0b46-c4ba-4c38-a636-ae56cefc96b0}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{af43ef56-0ad9-4c2a-a5cb-6c90007383f6}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="header_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+            </cell>
+            <cell id="{1c8addc4-130d-46ae-b9c2-6517dd4ad82a}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+            <cell id="{d580d530-2b63-4b8f-b9d6-77ba994c14b3}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{45ae2cb9-f98c-4769-8407-e760b61bbfc3}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{86dc5c3b-a947-410b-bafc-96dd8c35258e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c3c1e2e4-dd10-4899-8c75-98cdc29e2251}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c7487f35-8448-4290-a49f-3c05176fd8c9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Variety Maintenance - Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

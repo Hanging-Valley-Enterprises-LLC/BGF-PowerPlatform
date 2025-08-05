@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d8ed3861-8a5b-49a2-98c3-a141fc3e7828}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{b61d3f92-4ed5-4169-ad26-f5cda7cb5a4e}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{880998be-5864-455c-b805-a5d614b8c220}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{df6376c5-2441-4b17-9107-85098c32ee40}">
+                        <labels>
+                          <label description="SKU Conversion Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_skuconversionname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_skuconversionname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5962cf91-5a98-4c72-ac53-c44a5ef8efd0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{601db760-44b7-4869-bc7b-0d306621b3c1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Source UOM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_sourceuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_sourceuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{653290e8-fa9d-4cbe-a8aa-16441bb1d904}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Target UOM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_targetuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_targetuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{567e0ba9-7d00-40a0-bf09-1d9cbd96cbca}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Conversion Multiplier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_conversionmultiplier" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_conversionmultiplier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0f8f954-940a-47fd-bc01-25a8517eb06b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Est Firsts (%)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_estfirsts" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_estfirsts" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fc0f084e-6963-4f3e-ac0c-fdac44b9c9fb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Est Seconds (%)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_estseconds" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_estseconds" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{36027d0f-1bd3-4c81-bdff-4d4d8a7c2c63}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ce5aa5b5-0006-4bc1-8460-e57713c1e55d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{137378d0-b50e-4e26-8e50-96706116f4a5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9dfee07f-ba80-4cf3-8d9e-f84cc3ba39a1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{bcb273ee-f88a-48ed-99b6-9c8699e61f52}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{ea6002fa-002e-4c06-83de-2e2b99f6e441}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{dc8619b8-9358-4852-adda-93f1cd91c6b8}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{639a51de-4888-4de2-9e54-da1df56abfff}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{840be17b-c728-4dd0-a6e0-dd5c87b07019}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d73b35d1-a886-48f0-b9c0-58403a79d568}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ab53cb6a-e6e3-4d63-8aa0-4bae7825e5bf}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Stocking Unit Conversion Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

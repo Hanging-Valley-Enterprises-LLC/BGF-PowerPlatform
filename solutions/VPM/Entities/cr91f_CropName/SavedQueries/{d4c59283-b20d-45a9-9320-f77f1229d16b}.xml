@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d4c59283-b20d-45a9-9320-f77f1229d16b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_cropname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_cropnameid">
+          <cell name="cr91f_cropname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_cropname">
+          <attribute name="cr91f_cropnameid" />
+          <attribute name="cr91f_cropname" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_cropname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_cropname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Crop Names" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

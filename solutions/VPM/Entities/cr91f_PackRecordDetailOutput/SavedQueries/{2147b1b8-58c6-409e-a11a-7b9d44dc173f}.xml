@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2147b1b8-58c6-409e-a11a-7b9d44dc173f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_lotnumber" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_packrecorddetailoutputid">
+          <cell name="cr91f_lotnumber" width="158" />
+          <cell name="cr91f_packrun" width="100" />
+          <cell name="cr91f_farmproductfinal" width="158" />
+          <cell name="cr91f_packsizeuom" width="137" />
+          <cell name="cr91f_productgrade" width="122" />
+          <cell name="cr91f_quantityproduced" width="146" />
+          <cell name="cr91f_salesorderlineitem" width="165" />
+          <cell name="cr91f_storagelocation" width="137" />
+          <cell name="cr91f_lotnotes" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_packrecorddetailoutput">
+          <attribute name="cr91f_packrecorddetailoutputid" />
+          <attribute name="cr91f_lotnumber" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_lotnumber" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_farmproductfinal" />
+          <attribute name="cr91f_packsizeuom" />
+          <attribute name="cr91f_productgrade" />
+          <attribute name="cr91f_quantityproduced" />
+          <attribute name="cr91f_salesorderlineitem" />
+          <attribute name="cr91f_lotnotes" />
+          <attribute name="cr91f_storagelocation" />
+          <attribute name="cr91f_packrun" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Pack Record Detail Outputs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

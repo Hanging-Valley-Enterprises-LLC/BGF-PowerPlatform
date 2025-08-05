@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1a732cb3-0025-ef11-840a-000d3a5acddf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr0b9_farmproductname" select="1" icon="1" preview="1">
+        <row name="result" id="cr0b9_farmproductid">
+          <cell name="cr0b9_farmproductname" width="234" />
+          <cell name="cr91f_cropname" width="100" />
+          <cell name="cr91f_family" width="100" />
+          <cell name="cr91f_plantinggroup" width="100" />
+          <cell name="cr91f_harvestinventorytype" width="173" />
+          <cell name="cr91f_estimatedyield" width="100" />
+          <cell name="cr91f_unitofmeasure" width="116" />
+          <cell name="cr91f_estimatedprice" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="cr0b9_flexibleproductattribute" width="100" />
+          <cell name="cr91f_farmproductnamespanish" width="210" />
+          <cell name="cr91f_productcategory" width="139" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr0b9_farmproduct">
+          <attribute name="cr0b9_farmproductid" />
+          <attribute name="cr0b9_farmproductname" />
+          <attribute name="createdon" />
+          <order attribute="cr0b9_farmproductname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="cr91f_productcategoryname" operator="like" value="%produce%" />
+          </filter>
+          <attribute name="cr91f_cropname" />
+          <attribute name="cr0b9_flexibleproductattribute" />
+          <attribute name="cr91f_family" />
+          <attribute name="cr91f_plantinggroup" />
+          <attribute name="cr91f_unitofmeasure" />
+          <attribute name="cr91f_estimatedyield" />
+          <attribute name="cr91f_estimatedprice" />
+          <attribute name="cr91f_farmproductnamespanish" />
+          <attribute name="cr91f_productcategory" />
+          <attribute name="cr91f_harvestinventorytype" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Farm Products - Produce Only" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

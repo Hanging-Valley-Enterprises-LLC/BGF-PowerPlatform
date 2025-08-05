@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1d58373d-46c6-496c-9f55-626078f1ece4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_method" width="100" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_planrecordid" width="149" />
+          <cell name="cr91f_farmproduct" width="155" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_succession" width="100" />
+          <cell name="cr91f_targetgerminationdate" width="100" />
+          <cell name="cr91f_rowsperbed" width="100" />
+          <cell name="cr91f_bedqty" width="100" />
+          <cell name="cr91f_bedlengthdecimal" width="163" />
+          <cell name="cr91f_bedlength" width="100" />
+          <cell name="cr91f_calculatedacres" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_calculatedestimatedyield" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_plantingplanrecord">
+          <attribute name="cr91f_plantingplanrecordid" />
+          <attribute name="cr91f_planrecordid" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_planrecordid" descending="false" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_rowsperbed" />
+          <attribute name="cr91f_bedqty" />
+          <attribute name="cr91f_bedlength" />
+          <attribute name="cr91f_calculatedacres" />
+          <attribute name="cr91f_calculatedestimatedyield" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_method" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_targetgerminationdate" />
+          <attribute name="cr91f_bedlengthdecimal" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Production Plan Record Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

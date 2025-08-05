@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{17c36a0d-7119-4948-b120-a483dea89f36}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{dfbb1cfd-3ceb-484e-a395-72d59cc26777}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{86db78bb-ba5d-42e2-8490-c532b315698f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{109663a5-c349-46f3-bb46-ff2be6ff34a2}">
+                        <labels>
+                          <label description="Planting Group Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_plantinggroupname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr0b9_plantinggroupname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{156951ba-e3e1-4141-97e2-048073739ff1}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="ed9ad2a6-3f86-48b8-80b8-f880f56c56d2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Farm Products" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{2e348a2d-4e54-4839-b7be-4ac22c9edbae}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="New SG control 1719164345336" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr0b9_farmproduct</TargetEntityType>
+                            <ViewId>{1BFDE746-5F0F-4490-9C64-3A48C79CF0FC}</ViewId>
+                            <ViewIds>{1BFDE746-5F0F-4490-9C64-3A48C79CF0FC}</ViewIds>
+                            <RelationshipName>cr91f_cr0b9_farmproduct_PlantingGroup_cr0b9_pla</RelationshipName>
+                            <VisualizationId>{B3D07A09-8BC7-ED11-B597-00224806F127}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{42c50005-5741-40f5-a26a-0bd066dffc3c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f171884f-d0bc-4cb9-97b3-19b848d1a2c1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5f6cf2b1-2b37-4c3c-a132-e1295e1d81bb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{98cbf5fc-1b51-4758-bb35-8dc739af8054}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{89622e92-372a-4da1-b7f0-f49485d5bc1f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1a8775a5-e42a-4bb3-bcf1-2bb401644555}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{44c8abc7-e397-4155-b84c-02d11a5f118f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e9621535-91c1-498b-a9d8-0843121b2bee}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

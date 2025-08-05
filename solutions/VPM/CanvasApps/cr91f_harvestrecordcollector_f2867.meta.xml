@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr91f_harvestrecordcollector_f2867</Name>
+  <AppVersion>2025-07-15T21:26:50Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.25072.2.0</CreatedByClientVersion>
+  <MinClientVersion>3.25072.2.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25072.2","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250715T212650Z-3.25072.2.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Test Tablet - Harvest Record Collector</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"NotSpecified","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Harvest Records":{"entitySetName":"cr91f_harvestrecords","logicalName":"cr91f_harvestrecord"},"Field Plantings":{"entitySetName":"cr91f_fieldplantings","logicalName":"cr91f_fieldplanting"},"cr91f_bgfemployees":{"entitySetName":"cr91f_bgfemployees","logicalName":"cr91f_bgfemployee"},"BGF Employees":{"entitySetName":"cr91f_bgfemployees","logicalName":"cr91f_bgfemployee"},"cr91f_unitofmeasures":{"entitySetName":"cr91f_unitofmeasures","logicalName":"cr91f_unitofmeasure"},"Units of Measures":{"entitySetName":"cr91f_unitofmeasures","logicalName":"cr91f_unitofmeasure"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr91f_harvestrecord","componenttype":1},{"logicalname":"cr91f_fieldplanting","componenttype":1},{"logicalname":"cr91f_bgfemployee","componenttype":1},{"logicalname":"cr91f_unitofmeasure","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr91f_harvestrecordcollector_f2867_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr91f_harvestrecordcollector_f2867_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/cr91f_harvestrecordcollector_f2867_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>

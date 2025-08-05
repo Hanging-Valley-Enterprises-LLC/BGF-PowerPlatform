@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a5cc4d0a-6ed4-ef11-a730-7c1e5217ccdd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_seedingweek" width="121" />
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_succession" width="103" />
+          <cell name="cr91f_planrecordid" width="128" />
+          <cell name="cr91f_trays" width="100" />
+          <cell name="cr91f_plannedtrayqty" width="140" />
+          <cell name="cr91f_plantraysize" width="122" />
+          <cell name="cr91f_plannedseedsneeded" width="168" />
+          <cell name="cr91f_planseedsneededm" width="173" />
+          <cell name="cr91f_targetseedingdate" width="154" />
+          <cell name="cr91f_targetgerminationdate" width="184" />
+          <cell name="cr91f_totaltransplantwindowdays" width="222" />
+          <cell name="cr91f_estdaystotransplant" width="226" />
+          <cell name="cr91f_targetplantingweek" width="161" />
+          <cell name="cr91f_plantingweek" width="122" />
+          <cell name="cr91f_targetplantingdate" width="234" />
+          <cell name="cr91f_plantsourcevariety" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingplanrecord">&lt;attribute name="cr91f_targetplantingdate" /&gt;&lt;attribute name="cr91f_calculatedacres" /&gt;&lt;attribute name="cr91f_plannednumberofplants" /&gt;&lt;attribute name="cr91f_plantingweek" /&gt;&lt;attribute name="cr91f_plantsourcevariety" /&gt;
+        
+        
+        
+        
+        
+        
+        
+        <attribute name="cr91f_plantsourcevariety" /><attribute name="cr91f_plantingplanrecordid" /><attribute name="cr91f_planrecordid" /><attribute name="cr91f_seedingweek" /><attribute name="cr91f_farmproduct" /><attribute name="cr91f_variety" /><attribute name="cr91f_succession" /><order attribute="cr91f_seedingweek" descending="false" /><order attribute="cr91f_farmproduct" descending="false" /><order attribute="cr91f_variety" descending="false" /><attribute name="cr91f_targetseedingdate" /><attribute name="cr91f_targetplantingdate" /><attribute name="cr91f_plantraysize" /><attribute name="cr91f_plannedseedsneeded" /><attribute name="cr91f_trays" /><attribute name="cr91f_plannedtrayqty" /><attribute name="cr91f_totaltransplantwindowdays" /><attribute name="cr91f_planseedsneededm" /><attribute name="cr91f_targetgerminationdate" /><attribute name="cr91f_estdaystotransplant" /><attribute name="cr91f_plantingweek" /><attribute name="cr91f_targetplantingweek" /><filter type="and"><condition attribute="cr91f_planyear" operator="eq" value="2025" /><condition attribute="cr91f_method" operator="not-null" /><filter type="and"><condition attribute="cr91f_method" operator="ne" value="{0c799729-4154-ef11-bfe3-000d3a100e2b}" uiname="Direct to Field" uitype="cr91f_seedingmethod" /></filter></filter></entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="2025 Transplant Plan" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

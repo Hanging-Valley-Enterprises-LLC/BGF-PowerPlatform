@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25074.166" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25074.166" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25074.00166">
+  <SolutionManifest>
+    <UniqueName>VegetableProductionManagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Vegetable Production Management" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.20</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Crb864c</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CDS Default Publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>cr91f</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>46061</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="aaduser" behavior="1" />
+      <RootComponent type="1" schemaName="account" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="cr0b9_family" behavior="0" />
+      <RootComponent type="1" schemaName="cr0b9_farmproduct" behavior="0" />
+      <RootComponent type="1" schemaName="cr0b9_fieldcorner" behavior="0" />
+      <RootComponent type="1" schemaName="cr0b9_plantinggroup" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_bed" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_bgfemployee" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_containerweightaverage" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_cropname" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_daysofweek" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_equipment" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_equipmenttype" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_farmproductpricing" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_field" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_fieldmap" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_fieldplanting" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_gearing" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_geographicdirectionoption" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_greenhouse" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_greenhouserecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_harvestinventorytype" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_harvestmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_harvestrecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_historicalproductpricingandyields" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_insurancecarrier" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_insurancepolicy" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_materialinput" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_materialinputmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_materialinputrecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_number" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_packrecorddetailoutput" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_packrun" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_packshedmethods" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_planter" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_plantingdepthoption" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_plantingmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_plantingplanrecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_plantingrecordindividual" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_plate" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_pricecategory" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_productcategory" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_productgrades" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_reportcategory" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_salesorder" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_salesorderheader" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_seedingmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_seedinventorycount" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_seedlot" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_seedmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_shippingmethod" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_shippingrecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_stockingunitconversions" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_storagelocation" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_succession" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_transplantrecord" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_traysizes" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_unitofmeasure" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_validfarmproductharvestuom" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_validfarmproductsellinguom" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_variety" behavior="0" />
+      <RootComponent type="1" schemaName="cr91f_vendor" behavior="0" />
+      <RootComponent type="1" schemaName="new_qbocustomer" behavior="0" />
+      <RootComponent type="1" schemaName="report" behavior="2" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="1" schemaName="transactioncurrency" behavior="1" />
+      <RootComponent type="20" id="{00b22870-eec8-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="20" id="{0b8b49db-ecc8-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="20" id="{22f1f9ce-e7c8-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="20" id="{2d31c3e3-ba6b-ef11-a670-000d3a18d76d}" behavior="0" />
+      <RootComponent type="20" id="{45f25e39-0b26-f011-8c4d-7c1e5249e84a}" behavior="0" />
+      <RootComponent type="20" id="{53aab5ea-ebc8-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="20" id="{7362c00b-cb4d-ee11-be6e-000d3a32f410}" behavior="0" />
+      <RootComponent type="20" id="{8b2eb26b-edc8-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="29" id="{01d31be6-353b-f011-8779-6045bddb18c3}" behavior="0" />
+      <RootComponent type="29" id="{2e530016-69b2-ef11-b8e8-6045bdec8025}" behavior="0" />
+      <RootComponent type="29" id="{543369e3-992b-f011-8c4c-7c1e5249e84a}" behavior="0" />
+      <RootComponent type="29" id="{5b0ea500-7e18-ef11-9f8a-000d3a3adac6}" behavior="0" />
+      <RootComponent type="29" id="{6208835c-9d53-f011-bec2-7c1e5249e84a}" behavior="0" />
+      <RootComponent type="29" id="{77bc6dba-e35d-f011-877a-6045bdeb2011}" behavior="0" />
+      <RootComponent type="29" id="{81bc669b-f128-ef11-840a-000d3a31dd5a}" behavior="0" />
+      <RootComponent type="29" id="{8ee9acc4-b526-f011-8c4d-6045bddc41a1}" behavior="0" />
+      <RootComponent type="29" id="{cc4638cb-9d53-f011-bec2-7c1e5249e84a}" behavior="0" />
+      <RootComponent type="29" id="{efba04f1-e75d-f011-877a-6045bdeb2011}" behavior="0" />
+      <RootComponent type="29" id="{f41bd6dd-0fd0-ed11-b597-00224806f127}" behavior="0" />
+      <RootComponent type="29" id="{f77461cc-af68-f011-b4cb-6045bdeb2011}" behavior="0" />
+      <RootComponent type="29" id="{ff47080f-69b2-ef11-b8e8-6045bdec8025}" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_directseedtofieldplantingdataentry_720a8" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_fieldcorners_1f075" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_fielddataentry_5de9e" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_harvestrecordcollector_f2867" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_materialinput_ef069" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_materialinputautogenerated_6b884" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_matinputcopy2_448d9" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_page1_23c18" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_preparingaharvestworkorder_bf7e7" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_qbointegrationtestestimatelineitems_8dea1" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_transplantfieldplantingdataentry_1104c" behavior="0" />
+      <RootComponent type="300" schemaName="cr91f_welcome_9ee13" behavior="0" />
+      <RootComponent type="31" id="{be97abc5-07bf-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="31" id="{ede7ef2f-44be-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="60" id="{047ad0c7-8cc1-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="60" id="{0a21ffe4-c7c3-ef11-a72e-7c1e52587592}" behavior="0" />
+      <RootComponent type="60" id="{5e626149-c7c3-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="60" id="{76ae2edc-8cc1-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="60" id="{886fc765-c7c3-ef11-a72e-7c1e5200f15b}" behavior="0" />
+      <RootComponent type="60" id="{fe3d63e7-8cc1-ef11-a72e-7c1e52587592}" behavior="0" />
+      <RootComponent type="61" schemaName="cr91f_bgfhomepic" behavior="0" />
+      <RootComponent type="61" schemaName="cr91f_BGFWelcomePage" behavior="0" />
+      <RootComponent type="62" schemaName="cr91f_AccountManagementtest" behavior="0" />
+      <RootComponent type="62" schemaName="cr91f_HarvestApp" behavior="0" />
+      <RootComponent type="62" schemaName="cr91f_HarvestRecordsbasicinfo" behavior="0" />
+      <RootComponent type="62" schemaName="cr91f_SalesOrderwithEditableGrid" behavior="0" />
+      <RootComponent type="62" schemaName="cr91f_VegetableProductionManagementOpera" behavior="0" />
+      <RootComponent type="70" id="{381945de-3da1-ef11-8a69-6045bdec8025}" behavior="0" />
+      <RootComponent type="70" id="{7623b6b1-cdd1-e511-80d2-00155db70850}" behavior="0" />
+      <RootComponent type="80" schemaName="cr91f_AccountManagementtest" behavior="0" />
+      <RootComponent type="80" schemaName="cr91f_HarvestRecordsbasicinfo" behavior="0" />
+      <RootComponent type="80" schemaName="cr91f_VegetableProductionManagementOpera" behavior="0" />
+      <RootComponent type="9" schemaName="cr0b9_successionid" behavior="0" />
+      <RootComponent type="9" schemaName="cr91f_availability" behavior="0" />
+      <RootComponent type="9" schemaName="cr91f_flexiblevarietyattributes" behavior="0" />
+      <RootComponent type="9" schemaName="cr91f_neworused" behavior="0" />
+      <RootComponent type="9" schemaName="cr91f_plantingsource" behavior="0" />
+      <RootComponent type="9" schemaName="cr91f_unitperrowft" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="1" schemaName="aaduser" displayName="Microsoft Entra ID" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active BGF Employees" displayName="Active BGF Employees" parentSchemaName="cr91f_bgfemployee" parentDisplayName="BGF Employee" id="{f7cc3e12-9d1a-491e-ad73-3c668407cfcb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="300" schemaName="cr91f_fielddataentry_5de9e" displayName="Phone - Greenhouse Seeding Data Entry" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="PowerPages_RuntimeCore (1.0.2402.1)" />
+        <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)" />
+        <Dependent type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="powerpagecomponent_mspp_webrole_account" displayName="powerpagecomponent_mspp_webrole_account" parentSchemaName="powerpagecomponent" parentDisplayName="Site Component" solution="PowerPages_RuntimeExtensions (1.0.2404.2)" />
+        <Dependent type="10" schemaName="powerpagecomponent_mspp_webrole_account" displayName="powerpagecomponent_mspp_webrole_account" parentSchemaName="powerpagecomponent" parentDisplayName="Site Component" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="aaduserid" displayName="Id" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active BGF Employees" displayName="Active BGF Employees" parentSchemaName="cr91f_bgfemployee" parentDisplayName="BGF Employee" id="{f7cc3e12-9d1a-491e-ad73-3c668407cfcb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="dependentmodelreportid" displayName="Dependent Model Report Id" parentSchemaName="report" parentDisplayName="Report" solution="msdyn_CDSReportSchemaChanges (1.0.0.58)">
+          <package appName="CDSTransactionalAnalyticsApp Package" version="1.0.0.0">CDSTransactionalAnalyticsApp_Anchor (1.0.0.0)</package>
+        </Required>
+        <Dependent type="2" schemaName="dependentmodelreportid" displayName="Dependent Model Report Id" parentSchemaName="report" parentDisplayName="Report" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="filecontent" displayName="File Content" parentSchemaName="report" parentDisplayName="Report" solution="msdyn_CDSReportSchemaChanges (1.0.0.58)">
+          <package appName="CDSTransactionalAnalyticsApp Package" version="1.0.0.0">CDSTransactionalAnalyticsApp_Anchor (1.0.0.0)</package>
+        </Required>
+        <Dependent type="2" schemaName="filecontent" displayName="File Content" parentSchemaName="report" parentDisplayName="Report" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="id" displayName="A unique identifer for Microsoft Entra ID" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active BGF Employees" displayName="Active BGF Employees" parentSchemaName="cr91f_bgfemployee" parentDisplayName="BGF Employee" id="{f7cc3e12-9d1a-491e-ad73-3c668407cfcb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="userprincipalname" displayName="User Principal Name" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active BGF Employees" displayName="Active BGF Employees" parentSchemaName="cr91f_bgfemployee" parentDisplayName="BGF Employee" id="{f7cc3e12-9d1a-491e-ad73-3c668407cfcb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="usertype" displayName="User Type" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.109)">
+          <package appName="Data Modeling Extensions Package" version="1.0.0.34">msft_AsyncAttributeMetadataApp (1.0.0.34)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active BGF Employees" displayName="Active BGF Employees" parentSchemaName="cr91f_bgfemployee" parentDisplayName="BGF Employee" id="{f7cc3e12-9d1a-491e-ad73-3c668407cfcb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Environment Maker" solution="SolutionComponentConfiguration (9.1.1.1)" id="{d58407f2-48d5-e711-a82c-000d3a37c848}">
+          <package appName="Solution History Package" version="9.1.0.10">SolutionHistoryAnchor (9.1.0.10)</package>
+        </Required>
+        <Dependent type="60" displayName="Direct Seed to Field Planting Form" parentDisplayName="Field Planting" id="{1699ccfc-6013-f011-9989-6045bddb18c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Environment Maker" solution="SolutionComponentConfiguration (9.1.1.1)" id="{d58407f2-48d5-e711-a82c-000d3a37c848}">
+          <package appName="Solution History Package" version="9.1.0.10">SolutionHistoryAnchor (9.1.0.10)</package>
+        </Required>
+        <Dependent type="60" displayName="Transplant Field Planting Form" parentDisplayName="Field Planting" id="{45a91a28-6113-f011-998a-6045bddc41a1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Environment Maker" solution="SolutionComponentConfiguration (9.1.1.1)" id="{d58407f2-48d5-e711-a82c-000d3a37c848}">
+          <package appName="Solution History Package" version="9.1.0.10">SolutionHistoryAnchor (9.1.0.10)</package>
+        </Required>
+        <Dependent type="60" displayName="Greenhouse Record Main Form" parentDisplayName="Greenhouse Record" id="{70c2e648-502d-439c-8e81-631495494946}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Environment Maker" solution="SolutionComponentConfiguration (9.1.1.1)" id="{d58407f2-48d5-e711-a82c-000d3a37c848}">
+          <package appName="Solution History Package" version="9.1.0.10">SolutionHistoryAnchor (9.1.0.10)</package>
+        </Required>
+        <Dependent type="80" schemaName="cr91f_VegetableProductionManagementOpera" displayName="Vegetable Production Management Operating System" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package appName="msdynce_AppCommon" version="9.0.25073.10001">msdynce_AppCommonAnchor (9.0.25073.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}">
+          <package appName="msdynce_AppCommon" version="9.0.25073.10001">msdynce_AppCommonAnchor (9.0.25073.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="cr91f_HarvestRecordsbasicinfo" displayName="Harvest Records (basic info)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2507.4009)">
+          <package appName="Base Custom Controls" version="9.0.2507.4009">BaseCustomControlsCore (9.0.2507.4009)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="70" displayName="Local Identity Credentials" solution="PowerPages_RuntimeCoreExtensions (1.0.2308.2)" id="{7623b6b1-cdd1-e511-80d2-00155db70850}" />
+        <Dependent type="70" displayName="Local Identity Credentials" id="{7623b6b1-cdd1-e511-80d2-00155db70850}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_QBO" solution="Active" id.connectionreferencelogicalname="new_QBO" />
+        <Dependent type="29" displayName="PowerAppV2 -&gt; Get and Copy entities from Customers" id="{543369e3-992b-f011-8c4c-7c1e5249e84a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AllowNotificationsEarlyAccess" solution="AppNotifications (10.0.0.16)" id.uniquename="AllowNotificationsEarlyAccess">
+          <package appName="PowerAppsUnifiedClientExtensionApp Package" version="1.0.0.62">msft_PowerAppsUnifiedClientInfraExtensions (1.0.0.62)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_VegetableProductionManagementOpera,settingdefinitionid.uniquename=AllowNotificationsEarlyAccess" id.parentappmoduleid.uniquename="cr91f_VegetableProductionManagementOpera" id.settingdefinitionid.uniquename="AllowNotificationsEarlyAccess" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.21">PowerAppsAppFramework_Anchor (1.0.0.21)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_AccountManagementtest,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="cr91f_AccountManagementtest" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.21">PowerAppsAppFramework_Anchor (1.0.0.21)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_HarvestRecordsbasicinfo,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="cr91f_HarvestRecordsbasicinfo" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="EnableLockTabsOnMobile2022" solution="msdyn_FormsInfraSettings (1.0.0.7)" id.uniquename="EnableLockTabsOnMobile2022">
+          <package appName="PowerAppsFormsApp Package" version="1.0.0.4">msdyn_FormsInsightSettings (1.0.0.4)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_VegetableProductionManagementOpera,settingdefinitionid.uniquename=EnableLockTabsOnMobile2022" id.parentappmoduleid.uniquename="cr91f_VegetableProductionManagementOpera" id.settingdefinitionid.uniquename="EnableLockTabsOnMobile2022" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="FormFillBarUXEnabled" solution="msdyn_FormsInfraSettings (1.0.0.7)" id.uniquename="FormFillBarUXEnabled">
+          <package appName="PowerAppsFormsApp Package" version="1.0.0.4">msdyn_FormsInsightSettings (1.0.0.4)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_HarvestRecordsbasicinfo,settingdefinitionid.uniquename=FormFillBarUXEnabled" id.parentappmoduleid.uniquename="cr91f_HarvestRecordsbasicinfo" id.settingdefinitionid.uniquename="FormFillBarUXEnabled" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="MobileCommandingImprovements2022" solution="msdyn_CommandingSettings (1.0.0.2)" id.uniquename="MobileCommandingImprovements2022">
+          <package appName="PowerAppsCommandingApp Package" version="1.0.0.6">PowerAppsCommandingApp_Anchor (1.0.0.6)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_VegetableProductionManagementOpera,settingdefinitionid.uniquename=MobileCommandingImprovements2022" id.parentappmoduleid.uniquename="cr91f_VegetableProductionManagementOpera" id.settingdefinitionid.uniquename="MobileCommandingImprovements2022" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileDateTime" solution="SettingDefinitionsData (9.2.2507.2507161)" id.uniquename="NativeMobileDateTime">
+          <package appName="AppModule" version="9.2.2507.2507161">AppModuleSolutionAnchor (9.2.2507.2507161)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_VegetableProductionManagementOpera,settingdefinitionid.uniquename=NativeMobileDateTime" id.parentappmoduleid.uniquename="cr91f_VegetableProductionManagementOpera" id.settingdefinitionid.uniquename="NativeMobileDateTime" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileInputs" solution="SettingDefinitionsData (9.2.2507.2507161)" id.uniquename="NativeMobileInputs">
+          <package appName="AppModule" version="9.2.2507.2507161">AppModuleSolutionAnchor (9.2.2507.2507161)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr91f_VegetableProductionManagementOpera,settingdefinitionid.uniquename=NativeMobileInputs" id.parentappmoduleid.uniquename="cr91f_VegetableProductionManagementOpera" id.settingdefinitionid.uniquename="NativeMobileInputs" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

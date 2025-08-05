@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6ca662b6-9e35-49a5-8e0a-19d7fe44fc22}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{37fd2465-27e2-4e11-93c3-6f48fbfaa434}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{150f3d41-4f50-4227-b88e-617c7e183f3a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d3f6f03c-8efe-44d2-b067-e2f72b419d34}">
+                        <labels>
+                          <label description="Crop Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_cropname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_cropname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21bc38fb-d93f-4d5b-8ebb-b3a65c85c320}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="a9676fde-0816-41f1-ab3b-0f59db746ef5" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Related Records" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{3e9fc064-0e07-4a96-803e-c05cc96493c9}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Related Farm Products" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="RelatedFarmProductsSubgrid1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr0b9_farmproduct</TargetEntityType>
+                            <ViewId>{1BFDE746-5F0F-4490-9C64-3A48C79CF0FC}</ViewId>
+                            <ViewIds>{1BFDE746-5F0F-4490-9C64-3A48C79CF0FC}</ViewIds>
+                            <VisualizationId>{B3D07A09-8BC7-ED11-B597-00224806F127}</VisualizationId>
+                            <RelationshipName>cr91f_cr0b9_farmproduct_CropName_cr91f_cropname</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{64df67f5-d0b3-42ea-8e9b-be5b8526d549}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2f7b4dec-22af-4e1a-8cd3-32828fd42e12}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{cae39987-9c52-43ab-bcb7-125fefb646c1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5d84a30a-116b-4737-b143-7340d5ecf9d7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8251f349-e159-40da-9b24-6462454113bd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b5ba5bed-ff64-4509-ba29-2e9bfb534cd0}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2283bef4-0616-4dfe-a977-9a9d3e4e3add}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b6966a1f-17ad-47de-8b66-3f3d103dfbd4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5685ea08-86af-4dbd-b460-06e32c0985fd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

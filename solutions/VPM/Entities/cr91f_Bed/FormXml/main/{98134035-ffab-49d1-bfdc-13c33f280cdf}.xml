@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{98134035-ffab-49d1-bfdc-13c33f280cdf}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{51d8e15f-ecac-409c-b44c-c728708aa02a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3fabd017-543f-4048-abde-231b8ddda33c}" name="General">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b5b59c49-c552-4dde-9036-cb39d123756f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Field" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_field" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_field" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{06965258-5acf-48b7-a2c0-3ae1e194b79f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bed Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bednumber" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_bednumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60aa2869-e552-4519-ba3d-906d0c26ef53}">
+                        <labels>
+                          <label description="Bed Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bedname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_bedname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0251f42f-e640-4c4b-a3ce-fb6957eaabb0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Start - Latitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_startlatitude" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_startlatitude" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{738bad4c-8591-4cc3-90c3-6e254a6fd150}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Start - Longitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_startlongitude" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_startlongitude" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dc57fd00-fef4-4e9e-a863-76a70ba6a423}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="End - Latitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_endlatitude" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_endlatitude" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6910ccad-ecf6-4ead-8238-b1e295602a7a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="End - Longitude" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_endlongitude" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_endlongitude" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{f9c8e441-41ef-42d4-a982-149e60aea8d3}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1fb46080-e481-49ca-aaae-39b14296d488}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8952c367-1952-4cdd-89ee-a21ee33c27fe}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9e2003b5-1b7d-4d48-8bf6-38a47507d5c7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e81b413d-ccc0-406f-a1e0-ac2d6e0a5569}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{29ec0f79-3737-41b7-89ef-8e779fb3cad7}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{26ea0450-9fb8-42df-bf8f-a97a4ad56b93}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="header_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+            </cell>
+            <cell id="{68bc4559-8fcf-4939-9c2c-34bd0f7e7d54}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+            <cell id="{ae6cabd5-8403-4638-a1ad-6643894c11f9}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0bda9550-82bf-4b6c-bbfe-e5735359a7f7}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fbca785e-57b0-458b-a222-233b17ae8cf8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{78d830ea-323f-439f-970c-b8de31271727}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0bcc16bc-fb67-4e01-883c-558e769471ec}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Main Bed Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

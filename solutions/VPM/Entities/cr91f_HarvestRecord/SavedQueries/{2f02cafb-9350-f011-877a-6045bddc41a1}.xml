@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2f02cafb-9350-f011-877a-6045bddc41a1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_harvestrecordidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_harvestrecordid">
+          <cell name="cr91f_harvestrecordidentifier" width="127" />
+          <cell name="cr91f_farmproductname" width="154" />
+          <cell name="cr91f_farmproductnamespanish" width="210" />
+          <cell name="cr91f_targetharvestdate" width="107" />
+          <cell name="cr91f_harvestdate" width="114" />
+          <cell name="cr91f_targetharvestqty" width="147" />
+          <cell name="cr91f_quantityharvested" width="150" />
+          <cell name="cr91f_targetharvestunitofmeasure" width="218" />
+          <cell name="cr91f_harvestqtyunitofmeasure" width="204" />
+          <cell name="cr91f_harvestnotes" width="120" />
+          <cell name="cr91f_customernotes" width="131" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="cr91f_harvestrecord">
+          <attribute name="cr91f_harvestrecordidentifier" />
+          <attribute name="cr91f_harvestrecordid" />
+          <attribute name="cr91f_quantityharvested" />
+          <attribute name="cr91f_harvestqtyunitofmeasure" />
+          <attribute name="cr91f_harvestnotes" />
+          <attribute name="cr91f_customernotes" />
+          <order attribute="cr91f_harvestrecordidentifier" descending="true" />
+          <attribute name="cr91f_targetharvestqty" />
+          <attribute name="cr91f_targetharvestdate" />
+          <attribute name="cr91f_harvestdate" />
+          <attribute name="cr91f_targetharvestunitofmeasure" />
+          <attribute name="cr91f_farmproductname" />
+          <attribute name="cr91f_farmproductnamespanish" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.18</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Harvest Records - Actuals Only" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

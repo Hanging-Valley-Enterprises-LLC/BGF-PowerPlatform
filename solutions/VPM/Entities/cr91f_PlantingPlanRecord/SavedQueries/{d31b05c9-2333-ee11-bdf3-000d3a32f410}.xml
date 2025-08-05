@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d31b05c9-2333-ee11-bdf3-000d3a32f410}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_lookupviewconcatenation" width="300" />
+          <cell name="cr91f_lookupbedqty" width="135" />
+          <cell name="cr91f_lookupbedfeet" width="153" />
+          <cell name="cr91f_planrecordid" width="136" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingplanrecord">
+          <attribute name="cr91f_planrecordid" />
+          <attribute name="cr91f_plantingplanrecordid" />
+          <attribute name="cr91f_lookupviewconcatenation" />
+          <attribute name="cr91f_lookupbedqty" />
+          <attribute name="cr91f_lookupbedfeet" />
+          <filter type="and">
+            <condition attribute="cr91f_farmproductlookup" operator="not-like" value="%DNU%" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Lookup By Product" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4973a6d4-5016-4dc4-ba11-49e195a3f8e1}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{22f2884c-71ae-492a-ba17-0400913ca3c6}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{36e53f76-4d61-40ba-9d64-4ce9fcdea2d3}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fd2c27b5-0319-475d-8159-a533988cb0f9}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c71a2970-0324-4ff4-a841-cd40e0566032}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Greenhouse" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_greenhouse" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_greenhouse" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f7152b9e-7234-4d9d-9879-148fa1969bd0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Greenhouse Location" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_greenhouselocation" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_greenhouselocation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{440d1ea2-db0d-499a-91b0-0f8c47962adc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tag Color" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_tagcolor" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_tagcolor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d34414d-987f-4151-87da-e5a85dbbd616}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tray Size" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_traysize" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_traysize" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{52b69282-7c1f-4b67-8244-f9c8e211cfef}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Trays Seeded" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_traysseeded" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_traysseeded" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d5ea4a5-7198-4f67-8b49-b1a74b7e4086}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DateTime End" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_datetimeend" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_datetimeend" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58ba1372-8a19-44f0-8dfa-6454d895eae8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seed Team Lead" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedteamlead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_seedteamlead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58829863-6256-461c-be6d-3c4e8aab8ca6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seeding Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedingnotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_seedingnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{156a7ab9-832c-43fa-b729-fe7af531d506}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Greenhouse Record Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_greenhouserecordidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_greenhouserecordidentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0faad610-07b9-49b9-a55b-2677b617d1ed}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Production Plan Record" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productionplanrecord" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_productionplanrecord" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Greenhouse Record Quick View Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

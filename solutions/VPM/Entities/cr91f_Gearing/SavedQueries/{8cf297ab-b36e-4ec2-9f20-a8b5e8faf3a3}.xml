@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8cf297ab-b36e-4ec2-9f20-a8b5e8faf3a3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_gearingname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_gearingid">
+          <cell name="cr91f_gearingname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_gearing">
+          <attribute name="cr91f_gearingid" />
+          <attribute name="cr91f_gearingname" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_gearingname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Gearing Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

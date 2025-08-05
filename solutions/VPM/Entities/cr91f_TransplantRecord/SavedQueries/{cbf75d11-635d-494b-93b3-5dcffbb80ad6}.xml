@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cbf75d11-635d-494b-93b3-5dcffbb80ad6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_transplantrecordidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_transplantrecordid">
+          <cell name="cr91f_plantingplanrecord" width="159" />
+          <cell name="cr91f_transplantrecordidentifier" width="300" />
+          <cell name="cr91f_cropname" width="105" />
+          <cell name="a_002ccbc6d3b4437b9c4adead43ef08fb.cr91f_farmproduct" width="249" />
+          <cell name="a_002ccbc6d3b4437b9c4adead43ef08fb.cr91f_variety" width="213" />
+          <cell name="a_002ccbc6d3b4437b9c4adead43ef08fb.cr91f_successionid" width="253" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_bedftplantedactual" width="173" />
+          <cell name="cr91f_bedsplantedactual" width="163" />
+          <cell name="cr91f_rowsperbedactual" width="170" />
+          <cell name="cr91f_ptpactual" width="109" />
+          <cell name="cr91f_materialinputmethod" width="100" />
+          <cell name="cr91f_materialinputrate" width="133" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_transplantlead" width="131" />
+          <cell name="cr91f_transplantdatetimestart" width="197" />
+          <cell name="cr91f_transplantdatetimeend" width="185" />
+          <cell name="cr91f_directionstart" width="131" />
+          <cell name="cr91f_directiontravel" width="141" />
+          <cell name="cr91f_gearing" width="100" />
+          <cell name="cr91f_plantingdepth" width="125" />
+          <cell name="cr91f_transplantequipment" width="165" />
+          <cell name="cr91f_transplantnotes" width="136" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_transplantrecord">
+          <attribute name="cr91f_transplantrecordid" />
+          <attribute name="cr91f_transplantrecordidentifier" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_transplantrecordidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_materialinputmethod" />
+          <attribute name="cr91f_materialinputrate" />
+          <attribute name="cr91f_plantingplanrecord" />
+          <link-entity alias="a_002ccbc6d3b4437b9c4adead43ef08fb" name="cr91f_plantingplanrecord" to="cr91f_plantingplanrecord" from="cr91f_plantingplanrecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_farmproduct" />
+            <attribute name="cr91f_variety" />
+            <attribute name="cr91f_successionid" />
+          </link-entity>
+          <attribute name="cr91f_bedftplantedactual" />
+          <attribute name="cr91f_bedsplantedactual" />
+          <attribute name="cr91f_cropname" />
+          <attribute name="cr91f_transplantdatetimestart" />
+          <attribute name="cr91f_transplantdatetimeend" />
+          <attribute name="cr91f_directionstart" />
+          <attribute name="cr91f_directiontravel" />
+          <attribute name="cr91f_gearing" />
+          <attribute name="cr91f_transplantlead" />
+          <attribute name="cr91f_rowsperbedactual" />
+          <attribute name="cr91f_ptpactual" />
+          <attribute name="cr91f_plantingdepth" />
+          <attribute name="cr91f_transplantequipment" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_transplantnotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Transplant Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

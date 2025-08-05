@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{57935aa1-72fd-4f47-9dc7-870616cee9fc}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{13443625-22cf-49e3-8d92-5bbda9c0734b}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{30f297d4-da07-48e8-9a70-8b451d184669}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2d372991-e292-4e0b-882d-dbd44eda9c80}">
+                        <labels>
+                          <label description="Historical Pricing and Yield Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_historicalpricingandyieldidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_historicalpricingandyieldidentifier" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc91ff71-91c2-44a3-9313-fda310bc5acc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Production Year" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productionyear" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_productionyear" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5d44a73-3747-4aa0-a1dd-88dd9ce9908a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bd2cbf04-7298-420c-926c-50c31ddb5de3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Average Unit Price" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_averageunitprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cr91f_averageunitprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40c2c601-7f95-4cae-83ef-823c53119a38}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Average Yield per BedFt" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_averageyieldperbedft" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_averageyieldperbedft" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f056231b-3bfd-4f40-8c73-d503535666c6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Average Yield per RowFt" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_averageyieldperrowft" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_averageyieldperrowft" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c59ff236-c645-49ad-bb84-fca3b216ff4c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d5a73c15-ecdd-4583-8dd0-978f31ad6936}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{872f971c-eb62-46fa-8522-62210704b7e2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{bab8324b-0d93-4d6a-a5e8-69db48d235ef}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{657b768a-1607-4cc6-88ff-a3a90157792e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{617b0723-a51b-4211-b333-8e5e2a5b57f4}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{17a7b32d-345d-4ab5-a3ae-28213fc4d0f5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{68e5881a-8002-4b09-83b8-0028b7b999e0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{80a2c10c-0de1-42f5-ac3d-93e05d0cdad3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+        <Role Id="{7362C00B-CB4D-EE11-BE6E-000D3A32F410}" />
+        <Role Id="{45F25E39-0B26-F011-8C4D-7C1E5249E84A}" />
+        <Role Id="{8B2EB26B-EDC8-ED11-B597-00224806F127}" />
+        <Role Id="{00B22870-EEC8-ED11-B597-00224806F127}" />
+        <Role Id="{53AAB5EA-EBC8-ED11-B597-00224806F127}" />
+        <Role Id="{0B8B49DB-ECC8-ED11-B597-00224806F127}" />
+        <Role Id="{2D31C3E3-BA6B-EF11-A670-000D3A18D76D}" />
+        <Role Id="{22F1F9CE-E7C8-ED11-B597-00224806F127}" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

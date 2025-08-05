@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="cr0b9_successionid" localizedName="Succession ID" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Succession ID" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="598180000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="1st Planting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="598180001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="2nd Planting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="598180002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="3rd Planting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="598180003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="4th Planting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610001" IsHidden="0">
+      <labels>
+        <label description="5th Planting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="460610002" IsHidden="0">
+      <labels>
+        <label description="NA" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

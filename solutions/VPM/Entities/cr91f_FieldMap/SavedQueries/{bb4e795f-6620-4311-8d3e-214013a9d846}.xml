@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bb4e795f-6620-4311-8d3e-214013a9d846}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_fieldmaprecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_fieldmapid">
+          <cell name="cr91f_productionplanid" width="196" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr91f_field" width="197" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_bednumber" width="100" />
+          <cell name="cr91f_fieldmaprecordid" width="176" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr91f_farmproduct" width="253" />
+          <cell name="cr91f_variety" width="220" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr91f_variety" width="216" />
+          <cell name="cr91f_succession" width="106" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr91f_rowsperbed" width="100" />
+          <cell name="cr91f_rowsperbed" width="167" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr91f_bedlength" width="100" />
+          <cell name="cr91f_spacingin" width="100" />
+          <cell name="a_355060ef2ad84b738eae33e83812c5c9.cr0b9_bedwidth" width="100" />
+          <cell name="cr91f_bedfeet" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_seedingmethod" width="100" />
+          <cell name="cr91f_farmproduct" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_fieldmap">
+          <attribute name="cr91f_fieldmapid" />
+          <attribute name="cr91f_fieldmaprecordid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_productionplanid" />
+          <attribute name="cr91f_rowsperbed" />
+          <attribute name="cr91f_spacingin" />
+          <attribute name="cr91f_bedfeet" />
+          <link-entity alias="a_355060ef2ad84b738eae33e83812c5c9" name="cr91f_plantingplanrecord" to="cr91f_productionplanid" from="cr91f_plantingplanrecordid" link-type="outer" visible="false">
+            <attribute name="cr91f_farmproduct" />
+            <attribute name="cr91f_variety" />
+            <attribute name="cr91f_rowsperbed" />
+            <attribute name="cr91f_bedlength" />
+            <attribute name="cr91f_field" />
+            <attribute name="cr0b9_bedwidth" />
+          </link-entity>
+          <attribute name="cr91f_seedingmethod" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_bednumber" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_field" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Field Maps" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

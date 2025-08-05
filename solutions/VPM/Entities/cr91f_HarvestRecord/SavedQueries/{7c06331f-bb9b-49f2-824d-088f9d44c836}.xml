@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7c06331f-bb9b-49f2-824d-088f9d44c836}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_harvestrecordidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_harvestrecordid">
+          <cell name="cr91f_harvestrecordidentifier" width="194" />
+          <cell name="cr91f_harvestinventorytype" width="173" />
+          <cell name="cr91f_farmproductname" width="154" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_succession" width="103" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_targetharvestdate" width="153" />
+          <cell name="cr91f_targetharvestqty" width="147" />
+          <cell name="cr91f_harvestqtyunitofmeasure" width="204" />
+          <cell name="cr91f_quantityharvested" width="150" />
+          <cell name="cr91f_enddatetime" width="130" />
+          <cell name="cr91f_storagelocation" width="137" />
+          <cell name="cr91f_salesorderline" width="135" />
+          <cell name="a_a2b76b57d0fa4ae1940c4c1698f0b512.cr91f_customer" width="203" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_harvestrecord">
+          <attribute name="cr91f_harvestrecordid" />
+          <attribute name="cr91f_harvestrecordidentifier" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_harvestrecordidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_harvestrecordidentifier" operator="like" value="{0}" />
+            <condition attribute="cr91f_farmproductname" operator="like" value="{0}" />
+            <condition attribute="cr91f_field" operator="like" value="{0}" />
+            <condition attribute="cr91f_variety" operator="like" value="{0}" />
+            <condition attribute="cr91f_succession" operator="like" value="{0}" />
+            <condition attribute="cr91f_storagelocation" operator="like" value="{0}" />
+          </filter>
+          <attribute name="cr91f_quantityharvested" />
+          <attribute name="cr91f_salesorderline" />
+          <attribute name="cr91f_harvestqtyunitofmeasure" />
+          <attribute name="cr91f_farmproductname" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_targetharvestdate" />
+          <attribute name="cr91f_targetharvestqty" />
+          <attribute name="cr91f_enddatetime" />
+          <attribute name="cr91f_harvestinventorytype" />
+          <attribute name="cr91f_storagelocation" />
+          <link-entity alias="a_a2b76b57d0fa4ae1940c4c1698f0b512" name="cr91f_salesorder" to="cr91f_salesorderline" from="cr91f_salesorderid" link-type="outer" visible="false">
+            <attribute name="cr91f_customer" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Harvest Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

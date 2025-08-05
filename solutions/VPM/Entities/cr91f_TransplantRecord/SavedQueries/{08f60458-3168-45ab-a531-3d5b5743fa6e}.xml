@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{08f60458-3168-45ab-a531-3d5b5743fa6e}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_transplantrecords" jump="cr91f_transplantrecordidentifier" select="1" icon="1" preview="0">
+        <row name="cr91f_transplantrecord" id="cr91f_transplantrecordid">
+          <cell name="cr91f_plantingplanrecordlookup" width="291" />
+          <cell name="cr91f_bedftplantedactual" width="173" />
+          <cell name="cr91f_bedsplantedactual" width="163" />
+          <cell name="cr91f_transplantdatetimestart" width="197" />
+          <cell name="cr91f_transplantrecordidentifier" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_transplantrecord">
+          <attribute name="cr91f_transplantrecordid" />
+          <attribute name="cr91f_transplantrecordidentifier" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_plantingplanrecordlookup" />
+          <attribute name="cr91f_bedftplantedactual" />
+          <attribute name="cr91f_bedsplantedactual" />
+          <attribute name="cr91f_transplantdatetimestart" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Transplant Record Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

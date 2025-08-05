@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e2a8558f-ba12-4571-8424-358911423ce0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_planrecordid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_planrecordid" width="133" />
+          <cell name="cr91f_planyear" width="100" />
+          <cell name="cr91f_farmproduct" width="100" />
+          <cell name="cr91f_succession" width="100" />
+          <cell name="cr91f_variety" width="100" />
+          <cell name="cr91f_method" width="100" />
+          <cell name="cr91f_plantingweek" width="122" />
+          <cell name="cr91f_targetgerminationdate" width="100" />
+          <cell name="cr91f_totaltransplantwindowdays" width="246" />
+          <cell name="cr91f_estdaystotransplant" width="237" />
+          <cell name="cr91f_field" width="100" />
+          <cell name="cr91f_bedlengthdecimal" width="163" />
+          <cell name="cr91f_bedqty" width="100" />
+          <cell name="cr91f_bedfeet" width="100" />
+          <cell name="cr0b9_bedwidth" width="100" />
+          <cell name="cr91f_rowsperbed" width="100" />
+          <cell name="cr91f_bedlength" width="100" />
+          <cell name="cr91f_calculatedacres" width="134" />
+          <cell name="cr91f_acres" width="68" />
+          <cell name="cr91f_calculatedestimatedyield" width="188" />
+          <cell name="cr91f_estimatedyield" width="127" />
+          <cell name="cr91f_calculatedestimatedannualgross" width="249" />
+          <cell name="cr91f_calculatedgrossat85percent" width="233" />
+          <cell name="cr91f_calculated90percentperbedft" width="223" />
+          <cell name="cr91f_calculated90percentgrossperacre" width="258" />
+          <cell name="cr91f_ptp" width="100" />
+          <cell name="cr91f_seedspercell" width="121" />
+          <cell name="cr91f_trays" width="100" />
+          <cell name="cr91f_associatedproductionplantrecordforbgfgrown" width="119" />
+          <cell name="createdon" width="220" />
+          <cell name="cr91f_farmproductload" width="154" />
+          <cell name="cr91f_farmproductlookup" width="164" />
+          <cell name="cr91f_methodload" width="121" />
+          <cell name="cr91f_datemanuallyentered" width="180" />
+          <cell name="cr91f_varietyload" width="118" />
+          <cell name="cr91f_successionload" width="140" />
+          <cell name="cr91f_successionid" width="121" />
+          <cell name="cr91f_traysizevariety" width="147" />
+          <cell name="cr91f_seedsperftvariety" width="163" />
+          <cell name="cr91f_seedspercellvariety" width="175" />
+          <cell name="cr91f_rowsperbedvariety" width="173" />
+          <cell name="cr91f_ptpvariety" width="113" />
+          <cell name="cr91f_plantsourcevariety" width="165" />
+          <cell name="cr91f_bedwidthvariety" width="154" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_plantingplanrecord">
+          <attribute name="cr91f_plantingplanrecordid" />
+          <attribute name="cr91f_planrecordid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_acres" />
+          <attribute name="cr91f_bedlength" />
+          <attribute name="cr91f_bedqty" />
+          <attribute name="cr91f_estimatedyield" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_field" />
+          <attribute name="cr91f_method" />
+          <attribute name="cr91f_rowsperbed" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_calculated90percentgrossperacre" />
+          <attribute name="cr91f_calculated90percentperbedft" />
+          <attribute name="cr91f_calculatedacres" />
+          <attribute name="cr91f_calculatedestimatedannualgross" />
+          <attribute name="cr91f_calculatedestimatedyield" />
+          <attribute name="cr91f_calculatedgrossat85percent" />
+          <attribute name="cr0b9_bedwidth" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_targetgerminationdate" />
+          <attribute name="cr91f_associatedproductionplantrecordforbgfgrown" />
+          <attribute name="cr91f_totaltransplantwindowdays" />
+          <attribute name="cr91f_estdaystotransplant" />
+          <attribute name="cr91f_farmproductload" />
+          <attribute name="cr91f_varietyload" />
+          <attribute name="cr91f_methodload" />
+          <attribute name="cr91f_ptp" />
+          <attribute name="cr91f_seedspercell" />
+          <attribute name="cr91f_trays" />
+          <attribute name="cr91f_planyear" />
+          <attribute name="cr91f_farmproductlookup" />
+          <attribute name="cr91f_datemanuallyentered" />
+          <attribute name="cr91f_successionload" />
+          <attribute name="cr91f_successionid" />
+          <attribute name="cr91f_bedfeet" />
+          <attribute name="cr91f_bedlengthdecimal" />
+          <attribute name="cr91f_traysizevariety" />
+          <attribute name="cr91f_seedsperftvariety" />
+          <attribute name="cr91f_seedspercellvariety" />
+          <attribute name="cr91f_rowsperbedvariety" />
+          <attribute name="cr91f_ptpvariety" />
+          <attribute name="cr91f_plantsourcevariety" />
+          <attribute name="cr91f_bedwidthvariety" />
+          <attribute name="cr91f_plantingweek" />
+          <order attribute="cr91f_farmproduct" descending="false" />
+          <order attribute="cr91f_succession" descending="false" />
+          <order attribute="cr91f_variety" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Production Plan Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

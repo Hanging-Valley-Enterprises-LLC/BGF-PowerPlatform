@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a609a0c5-eba6-4c72-887a-5a91cc6694ef}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_qbocustomeridentifier" select="1" icon="1" preview="1">
+        <row name="result" id="new_qbocustomerid">
+          <cell name="new_displayname" width="121" />
+          <cell name="new_qbocustomeridentifier" width="300" />
+          <cell name="new_familyname" width="117" />
+          <cell name="new_fullyqualifiedname" width="163" />
+          <cell name="new_mobilephonefreeform" width="175" />
+          <cell name="new_primaryemailaddr" width="155" />
+          <cell name="new_primaryphonefreeform" width="180" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qbocustomer">
+          <attribute name="new_qbocustomerid" />
+          <attribute name="new_qbocustomeridentifier" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="new_qbocustomeridentifier" operator="like" value="{0}" />
+            <condition attribute="new_displayname" operator="like" value="{0}" />
+            <condition attribute="new_familyname" operator="like" value="{0}" />
+            <condition attribute="new_fullyqualifiedname" operator="like" value="{0}" />
+            <condition attribute="new_mobilephonefreeform" operator="like" value="{0}" />
+            <condition attribute="new_primaryemailaddr" operator="like" value="{0}" />
+            <condition attribute="new_primaryphonefreeform" operator="like" value="{0}" />
+          </filter>
+          <attribute name="new_displayname" />
+          <attribute name="new_familyname" />
+          <attribute name="new_fullyqualifiedname" />
+          <attribute name="new_mobilephonefreeform" />
+          <attribute name="new_primaryemailaddr" />
+          <attribute name="new_primaryphonefreeform" />
+          <order attribute="new_displayname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active QBO Customers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

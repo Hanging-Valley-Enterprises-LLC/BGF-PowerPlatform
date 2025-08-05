@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6e031b1b-de3e-4a1d-8a75-7aab5e9ba746}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_greenhouserecords" jump="cr91f_greenhouserecordidentifier" select="1" icon="1" preview="0">
+        <row name="cr91f_greenhouserecord" id="cr91f_greenhouserecordid">
+          <cell name="cr91f_greenhouserecordlookupconcatenation" width="283" />
+          <cell name="cr91f_dateseededforlookup" width="170" />
+          <cell name="cr91f_greenhouserecordidentifier" width="207" />
+          <cell name="cr91f_greenhouselocation" width="161" />
+          <cell name="cr91f_tagcolor" width="100" />
+          <cell name="cr91f_plantingseason" width="130" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_greenhouserecord">
+          <attribute name="cr91f_greenhouserecordid" />
+          <attribute name="cr91f_greenhouserecordidentifier" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_greenhouserecordlookupconcatenation" />
+          <attribute name="cr91f_dateseededforlookup" />
+          <attribute name="cr91f_plantingseason" />
+          <attribute name="cr91f_greenhouselocation" />
+          <attribute name="cr91f_tagcolor" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Greenhouse Record Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

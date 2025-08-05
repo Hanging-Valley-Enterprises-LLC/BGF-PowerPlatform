@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9ba1b502-b22d-41b4-92ee-5e46b1e813e6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_varietyname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_varietyid">
+          <cell name="cr91f_varietyname" width="300" />
+          <cell name="cr0b9_farmproduct" width="100" />
+          <cell name="cr91f_plantsource" width="112" />
+          <cell name="cr91f_plantingmethod" width="134" />
+          <cell name="cr91f_ptp" width="100" />
+          <cell name="cr91f_rowsperbed" width="120" />
+          <cell name="cr91f_bedwidth" width="101" />
+          <cell name="cr91f_traysize" width="100" />
+          <cell name="cr0b9_seedspercell" width="121" />
+          <cell name="cr91f_storagemaximumdays" width="187" />
+          <cell name="cr91f_storageoptimumdays" width="182" />
+          <cell name="cr91f_plantingmachineplate" width="171" />
+          <cell name="overriddencreatedon" width="149" />
+          <cell name="cr91f_plantingmachinegearing" width="188" />
+          <cell name="cr91f_seedsperftcalc" width="148" />
+          <cell name="cr91f_plantingmachine" width="140" />
+          <cell name="statecode" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr91f_variety">
+          <attribute name="cr91f_varietyid" />
+          <attribute name="cr91f_varietyname" />
+          <attribute name="createdon" />
+          <attribute name="cr0b9_farmproduct" />
+          <attribute name="cr91f_bedwidth" />
+          <attribute name="cr91f_plantsource" />
+          <attribute name="cr91f_ptp" />
+          <attribute name="cr91f_rowsperbed" />
+          <attribute name="cr91f_traysize" />
+          <attribute name="cr0b9_seedspercell" />
+          <order attribute="cr0b9_farmproduct" descending="false" />
+          <order attribute="cr91f_varietyname" descending="false" />
+          <filter type="and">
+            <condition attribute="cr91f_varietyname" operator="not-like" value="%DNU%" />
+          </filter>
+          <attribute name="cr91f_plantingmethod" />
+          <attribute name="cr91f_storagemaximumdays" />
+          <attribute name="cr91f_storageoptimumdays" />
+          <attribute name="cr91f_plantingmachineplate" />
+          <attribute name="overriddencreatedon" />
+          <attribute name="cr91f_plantingmachinegearing" />
+          <attribute name="cr91f_seedsperftcalc" />
+          <attribute name="cr91f_plantingmachine" />
+          <attribute name="statecode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Varieties" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

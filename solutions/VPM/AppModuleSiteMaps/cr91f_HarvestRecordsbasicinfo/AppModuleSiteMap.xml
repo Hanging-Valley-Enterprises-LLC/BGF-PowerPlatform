@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>cr91f_HarvestRecordsbasicinfo</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_2e783536" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Area1" />
+      </Titles>
+      <Group Id="group_ceb4fe68" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Harvest Activities" />
+        </Titles>
+        <SubArea Id="subarea_db661612" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr91f_harvestrecord" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_d5168233" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/c722a291-8358-4f60-abc9-58537011d60d?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest Records with Actuals by Harvest Date" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_820e2bb1" ResourceId="SitemapDesigner.NewSubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="https://app.powerbi.com/groups/31bc5e2c-c916-40da-88a1-e6e09003c485/rdlreports/3d5355f2-770d-47df-b259-10664dbab62e?experience=power-bi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Harvest Records with Actuals by Field and Farm Product" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="group_b55b451a" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Reference Tables (with Español)" />
+        </Titles>
+        <SubArea Id="subarea_492800f8" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr0b9_farmproduct" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Harvest Records (basic info)" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a336bded-b432-4093-98ed-f037d89cb94a}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{edd68ae5-d012-4c31-8be7-55a28ef105f0}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e70c501c-2927-43ff-965a-05b23107fdd6}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e325cf57-c475-4758-92ae-c32853eca692}">
+                        <labels>
+                          <label description="Material Input RecordID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputrecordid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_materialinputrecordid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{20d9c274-0780-4563-9eb3-3984f83d9d57}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Material Input Method" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputmethod" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_materialinputmethod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8656cd82-c545-4c26-bbfe-ba660911d3ed}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Field" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_field" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_field" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a006485f-f61e-49e7-a253-3c00b528a925}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Material Input Start DateTime" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputstartdatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_materialinputstartdatetime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e63971d8-c02e-4b66-a391-e0b875286114}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Team Lead" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_teamlead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_teamlead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15aeda75-a802-4ecc-9722-a4f904b43686}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Production Plan Record" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productionplanrecord" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_productionplanrecord" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed18ed5b-ffc1-437d-8259-6c45ad6441b5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Greenhouse Seeding Record" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_greenhouseseedingrecord" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_greenhouseseedingrecord" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1d8712d-80bf-4e6c-82af-4cbacc762ce3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Direct Seed Planting Record" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_directseedplantingrecord" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_directseedplantingrecord" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c21e879c-a82b-4bb5-b7f2-fa405bb960b5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Transplant Record" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_transplantrecord" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_transplantrecord" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a78c574-5e6c-438c-a888-e090e1c4340c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Application Unit of Measure" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_applicationunitofmeasure" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_applicationunitofmeasure" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7ded8dc-6fd4-4c1d-ba22-0359412966da}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Volume or Weight Applied" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_volumeorweightapplied" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_volumeorweightapplied" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f472300a-8ab6-4008-ac85-7b9d630e2ca8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Material Input Weather" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputweather" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_materialinputweather" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{008f6778-e478-4246-b5b4-5dd2e2ecaa1a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Air Temperature" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_airtemperature" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_airtemperature" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b952c216-9d3f-4397-9458-5a15c0fc1092}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Ambient Humidity" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_ambienthumidity" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_ambienthumidity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e823d93d-765a-4d01-a23e-82887d05862a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Soil Temperature" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_soiltemperature" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_soiltemperature" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d994bef2-4e99-4cca-a8ff-313517641091}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Material Input End DateTime" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputenddatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_materialinputenddatetime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7df311b5-51bf-4e5e-a5cd-67aa4a236e01}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Material Input Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_materialinputnotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_materialinputnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6ee55bef-7068-426b-8a95-7cd7acdcef63}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{3c451534-34b3-4752-a0c6-df280c0630c7}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7d872fdc-2586-41c3-9ccb-1b9a2d8cd073}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e0298a9-e18f-4ca5-bf1a-ada7a01c9db4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{aec5861e-9e3a-4330-9747-5e7ac4423d97}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{634c774e-c5ec-44cc-8984-858e69274b6f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{087df566-fa71-485b-a90a-8c04f3b106f4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9170910e-4ee4-4360-800c-e0251fd8aeb9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{342a95f6-ac20-45b3-9c0b-3223282fe3a1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

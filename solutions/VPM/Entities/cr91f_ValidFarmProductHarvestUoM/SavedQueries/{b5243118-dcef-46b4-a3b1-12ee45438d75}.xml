@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b5243118-dcef-46b4-a3b1-12ee45438d75}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_validfarmproductharvestuomreferenceid" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_validfarmproductharvestuomid">
+          <cell name="cr91f_validfarmproductharvestuomreferenceid" width="300" />
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_harvestuom" width="117" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_validfarmproductharvestuom">
+          <attribute name="cr91f_validfarmproductharvestuomid" />
+          <attribute name="cr91f_validfarmproductharvestuomreferenceid" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_validfarmproductharvestuomreferenceid" descending="false" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_harvestuom" />
+          <attribute name="createdby" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Valid Farm Product Harvest UoM Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

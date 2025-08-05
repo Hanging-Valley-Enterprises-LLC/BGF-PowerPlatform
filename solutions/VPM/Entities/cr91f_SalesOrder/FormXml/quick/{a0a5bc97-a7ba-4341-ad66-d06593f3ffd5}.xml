@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a0a5bc97-a7ba-4341-ad66-d06593f3ffd5}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{7faae6a3-87fd-4da3-9ba1-962f13f789b2}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f0f6f32a-3564-4c0c-8cce-1e51cf9b5d83}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b38db049-ebc4-4132-9668-d851136abb15}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product Ordered" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductordered" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_farmproductordered" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e5334ad6-d01a-4ea5-bcb1-21830a424dd6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity " languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_quantity" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_quantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{edba8ef4-82fb-43d5-afce-ad49e66ce68a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Order UOM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_orderuom" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_orderuom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f8ed0d03-c99c-4de9-a09f-3925113cec7d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unit Price" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_unitprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cr91f_unitprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fdbb4ca7-f007-4b28-bc63-4cf8fa3d5757}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lot Number (original)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_lotnumberoriginal" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_lotnumberoriginal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{45182182-dfee-4822-9597-93f0fc4bcf5c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Extended Price" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_extendedprice" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_extendedprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9720ca3-d2a5-401b-8b15-3242f75079b5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Target Field Planting for Harvest" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_targetfieldplantingforharvest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_targetfieldplantingforharvest" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{20c9e226-1039-4f8a-96a4-7b793a1cda08}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_notes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_notes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa9c5b17-a060-4f95-9f7c-74e3b2d790a2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sales Order No" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_salesorderno" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_salesorderno" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4acde8ce-0d5e-40cf-8dc9-8c89c553c821}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sales Order Line Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_salesordernumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_salesordernumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1fb05bc-af1c-46f4-a505-c884c067b4a7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DateTime Order - Header" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_datetimeorderheader" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_datetimeorderheader" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{39a737c0-714d-4e7a-9720-15309c8b012a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DateTime Due - Header" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_datetimedueheader" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_datetimedueheader" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a5037d8-89cd-462e-8da7-6653bbcf206f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DateTime PickUp - Header" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_datetimepickupheader" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr91f_datetimepickupheader" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{458f2489-1f87-404b-97c1-92785e69b476}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Sales Order - Quick View" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

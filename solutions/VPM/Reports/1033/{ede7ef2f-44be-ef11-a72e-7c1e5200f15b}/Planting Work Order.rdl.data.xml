@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <name>Planting Work Order</name>
+  <defaultfilter>
+    <ReportFilter>
+      <ReportEntity paramname="CRM_Filteredcr91f_PlantingRecordIndividual" donotconvert="1">
+        <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+          <entity name="cr91f_plantingrecordindividual">
+            <all-attributes />
+            <filter type="and">
+              <condition attribute="modifiedon" operator="last-x-days" value="30" />
+            </filter>
+          </entity>
+        </fetch>
+      </ReportEntity>
+      <ReportEntity paramname="CRM_" donotconvert="1">
+        <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+          <entity name="userentityinstancedata">
+            <all-attributes />
+          </entity>
+        </fetch>
+      </ReportEntity>
+    </ReportFilter>
+  </defaultfilter>
+  <iscustomreport>1</iscustomreport>
+  <filename>Planting Work Order.rdl</filename>
+  <languagecode>1033</languagecode>
+  <reportid>{ede7ef2f-44be-ef11-a72e-7c1e5200f15b}</reportid>
+  <reporttypecode>1</reporttypecode>
+  <IntroducedVersion>1.0.0.18</IntroducedVersion>
+  <createdinmajorversion>9</createdinmajorversion>
+  <iscustomizable>1</iscustomizable>
+  <ExportedFileName>/Reports/PlantingWorkOrderrdlede7ef2f-44be-ef11-a72e-7c1e5200f15b.wdl</ExportedFileName>
+  <ReportCategories />
+  <ReportVisibilities>
+    <ReportVisbility>2</ReportVisbility>
+    <ReportVisbility>3</ReportVisbility>
+    <ReportVisbility>1</ReportVisbility>
+  </ReportVisibilities>
+  <ReportEntities>
+    <ReportEntity>cr91f_plantingrecordindividual</ReportEntity>
+  </ReportEntities>
+</Report>

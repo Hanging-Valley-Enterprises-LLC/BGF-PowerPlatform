@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldSecurityProfiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FieldSecurityProfile name="Local Identity Credentials" description="Limits access to local identity credential fields to system administrators." fieldsecurityprofileid="{7623b6b1-cdd1-e511-80d2-00155db70850}">
+    <FieldPermissions>
+      <FieldPermission>
+        <EntityName>contact</EntityName>
+        <AttributeName>adx_identity_logonenabled</AttributeName>
+        <CanRead>4</CanRead>
+        <CanUpdate>0</CanUpdate>
+        <CanCreate>0</CanCreate>
+      </FieldPermission>
+      <FieldPermission>
+        <EntityName>cr91f_plantingplanrecord</EntityName>
+        <AttributeName>cr91f_farmproduct</AttributeName>
+        <CanRead>4</CanRead>
+        <CanUpdate>0</CanUpdate>
+        <CanCreate>0</CanCreate>
+      </FieldPermission>
+    </FieldPermissions>
+  </FieldSecurityProfile>
+  <FieldSecurityProfile name="Lookups for Production Planning" fieldsecurityprofileid="{381945de-3da1-ef11-8a69-6045bdec8025}">
+    <FieldPermissions>
+      <FieldPermission>
+        <EntityName>cr91f_plantingplanrecord</EntityName>
+        <AttributeName>cr91f_farmproduct</AttributeName>
+        <CanRead>4</CanRead>
+        <CanUpdate>4</CanUpdate>
+        <CanCreate>4</CanCreate>
+      </FieldPermission>
+    </FieldPermissions>
+  </FieldSecurityProfile>
+</FieldSecurityProfiles>

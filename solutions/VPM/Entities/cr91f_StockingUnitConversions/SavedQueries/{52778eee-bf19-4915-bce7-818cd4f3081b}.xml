@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{52778eee-bf19-4915-bce7-818cd4f3081b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_skuconversionname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_stockingunitconversionsid">
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_sourceuom" width="116" />
+          <cell name="cr91f_targetuom" width="112" />
+          <cell name="cr91f_conversionmultiplier" width="165" />
+          <cell name="cr91f_estfirsts" width="117" />
+          <cell name="cr91f_estseconds" width="133" />
+          <cell name="cr91f_skuconversionname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_stockingunitconversions">
+          <attribute name="cr91f_stockingunitconversionsid" />
+          <attribute name="cr91f_skuconversionname" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_conversionmultiplier" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_sourceuom" />
+          <attribute name="cr91f_targetuom" />
+          <attribute name="cr91f_estfirsts" />
+          <attribute name="cr91f_estseconds" />
+          <order attribute="cr91f_farmproduct" descending="false" />
+          <order attribute="cr91f_sourceuom" descending="false" />
+          <order attribute="cr91f_targetuom" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Stocking Unit Conversions" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

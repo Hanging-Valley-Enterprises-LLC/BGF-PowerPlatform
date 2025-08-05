@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f5cb33f2-b9d6-4f06-a6aa-c0823d7d1453}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_harvestrecords" jump="cr91f_harvestrecordidentifier" select="1" icon="1" preview="1">
+        <row name="cr91f_harvestrecord" id="cr91f_harvestrecordid">
+          <cell name="cr91f_harvestrecordidentifier" width="77" />
+          <cell name="cr91f_farmproductname" width="104" />
+          <cell name="cr91f_variety" width="80" />
+          <cell name="cr91f_succession" width="75" />
+          <cell name="cr91f_field" width="51" />
+          <cell name="cr91f_targetharvestdate" width="82" />
+          <cell name="cr91f_harvestqtyunitofmeasure" width="99" />
+          <cell name="cr91f_targetharvestqty" width="78" />
+          <cell name="cr91f_quantityharvested" width="65" />
+          <cell name="cr91f_salesorderline" width="135" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_harvestrecord">
+          <attribute name="cr91f_harvestrecordid" />
+          <attribute name="cr91f_harvestrecordidentifier" />
+          <order attribute="cr91f_harvestrecordidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_quantityharvested" />
+          <attribute name="cr91f_salesorderline" />
+          <attribute name="cr91f_harvestqtyunitofmeasure" />
+          <attribute name="cr91f_targetharvestqty" />
+          <attribute name="cr91f_farmproductname" />
+          <attribute name="cr91f_variety" />
+          <attribute name="cr91f_succession" />
+          <attribute name="cr91f_targetharvestdate" />
+          <attribute name="cr91f_field" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Harvest Record Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

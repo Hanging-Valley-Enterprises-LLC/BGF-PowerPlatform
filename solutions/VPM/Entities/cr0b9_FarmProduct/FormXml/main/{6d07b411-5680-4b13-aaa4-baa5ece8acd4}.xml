@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6d07b411-5680-4b13-aaa4-baa5ece8acd4}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{b3d319b0-81e3-4701-b07d-4c59b17f2d45}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{325c99c5-1b0c-44c5-87c1-f6f50d4607ed}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8a158033-f855-4486-9f19-50594e928d28}">
+                        <labels>
+                          <label description="Farm Product Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_farmproductname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr0b9_farmproductname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{643045d4-1455-4555-996d-a27b7ecb0200}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product Name - Spanish" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproductnamespanish" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_farmproductnamespanish" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb821329-f3f7-4b5b-9fec-ee58003b70e6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Product Category" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productcategory" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_productcategory" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="769a9ab1-dec0-439e-a141-3eb727de6836" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="General Product Info" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{96fa7cd8-98dc-43dc-9995-e61f1980410b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Crop Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_cropname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_cropname" disabled="false" />
+                      </cell>
+                      <cell id="{c7ca0c37-41ea-4b05-9eb1-fd6b9659b781}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Estimated Price/Selling Unit" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_estimatedprice" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_estimatedprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79bcd271-1294-4e22-a699-114fbc96ac3a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Family" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_family" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_family" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8ebb44f-8e31-4356-a914-2588fbfaeb8d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Flexible Product Attribute" languagecode="1033" />
+                        </labels>
+                        <control id="cr0b9_flexibleproductattribute" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr0b9_flexibleproductattribute" disabled="false" />
+                      </cell>
+                      <cell id="{5353e57d-7af8-4846-9754-154215fea7b2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Stocking UoM" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_unitofmeasure" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_unitofmeasure" disabled="false">
+                          <parameters>
+                            <DefaultViewId>{1D9D812B-1868-F011-BEC1-7C1E52004D5F}</DefaultViewId>
+                            <AvailableViewIds>{8325B3D3-1B68-F011-BEC1-6045BDEB2C34},{E6553601-1C68-F011-BEC1-6045BDEB2011},{0130E9FF-12BF-EF11-A72E-6045BDD96150},{40873754-1868-F011-BEC1-6045BDEB2011},{1D9D812B-1868-F011-BEC1-7C1E52004D5F},{5B67B77E-FD6B-407D-BB60-1AE135CE5273},{F97E91D3-C87E-4F92-96EA-8DFA133542A6},{F7C09FD3-5430-49AE-B7F8-F6A4CEC1B9F0}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{4f04f952-f74c-4d52-b15a-d3b6fee6a23b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{9bbdd1f9-ac60-4306-8765-60e4bf349018}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Estimated Yield/Rowft" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_estimatedyield" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr91f_estimatedyield" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a316b680-ffec-4bd0-9637-6ed8dee16af1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Planting Group" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_plantinggroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_plantinggroup" disabled="false" />
+                      </cell>
+                      <cell id="{d51c0c32-325a-4059-b4bd-a7e1e357806f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Harvest Inventory Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_harvestinventorytype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_harvestinventorytype" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="0d4acfb8-f25a-4d92-ad2b-e5e480738aa3" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Farm Product MetaData" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{bba31e6c-671d-4495-9223-99e96824a72a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                      <cell id="{c669abe0-6c57-4484-96e2-8ed437de1a07}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4afc62d9-0c0a-441f-828b-5ef4e5b05d95}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                      <cell id="{2fb47464-94ba-4d05-9a34-14d67f7f9db5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70a6e72b-b5e6-4dd0-a9d1-dcd15be116ef}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell locklevel="0" id="{4b8db64c-c0a4-4292-a657-2cd7da18c5e6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="0f4374f5-0d0b-4f42-b87b-0c5ccc3d5b6e" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Pricing" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="402f1c90-ef6d-4625-ba92-7276a57e3380" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Customer, Category, Package, Pricing, Date Effectivity Pricing" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{72dfb7e6-35e2-4684-aaef-2cac7a9d1983}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1718488864487" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_3" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr91f_farmproductpricing</TargetEntityType>
+                            <ViewId>{9553F609-88E1-4DEF-A31A-5E30A20111B1}</ViewId>
+                            <ViewIds>{9553F609-88E1-4DEF-A31A-5E30A20111B1}</ViewIds>
+                            <RelationshipName>cr91f_farmproductpricing_FarmProduct_cr0b9_farmproduct</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="null_section_5" id="e4899608-7794-4d65-bf50-39d7522d6255" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Historical Pricing and Yields" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{5de5b5dd-fc24-4ddc-ac96-48b8ad4e3d75}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1747271796574" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_5" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cr91f_historicalproductpricingandyields_FarmProduct_cr0b9_farmproduct</RelationshipName>
+                            <TargetEntityType>cr91f_historicalproductpricingandyields</TargetEntityType>
+                            <ViewId>{1673A429-1B31-F011-8C4C-6045BDDB18C3}</ViewId>
+                            <ViewIds>{B9AFAF8C-39EF-4182-AF05-2AFFB7C90E67},{1673A429-1B31-F011-8C4C-6045BDDB18C3}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="76c32e54-1bab-4784-b177-075b353f9ee4" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Valid Units of Measure" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_4_section_1" id="497d7ec7-0c24-424e-9039-6e68d0e660c6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Harvest UoMs" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{9f90bd77-fd10-432b-8d43-abfe2d0c0b60}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1753315871228" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_6" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cr91f_validfarmproductharvestuom_FarmProduct_cr0b9_farmproduct</RelationshipName>
+                            <TargetEntityType>cr91f_validfarmproductharvestuom</TargetEntityType>
+                            <ViewId>{B9B10B55-2268-F011-BEC1-6045BDEB2011}</ViewId>
+                            <ViewIds>{134DB4E1-369C-4450-A2D2-41E16C7D630E},{B9B10B55-2268-F011-BEC1-6045BDEB2011}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_4_section_2" id="abca3a4b-d31c-48f0-b223-3b310cf15cca" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Selling UoMs" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{735107bf-810e-47a7-a391-3430440c618e}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1753315910334" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_7" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cr91f_validfarmproductsellinguom_FarmProduct_cr0b9_farmproduct</RelationshipName>
+                            <TargetEntityType>cr91f_validfarmproductsellinguom</TargetEntityType>
+                            <ViewId>{D7DECF83-2268-F011-BEC1-7C1E52004D5F}</ViewId>
+                            <ViewIds>{434FEBB0-BF89-4F00-8698-B22B233AB6CF},{D7DECF83-2268-F011-BEC1-7C1E52004D5F}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="41201b30-636a-42fb-847a-0481c29e4eed" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Varieties" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="2d94eb98-58db-49a7-8c65-5862818ca95c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Associated Varieties" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{2fa6e38c-ec50-4a87-b570-7b8c1269e397}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1718488992691" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_4" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr91f_variety</TargetEntityType>
+                            <ViewId>{9BA1B502-B22D-41B4-92EE-5E46B1E813E6}</ViewId>
+                            <ViewIds>{9BA1B502-B22D-41B4-92EE-5E46B1E813E6}</ViewIds>
+                            <RelationshipName>cr0b9_cr91f_variety_FarmProduct_cr0b9_farmprodu</RelationshipName>
+                            <VisualizationId>{352DB766-8AC7-ED11-B597-00224806F127}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{44137e85-26c3-4432-995a-9884b96b5b38}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c52ce076-7622-4465-a25d-4ccec70c0233}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1539de51-ab86-4bb2-910c-83c92c776761}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d1800721-5ba1-4530-a8de-dea9ed72b257}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{7675bd15-6f2e-4054-bf2c-459aac0a315e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{229e66a3-a5eb-4066-974c-3af9c8f5a94d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8f7a660f-912e-4a9b-a7f3-7da423369e65}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9fbc8c28-7361-485e-884f-092d3373fcb5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+        <Role Id="{7362C00B-CB4D-EE11-BE6E-000D3A32F410}" />
+        <Role Id="{45F25E39-0B26-F011-8C4D-7C1E5249E84A}" />
+        <Role Id="{8B2EB26B-EDC8-ED11-B597-00224806F127}" />
+        <Role Id="{00B22870-EEC8-ED11-B597-00224806F127}" />
+        <Role Id="{53AAB5EA-EBC8-ED11-B597-00224806F127}" />
+        <Role Id="{0B8B49DB-ECC8-ED11-B597-00224806F127}" />
+        <Role Id="{2D31C3E3-BA6B-EF11-A670-000D3A18D76D}" />
+        <Role Id="{22F1F9CE-E7C8-ED11-B597-00224806F127}" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Farm Product Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

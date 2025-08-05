@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{61d94520-4125-44d5-93b1-7766b35e643b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_qbocustomeridentifier" select="1" icon="1" preview="1">
+        <row name="result" id="new_qbocustomerid">
+          <cell name="new_displayname" width="121" />
+          <cell name="new_billaddrcity" width="118" />
+          <cell name="new_fullyqualifiedname" width="163" />
+          <cell name="new_familyname" width="117" />
+          <cell name="new_primaryphonefreeform" width="180" />
+          <cell name="new_primaryemailaddr" width="155" />
+          <cell name="new_mobilephonefreeform" width="175" />
+          <cell name="new_qbocustomeridentifier" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qbocustomer">
+          <attribute name="new_qbocustomerid" />
+          <attribute name="new_qbocustomeridentifier" />
+          <attribute name="createdon" />
+          <order attribute="new_qbocustomeridentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_displayname" />
+          <attribute name="new_fullyqualifiedname" />
+          <attribute name="new_familyname" />
+          <attribute name="new_mobilephonefreeform" />
+          <attribute name="new_primaryphonefreeform" />
+          <attribute name="new_primaryemailaddr" />
+          <attribute name="new_billaddrcity" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active QBO Customers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

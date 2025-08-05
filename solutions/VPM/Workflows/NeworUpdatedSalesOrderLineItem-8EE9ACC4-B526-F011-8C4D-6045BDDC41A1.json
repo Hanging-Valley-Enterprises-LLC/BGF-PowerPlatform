@@ -1,0 +1,184 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr91f_sharedcommondataserviceforapps_39671"
+        },
+        "runtimeSource": "embedded"
+      },
+      "shared_office365": {
+        "api": {
+          "name": "shared_office365"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_aceb1"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "When_a_SalesOrderLine_is_added,_modified_or_deleted": {
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 7,
+              "subscriptionRequest/entityname": "cr91f_salesorder",
+              "subscriptionRequest/scope": 3,
+              "subscriptionRequest/name": "8ee9acc4-b526-f011-8c4d-6045bddc41a1"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "fae99fbf-3338-4dfc-882e-b0e2f80e7112"
+          }
+        }
+      },
+      "actions": {
+        "TestIfNewSalesOrderLine": {
+          "type": "If",
+          "expression": {
+            "equals": [
+              "@triggerOutputs()['body/SdkMessage']",
+              "Create"
+            ]
+          },
+          "actions": {
+            "Add_a_New_Harvest_Record": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "cr91f_harvestrecords",
+                  "item/cr91f_customernotes": "@triggerOutputs()?['body/cr91f_notes']",
+                  "item/cr91f_FieldPlanting@odata.bind": "cr91f_fieldplantings(@{triggerOutputs()?['body/_cr91f_targetfieldplantingforharvest_value']})",
+                  "item/cr91f_HarvestQtyUnitofMeasure@odata.bind": "cr91f_unitofmeasures(@{triggerOutputs()?['body/_cr91f_orderuom_value']})",
+                  "item/cr91f_SalesOrderLine@odata.bind": "cr91f_salesorders(@{triggerOutputs()?['body/cr91f_salesorderid']})",
+                  "item/cr91f_targetharvestdate": "@triggerOutputs()?['body/cr91f_datetimedueheader']",
+                  "item/cr91f_targetharvestqty": "@triggerOutputs()?['body/cr91f_quantity']",
+                  "item/cr91f_TargetHarvestUnitofMeasure@odata.bind": "cr91f_unitofmeasures(@{triggerOutputs()?['body/_cr91f_orderuom_value']})"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              },
+              "metadata": {
+                "operationMetadataId": "f9121568-80c6-4968-bc73-06b22d3c165e"
+              }
+            }
+          },
+          "else": {
+            "actions": {
+              "TestIfUpdatedSalesOrder": {
+                "type": "If",
+                "expression": {
+                  "and": [
+                    {
+                      "equals": [
+                        "@triggerOutputs()['body/SdkMessage']",
+                        "Update"
+                      ]
+                    }
+                  ]
+                },
+                "actions": {
+                  "List_Harvest_Records_Affected": {
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "cr91f_harvestrecords",
+                        "$filter": "cr91f_SalesOrderLine/cr91f_salesorderid eq '@{triggerOutputs()?['body/cr91f_salesorderid']}'"
+                      },
+                      "host": {
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                        "operationId": "ListRecords",
+                        "connectionName": "shared_commondataserviceforapps"
+                      }
+                    }
+                  },
+                  "For_each": {
+                    "type": "Foreach",
+                    "foreach": "@outputs('List_Harvest_Records_Affected')?['body/value']",
+                    "actions": {
+                      "Update_(Upsert)_a_HarvestRecord": {
+                        "type": "OpenApiConnection",
+                        "inputs": {
+                          "parameters": {
+                            "entityName": "cr91f_harvestrecords",
+                            "recordId": "@items('For_each')?['cr91f_harvestrecordid']",
+                            "item/cr91f_FieldPlanting@odata.bind": "cr91f_fieldplantings(@{triggerOutputs()?['body/_cr91f_targetfieldplantingforharvest_value']})",
+                            "item/cr91f_HarvestQtyUnitofMeasure@odata.bind": "cr91f_unitofmeasures(@{triggerOutputs()?['body/_cr91f_orderuom_value']})",
+                            "item/cr91f_SalesOrderLine@odata.bind": "cr91f_salesorders(@{triggerOutputs()?['body/cr91f_salesorderid']})",
+                            "item/cr91f_targetharvestdate": "@triggerOutputs()?['body/cr91f_datetimedueheader']",
+                            "item/cr91f_targetharvestqty": "@triggerOutputs()?['body/cr91f_quantity']"
+                          },
+                          "host": {
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                            "operationId": "UpdateRecord",
+                            "connectionName": "shared_commondataserviceforapps"
+                          }
+                        }
+                      }
+                    },
+                    "runAfter": {
+                      "List_Harvest_Records_Affected": [
+                        "Succeeded"
+                      ]
+                    }
+                  }
+                },
+                "else": {
+                  "actions": {
+                    "Send_an_email_(V2)": {
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "parameters": {
+                          "emailMessage/To": "markslosberg@boldlygrownfarm.com;jacob@boldlygrownfarm.com",
+                          "emailMessage/Subject": "Someone has deleted a Sales Order Line Item",
+                          "emailMessage/Body": "<p class=\"editor-paragraph\">****Test Message***** (final wording TBD)</p><p class=\"editor-paragraph\">If a Harvest Record was created because of the selection of a Field Planting, the \"link\" between these two records no longer exists.  The Harvest Record will be unlinked but it will still exist and may have already been updated with Actual values from a actual, physical Harvest event.</p><br><p class=\"editor-paragraph\">You may want to manually check to ensure that the Harvest Plan and Actual are still in sync as the Harvest Record no longer \"knows\" what Sales Order Line it is destined to be attached to.</p>",
+                          "emailMessage/Importance": "Normal"
+                        },
+                        "host": {
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+                          "operationId": "SendEmailV2",
+                          "connectionName": "shared_office365"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "f92c9fd8-061c-4b6a-aceb-b4bbd033f1e2"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

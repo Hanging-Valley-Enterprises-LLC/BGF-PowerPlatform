@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr91f_fieldcorners_1f075</Name>
+  <AppVersion>2024-08-06T20:26:28Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.23031.19.0</CreatedByClientVersion>
+  <MinClientVersion>3.23031.19.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.23031.19","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20240806T202628Z-3.23031.19.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Phone - Field Corners</DisplayName>
+  <Description>This App records a collection of "corner" points for each Field.</Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"f5e7d49a-99fc-4c31-bdfe-9b9bc68cab46":{"id":"/providers/microsoft.powerapps/apis/shared_microsoftspatialservices","displayName":"Spatial Services","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1675/1.0.1675.3608/microsoftspatialservices/icon.png","dataSources":["SpatialServices"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Premium"}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified"}},"dataSources":{"Fields":{"entitySetName":"cr91f_fields","logicalName":"cr91f_field"},"Field Corners":{"entitySetName":"cr0b9_fieldcorners","logicalName":"cr0b9_fieldcorner"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr91f_field","componenttype":1},{"logicalname":"cr0b9_fieldcorner","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr91f_fieldcorners_1f075_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr91f_fieldcorners_1f075_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1e546205-5b16-4762-8839-5f7ea1d9767c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_traysizename" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_traysizesid">
+          <cell name="cr91f_traysizename" width="300" />
+          <cell name="cr91f_numberofcells" width="134" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_traysizes">
+          <attribute name="cr91f_traysizesid" />
+          <attribute name="cr91f_traysizename" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_traysizename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_numberofcells" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Tray Sizes" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

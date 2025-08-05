@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1537deca-9dd2-4ba6-8c7e-8c15027c590f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_salesordernumber" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_salesorderheaderid">
+          <cell name="cr91f_salesordernumber" width="300" />
+          <cell name="cr91f_qbocustomer" width="128" />
+          <cell name="cr91f_qbocustomerdisplayname" width="208" />
+          <cell name="cr91f_customer" width="100" />
+          <cell name="cr91f_ponumber" width="108" />
+          <cell name="cr91f_orderdate" width="103" />
+          <cell name="cr91f_duedate" width="100" />
+          <cell name="cr91f_pickupdatetime" width="148" />
+          <cell name="cr91f_shippingmethod" width="138" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_salesorderheader">
+          <attribute name="cr91f_salesorderheaderid" />
+          <attribute name="cr91f_salesordernumber" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_salesordernumber" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_salesordernumber" operator="like" value="{0}" />
+            <condition attribute="cr91f_customer" operator="like" value="{0}" />
+            <condition attribute="cr91f_duedate" operator="on" value="{3}" />
+            <condition attribute="cr91f_pickupdatetime" operator="on" value="{3}" />
+            <condition attribute="cr91f_ponumber" operator="like" value="{0}" />
+            <condition attribute="cr91f_qbocustomer" operator="like" value="{0}" />
+            <condition attribute="cr91f_qbocustomerdisplayname" operator="like" value="{0}" />
+            <condition attribute="cr91f_shippingmethod" operator="like" value="{0}" />
+          </filter>
+          <attribute name="cr91f_qbocustomerdisplayname" />
+          <attribute name="cr91f_customer" />
+          <attribute name="cr91f_qbocustomer" />
+          <attribute name="cr91f_ponumber" />
+          <attribute name="cr91f_duedate" />
+          <attribute name="cr91f_orderdate" />
+          <attribute name="cr91f_pickupdatetime" />
+          <attribute name="cr91f_shippingmethod" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Sales Order Headers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

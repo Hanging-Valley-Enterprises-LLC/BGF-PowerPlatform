@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0ff25767-c8d8-4c24-8ac8-161dd77f3bc2}</savedqueryid>
+    <layoutxml>
+      <grid name="cr91f_plantingplanrecords" jump="cr91f_planrecordid" select="1" icon="1" preview="0">
+        <row name="cr91f_plantingplanrecord" id="cr91f_plantingplanrecordid">
+          <cell name="cr91f_lookupviewconcatenation" width="300" />
+          <cell name="cr91f_plantinggroup" width="126" />
+          <cell name="cr91f_cropname" width="105" />
+          <cell name="cr91f_lookupbedqty" width="135" />
+          <cell name="cr91f_lookupbedfeet" width="153" />
+          <cell name="cr91f_plantingweek" width="122" />
+          <cell name="cr91f_planrecordid" width="141" />
+          <cell name="createdon" width="125" />
+          <cell name="cr91f_planyear" width="100" />
+          <cell name="cr91f_planyearstartdate" width="155" />
+          <cell name="cr91f_method" width="112" />
+          <cell name="cr91f_plantsourcevariety" width="165" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr91f_plantingplanrecord">
+          <attribute name="cr91f_plantingplanrecordid" />
+          <attribute name="cr91f_planrecordid" />
+          <attribute name="createdon" />
+          <attribute name="cr91f_lookupviewconcatenation" />
+          <attribute name="cr91f_lookupbedqty" />
+          <attribute name="cr91f_lookupbedfeet" />
+          <order attribute="cr91f_lookupviewconcatenation" descending="false" />
+          <attribute name="cr91f_plantingweek" />
+          <attribute name="cr91f_planyear" />
+          <attribute name="cr91f_planyearstartdate" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="cr91f_planyear" operator="eq" value="2025" />
+            <condition attribute="cr91f_method" operator="ne" value="{0c799729-4154-ef11-bfe3-000d3a100e2b}" uiname="Direct to Field" uitype="cr91f_seedingmethod" />
+          </filter>
+          <attribute name="cr91f_method" />
+          <attribute name="cr91f_plantsourcevariety" />
+          <attribute name="cr91f_plantinggroup" />
+          <attribute name="cr91f_cropname" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Production Plan Record 2025 GH or Transplant Vendor Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

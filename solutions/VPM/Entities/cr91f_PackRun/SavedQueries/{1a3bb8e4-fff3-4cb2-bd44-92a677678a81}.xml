@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1a3bb8e4-fff3-4cb2-bd44-92a677678a81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_packrunidentifier" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_packrunid">
+          <cell name="cr91f_packrunidentifier" width="161" />
+          <cell name="cr91f_targetpackdatetime" width="143" />
+          <cell name="cr91f_packshedactivity" width="143" />
+          <cell name="cr91f_farmproduct" width="117" />
+          <cell name="cr91f_uomrequired" width="133" />
+          <cell name="cr91f_productgrade" width="122" />
+          <cell name="cr91f_quantityrequired" width="152" />
+          <cell name="cr91f_targetsalesorderline" width="174" />
+          <cell name="cr91f_harvestrecordsource" width="179" />
+          <cell name="cr91f_lotnumbersource" width="160" />
+          <cell name="cr91f_uomsource" width="121" />
+          <cell name="cr91f_quantitysource" width="140" />
+          <cell name="cr91f_packrunlead" width="126" />
+          <cell name="cr91f_packrunteamsize" width="157" />
+          <cell name="cr91f_datetimestart" width="134" />
+          <cell name="cr91f_datetimeend" width="130" />
+          <cell name="cr91f_packrunnotes" width="131" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_packrun">
+          <attribute name="cr91f_packrunid" />
+          <attribute name="cr91f_packrunidentifier" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_packrunidentifier" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr91f_targetpackdatetime" />
+          <attribute name="cr91f_farmproduct" />
+          <attribute name="cr91f_uomrequired" />
+          <attribute name="cr91f_productgrade" />
+          <attribute name="cr91f_quantityrequired" />
+          <attribute name="cr91f_harvestrecordsource" />
+          <attribute name="cr91f_lotnumbersource" />
+          <attribute name="cr91f_packshedactivity" />
+          <attribute name="cr91f_uomsource" />
+          <attribute name="cr91f_quantitysource" />
+          <attribute name="cr91f_targetsalesorderline" />
+          <attribute name="cr91f_packrunlead" />
+          <attribute name="cr91f_packrunteamsize" />
+          <attribute name="cr91f_packrunnotes" />
+          <attribute name="cr91f_datetimestart" />
+          <attribute name="cr91f_datetimeend" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Pack Runs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

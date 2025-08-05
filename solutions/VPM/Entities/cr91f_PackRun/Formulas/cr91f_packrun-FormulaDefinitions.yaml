@@ -1,0 +1,43 @@
+cr91f_farmproduct: |
+    =If(
+        !IsBlank(cr91f_LotNumberSource) && !IsBlank(cr91f_HarvestRecordSource),
+        cr91f_LotNumberSource.cr91f_FarmProductFinal.cr0b9_farmproductname,
+        If(
+            !IsBlank(cr91f_LotNumberSource),
+            cr91f_LotNumberSource.cr91f_FarmProductFinal.cr0b9_farmproductname,
+            If(
+                !IsBlank(cr91f_HarvestRecordSource),
+                cr91f_HarvestRecordSource.cr91f_farmproductname,
+                "No Valid Harvest Record or Lot"
+            )
+        )
+    )
+cr91f_productgrade: |
+    =If(
+        !IsBlank(cr91f_LotNumberSource) && !IsBlank(cr91f_HarvestRecordSource),
+        cr91f_LotNumberSource.cr91f_ProductGrade.cr91f_gradename,
+        If(
+            !IsBlank(cr91f_LotNumberSource),
+            cr91f_LotNumberSource.cr91f_ProductGrade.cr91f_gradename,
+            If(
+                !IsBlank(cr91f_HarvestRecordSource),
+                "Product Not Graded Yet",
+                "No Valid Harvest Record or Lot"
+            )
+        )
+    )
+cr91f_targetsalesorderduedatetime: =cr91f_TargetSalesOrderLine.cr91f_datetimedueheader
+cr91f_uomsource: |
+    =If(
+        !IsBlank(cr91f_LotNumberSource) && !IsBlank(cr91f_HarvestRecordSource),
+        cr91f_LotNumberSource.cr91f_PackSizeUoM.cr91f_uomname,
+        If(
+            !IsBlank(cr91f_LotNumberSource),
+            cr91f_LotNumberSource.cr91f_PackSizeUoM.cr91f_uomname,
+            If(
+                !IsBlank(cr91f_HarvestRecordSource),
+                cr91f_HarvestRecordSource.cr91f_HarvestQtyUnitofMeasure.cr91f_uomname,
+                "No Harvest Record or Lot"
+            )
+        )
+    )

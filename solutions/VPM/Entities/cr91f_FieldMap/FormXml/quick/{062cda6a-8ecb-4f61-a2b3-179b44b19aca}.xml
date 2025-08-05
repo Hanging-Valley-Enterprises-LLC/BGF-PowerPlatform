@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{062cda6a-8ecb-4f61-a2b3-179b44b19aca}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{c0a34a29-28f2-4380-a283-09ebf279f92c}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f7b4cfc4-b7bc-4603-b64b-5ef3d4b7a26a}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{699dc46e-16a3-4857-9221-030e5634cb90}">
+                        <labels>
+                          <label description="Field Map Record ID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_fieldmaprecordid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr91f_fieldmaprecordid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37740d37-237a-462d-9292-081aead5ff23}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Field" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_field" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_field" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{947b5310-99f2-4c62-a457-bc72b4e3fafe}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bed Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bednumber" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_bednumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99c5a563-40a9-400e-b88e-4c6bd450474d}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5facf155-3849-4a40-a8ac-38a6a6287d69}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Farm Product" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_farmproduct" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_farmproduct" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b32f380-facb-4072-a9c4-8ce22e4280c4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Variety" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_variety" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_variety" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f81f810a-7324-4d99-8d92-9e5d40096840}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Succession" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_succession" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_succession" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{65f63549-1f6f-4428-976e-2ea009c3d310}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Seeding Method" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_seedingmethod" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr91f_seedingmethod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e446be7-2e0f-4c92-bd0e-764d4bfddd9e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Production Plan ID" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_productionplanid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr91f_productionplanid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c56c1f07-7225-4a65-ae0f-4d8ae2aefc5e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Rows per Bed" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_rowsperbed" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_rowsperbed" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc263bc3-419d-48b8-a5c5-d305ffe0f0fe}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Spacing (in)" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_spacingin" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_spacingin" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3a9a80e3-cd24-4ec9-85e3-125d35ec0e90}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bed Feet" languagecode="1033" />
+                        </labels>
+                        <control id="cr91f_bedfeet" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr91f_bedfeet" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Field Map Quickview Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

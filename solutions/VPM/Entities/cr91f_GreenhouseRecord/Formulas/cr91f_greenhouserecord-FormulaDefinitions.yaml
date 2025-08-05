@@ -1,0 +1,8 @@
+cr91f_dateseededforlookup: =cr91f_datetimeend
+cr91f_elapsedtime: =DateDiff(cr91f_startdatetime,cr91f_datetimeend,TimeUnit.Minutes)
+cr91f_farmproduct: =cr91f_ProductionPlanRecord.cr91f_FarmProduct.cr0b9_farmproductname
+cr91f_greenhouserecordlookupconcatenation: |
+    =cr91f_ProductionPlanRecord.cr91f_farmproductlookup & " - " & cr91f_ProductionPlanRecord.cr91f_Variety.cr91f_varietyname & " - " & cr91f_ProductionPlanRecord.cr91f_Succession.cr91f_successionname & " - " & cr91f_plantingseason
+cr91f_plantingseason: =cr91f_ProductionPlanRecord.cr91f_planyear
+cr91f_succession: =cr91f_ProductionPlanRecord.cr91f_Succession.cr91f_successionname
+cr91f_variety: =cr91f_ProductionPlanRecord.cr91f_Variety.cr91f_varietyname

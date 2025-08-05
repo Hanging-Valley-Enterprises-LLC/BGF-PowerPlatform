@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr91f_matinputcopy2_448d9</Name>
+  <AppVersion>2025-07-22T22:10:37Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.25073.3.0</CreatedByClientVersion>
+  <MinClientVersion>3.25073.3.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","showStatusBar":"false","publisherVersion":"3.25073.3","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250203T201523Z-3.25014.13.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Phone - Material Input Data Entry</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Transplant Records":{"entitySetName":"cr91f_transplantrecords","logicalName":"cr91f_transplantrecord"},"BGF Employees":{"entitySetName":"cr91f_bgfemployees","logicalName":"cr91f_bgfemployee"},"Direct Seed Planting Records":{"entitySetName":"cr91f_plantingrecordindividuals","logicalName":"cr91f_plantingrecordindividual"},"Greenhouse Records":{"entitySetName":"cr91f_greenhouserecords","logicalName":"cr91f_greenhouserecord"},"Fields":{"entitySetName":"cr91f_fields","logicalName":"cr91f_field"},"Material Input Methods":{"entitySetName":"cr91f_materialinputmethods","logicalName":"cr91f_materialinputmethod"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Production Plan Records":{"entitySetName":"cr91f_plantingplanrecords","logicalName":"cr91f_plantingplanrecord"},"Units of Measure":{"entitySetName":"cr91f_unitofmeasures","logicalName":"cr91f_unitofmeasure"},"Material Inputs":{"entitySetName":"cr91f_materialinputs","logicalName":"cr91f_materialinput"},"Field Plantings":{"entitySetName":"cr91f_fieldplantings","logicalName":"cr91f_fieldplanting"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr91f_transplantrecord","componenttype":1},{"logicalname":"cr91f_bgfemployee","componenttype":1},{"logicalname":"cr91f_plantingrecordindividual","componenttype":1},{"logicalname":"cr91f_greenhouserecord","componenttype":1},{"logicalname":"cr91f_field","componenttype":1},{"logicalname":"cr91f_materialinputmethod","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"cr91f_plantingplanrecord","componenttype":1},{"logicalname":"cr91f_unitofmeasure","componenttype":1},{"logicalname":"cr91f_materialinput","componenttype":1},{"logicalname":"cr91f_fieldplanting","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr91f_matinputcopy2_448d9_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr91f_matinputcopy2_448d9_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/cr91f_matinputcopy2_448d9_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>

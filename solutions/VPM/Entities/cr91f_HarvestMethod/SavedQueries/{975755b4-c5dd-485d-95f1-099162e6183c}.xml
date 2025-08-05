@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{975755b4-c5dd-485d-95f1-099162e6183c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr91f_harvestmethodname" select="1" icon="1" preview="1">
+        <row name="result" id="cr91f_harvestmethodid">
+          <cell name="cr91f_harvestmethodname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr91f_harvestmethod">
+          <attribute name="cr91f_harvestmethodid" />
+          <attribute name="cr91f_harvestmethodname" />
+          <attribute name="createdon" />
+          <order attribute="cr91f_harvestmethodname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr91f_harvestmethodname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Harvest Methods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
