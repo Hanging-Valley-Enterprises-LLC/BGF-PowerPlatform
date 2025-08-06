@@ -1,7 +1,5 @@
 # BGF-PowerPlatform
 The place for VegProdMOS (VPM) development and deployment
-# VPM-PowerPlatform
-*Vegetable Production Management - Power Platform Solution Components*
 
 ## Project Overview
 
@@ -10,7 +8,7 @@ The Vegetable Production Management (VPM) system is a comprehensive Power Platfo
 ## Repository Structure
 
 ```
-VPM-PowerPlatform/
+BGF-PowerPlatform/
 ├── solutions/                          # Power Platform Solutions
 │   ├── VegetableProductionManagement/  # Model-driven app solution
 │   ├── BGF-Canvas-Apps/               # Canvas applications
@@ -123,8 +121,8 @@ Currently in alpha development with limited contributors. Full contribution guid
 
 ## Project Status
 
-**Current Phase**: Foundation setup and architecture documentation  
-**Next Milestone**: Complete solution unpacking and GitHub integration  
+**Current Phase**: Sales Order Line Item table migration and repository structure setup
+**Next Milestone**: Complete Power BI report inventory and dependency mapping
 **Target**: AppSource publication ready solution
 
 ---
