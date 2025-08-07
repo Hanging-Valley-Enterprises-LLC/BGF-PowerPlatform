@@ -1,0 +1,2428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>240b5d49-1893-4108-93fb-95cca6b5fa08</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>PBIRB</am:Name>
+      <am:Version>15.7.1814.616</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>PBIRB</am:Name>
+      <am:Version>15.7.1814.616</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2025-08-07T17:11:20.8185036Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="HarvestProductionandSales_CoreModelSalesHarvestFieldPlantingPackRunStorageShipping">
+      <rd:SecurityType>None</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>PBIDATASET</DataProvider>
+        <ConnectString>Data Source=pbiazure://api.powerbi.com/;Identity Provider="https://login.microsoftonline.com/organizations, https://analysis.windows.net/powerbi/api, f0b72488-7082-488a-a7e8-eada97bd842d";Initial Catalog=sobe_wowvirtualserver-242d4046-acdd-47ee-a71c-7280c9fb8b63;Integrated Security=ClaimsToken</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>b74a13c5-5e84-4143-a94a-f47421a4ec10</rd:DataSourceID>
+      <rd:PowerBIWorkspaceName>Harvest, Production and Sales</rd:PowerBIWorkspaceName>
+      <rd:PowerBIDatasetName>Core Model - Sales, Harvest, Field Planting, Pack Run, Storage, Shipping</rd:PowerBIDatasetName>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Fields">
+      <Query>
+        <DataSourceName>HarvestProductionandSales_CoreModelSalesHarvestFieldPlantingPackRunStorageShipping</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Field</DimensionName>
+                      <HierarchyName>Field Name</HierarchyName>
+                      <HierarchyUniqueName>[Field].[Field Name]</HierarchyUniqueName>
+                      <LevelName>Field Name</LevelName>
+                      <UniqueName>[Field].[Field Name].[Field Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Field Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('Field'[Field Name])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('Field'[Field Name])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Field_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Field[Field Name]</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="QBOCustomers">
+      <Query>
+        <DataSourceName>HarvestProductionandSales_CoreModelSalesHarvestFieldPlantingPackRunStorageShipping</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>QBO Customer</DimensionName>
+                      <HierarchyName>Display Name</HierarchyName>
+                      <HierarchyUniqueName>[QBO Customer].[Display Name]</HierarchyUniqueName>
+                      <LevelName>Display Name</LevelName>
+                      <UniqueName>[QBO Customer].[Display Name].[Display Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Display Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('QBO Customer'[Display Name])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('QBO Customer'[Display Name])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Display_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>QBO Customer[Display Name]</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FarmProducts">
+      <Query>
+        <DataSourceName>HarvestProductionandSales_CoreModelSalesHarvestFieldPlantingPackRunStorageShipping</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Farm Product</DimensionName>
+                      <HierarchyName>Farm Product Name</HierarchyName>
+                      <HierarchyUniqueName>[Farm Product].[Farm Product Name]</HierarchyUniqueName>
+                      <LevelName>Farm Product Name</LevelName>
+                      <UniqueName>[Farm Product].[Farm Product Name].[Farm Product Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Farm Product Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Farm Product</DimensionName>
+                      <HierarchyName>Farm Product Name - Spanish</HierarchyName>
+                      <HierarchyUniqueName>[Farm Product].[Farm Product Name - Spanish]</HierarchyUniqueName>
+                      <LevelName>Farm Product Name - Spanish</LevelName>
+                      <UniqueName>[Farm Product].[Farm Product Name - Spanish].[Farm Product Name - Spanish]</UniqueName>
+                    </ID>
+                    <ItemCaption>Farm Product Name - Spanish</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Farm Product</DimensionName>
+                      <HierarchyName>Crop Name</HierarchyName>
+                      <HierarchyUniqueName>[Farm Product].[Crop Name]</HierarchyUniqueName>
+                      <LevelName>Crop Name</LevelName>
+                      <UniqueName>[Farm Product].[Crop Name].[Crop Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Crop Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('Farm Product'[Farm Product Name], 'Farm Product'[Farm Product Name - Spanish], 'Farm Product'[Crop Name])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('Farm Product'[Farm Product Name], 'Farm Product'[Farm Product Name - Spanish], 'Farm Product'[Crop Name])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Farm_Product_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Farm Product[Farm Product Name]</DataField>
+        </Field>
+        <Field Name="Farm_Product_Name___Spanish">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Farm Product[Farm Product Name - Spanish]</DataField>
+        </Field>
+        <Field Name="Crop_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Farm Product[Crop Name]</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="HarvestRecordsv2">
+      <Query>
+        <DataSourceName>HarvestProductionandSales_CoreModelSalesHarvestFieldPlantingPackRunStorageShipping</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Target Harvest Date</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Target Harvest Date]</HierarchyUniqueName>
+                      <LevelName>Target Harvest Date</LevelName>
+                      <UniqueName>[Harvest Record].[Target Harvest Date].[Target Harvest Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Target Harvest Date</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Field from Planting</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Field from Planting]</HierarchyUniqueName>
+                      <LevelName>Field from Planting</LevelName>
+                      <UniqueName>[Harvest Record].[Field from Planting].[Field from Planting]</UniqueName>
+                    </ID>
+                    <ItemCaption>Field from Planting</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Farm Product Name</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Farm Product Name]</HierarchyUniqueName>
+                      <LevelName>Farm Product Name</LevelName>
+                      <UniqueName>[Harvest Record].[Farm Product Name].[Farm Product Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Farm Product Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Farm Product Name - Spanish</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Farm Product Name - Spanish]</HierarchyUniqueName>
+                      <LevelName>Farm Product Name - Spanish</LevelName>
+                      <UniqueName>[Harvest Record].[Farm Product Name - Spanish].[Farm Product Name - Spanish]</UniqueName>
+                    </ID>
+                    <ItemCaption>Farm Product Name - Spanish</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Variety</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Variety]</HierarchyUniqueName>
+                      <LevelName>Variety</LevelName>
+                      <UniqueName>[Harvest Record].[Variety].[Variety]</UniqueName>
+                    </ID>
+                    <ItemCaption>Variety</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Sales Order Due Date</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Sales Order Due Date]</HierarchyUniqueName>
+                      <LevelName>Sales Order Due Date</LevelName>
+                      <UniqueName>[Harvest Record].[Sales Order Due Date].[Sales Order Due Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sales Order Due Date</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Sales Order Pickup Date</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Sales Order Pickup Date]</HierarchyUniqueName>
+                      <LevelName>Sales Order Pickup Date</LevelName>
+                      <UniqueName>[Harvest Record].[Sales Order Pickup Date].[Sales Order Pickup Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sales Order Pickup Date</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Field Planting Bed Ft</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Field Planting Bed Ft]</HierarchyUniqueName>
+                      <LevelName>Field Planting Bed Ft</LevelName>
+                      <UniqueName>[Harvest Record].[Field Planting Bed Ft].[Field Planting Bed Ft]</UniqueName>
+                    </ID>
+                    <ItemCaption>Field Planting Bed Ft</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Qty Unit of Measure</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Qty Unit of Measure]</HierarchyUniqueName>
+                      <LevelName>Harvest Qty Unit of Measure</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Qty Unit of Measure].[Harvest Qty Unit of Measure]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Qty Unit of Measure</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Target Harvest Qty</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Target Harvest Qty]</HierarchyUniqueName>
+                      <LevelName>Target Harvest Qty</LevelName>
+                      <UniqueName>[Harvest Record].[Target Harvest Qty].[Target Harvest Qty]</UniqueName>
+                    </ID>
+                    <ItemCaption>Target Harvest Qty</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Quantity Harvested</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Quantity Harvested]</HierarchyUniqueName>
+                      <LevelName>Quantity Harvested</LevelName>
+                      <UniqueName>[Harvest Record].[Quantity Harvested].[Quantity Harvested]</UniqueName>
+                    </ID>
+                    <ItemCaption>Quantity Harvested</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Method</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Method]</HierarchyUniqueName>
+                      <LevelName>Harvest Method</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Method].[Harvest Method]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Method</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Start - DateTime</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Start - DateTime]</HierarchyUniqueName>
+                      <LevelName>Start - DateTime</LevelName>
+                      <UniqueName>[Harvest Record].[Start - DateTime].[Start - DateTime]</UniqueName>
+                    </ID>
+                    <ItemCaption>Start - DateTime</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>End - DateTime</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[End - DateTime]</HierarchyUniqueName>
+                      <LevelName>End - DateTime</LevelName>
+                      <UniqueName>[Harvest Record].[End - DateTime].[End - DateTime]</UniqueName>
+                    </ID>
+                    <ItemCaption>End - DateTime</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Team Lead</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Team Lead]</HierarchyUniqueName>
+                      <LevelName>Harvest Team Lead</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Team Lead].[Harvest Team Lead]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Team Lead</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Team Size</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Team Size]</HierarchyUniqueName>
+                      <LevelName>Harvest Team Size</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Team Size].[Harvest Team Size]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Team Size</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Sales Order Line Identifier</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Sales Order Line Identifier]</HierarchyUniqueName>
+                      <LevelName>Sales Order Line Identifier</LevelName>
+                      <UniqueName>[Harvest Record].[Sales Order Line Identifier].[Sales Order Line Identifier]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sales Order Line Identifier</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Sales Order Line</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Sales Order Line]</HierarchyUniqueName>
+                      <LevelName>Sales Order Line</LevelName>
+                      <UniqueName>[Harvest Record].[Sales Order Line].[Sales Order Line]</UniqueName>
+                    </ID>
+                    <ItemCaption>Sales Order Line</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>QBO Customer DisplayName</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[QBO Customer DisplayName]</HierarchyUniqueName>
+                      <LevelName>QBO Customer DisplayName</LevelName>
+                      <UniqueName>[Harvest Record].[QBO Customer DisplayName].[QBO Customer DisplayName]</UniqueName>
+                    </ID>
+                    <ItemCaption>QBO Customer DisplayName</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Customer Notes</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Customer Notes]</HierarchyUniqueName>
+                      <LevelName>Customer Notes</LevelName>
+                      <UniqueName>[Harvest Record].[Customer Notes].[Customer Notes]</UniqueName>
+                    </ID>
+                    <ItemCaption>Customer Notes</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Notes</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Notes]</HierarchyUniqueName>
+                      <LevelName>Harvest Notes</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Notes].[Harvest Notes]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Notes</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Harvest Record</DimensionName>
+                      <HierarchyName>Harvest Date</HierarchyName>
+                      <HierarchyUniqueName>[Harvest Record].[Harvest Date]</HierarchyUniqueName>
+                      <LevelName>Harvest Date</LevelName>
+                      <UniqueName>[Harvest Record].[Harvest Date].[Harvest Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Harvest Date</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[Sales Order Line], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[Sales Order Line], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Target_Harvest_Date">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Target Harvest Date]</DataField>
+        </Field>
+        <Field Name="Field_from_Planting">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Field from Planting]</DataField>
+        </Field>
+        <Field Name="Farm_Product_Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Farm Product Name]</DataField>
+        </Field>
+        <Field Name="Farm_Product_Name___Spanish">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Farm Product Name - Spanish]</DataField>
+        </Field>
+        <Field Name="Variety">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Variety]</DataField>
+        </Field>
+        <Field Name="Sales_Order_Due_Date">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Sales Order Due Date]</DataField>
+        </Field>
+        <Field Name="Sales_Order_Pickup_Date">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Sales Order Pickup Date]</DataField>
+        </Field>
+        <Field Name="Field_Planting_Bed_Ft">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Field Planting Bed Ft]</DataField>
+        </Field>
+        <Field Name="Harvest_Qty_Unit_of_Measure">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Qty Unit of Measure]</DataField>
+        </Field>
+        <Field Name="Target_Harvest_Qty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Target Harvest Qty]</DataField>
+        </Field>
+        <Field Name="Quantity_Harvested">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Quantity Harvested]</DataField>
+        </Field>
+        <Field Name="Harvest_Method">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Method]</DataField>
+        </Field>
+        <Field Name="Start___DateTime">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Start - DateTime]</DataField>
+        </Field>
+        <Field Name="End___DateTime">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[End - DateTime]</DataField>
+        </Field>
+        <Field Name="Harvest_Team_Lead">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Team Lead]</DataField>
+        </Field>
+        <Field Name="Harvest_Team_Size">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Team Size]</DataField>
+        </Field>
+        <Field Name="Sales_Order_Line_Identifier">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Sales Order Line Identifier]</DataField>
+        </Field>
+        <Field Name="Sales_Order_Line">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Sales Order Line]</DataField>
+        </Field>
+        <Field Name="QBO_Customer_DisplayName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[QBO Customer DisplayName]</DataField>
+        </Field>
+        <Field Name="Customer_Notes">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Customer Notes]</DataField>
+        </Field>
+        <Field Name="Harvest_Notes">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Notes]</DataField>
+        </Field>
+        <Field Name="Harvest_Date">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Harvest Record[Harvest Date]</DataField>
+        </Field>
+      </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!Target_Harvest_Date.Value</FilterExpression>
+          <Operator>GreaterThanOrEqual</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!StartDate.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!Target_Harvest_Date.Value</FilterExpression>
+          <Operator>LessThanOrEqual</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!EndDate.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!Field_from_Planting.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=IIF(IsNothing(Parameters!Field.Value), Fields!Field_from_Planting.Value, Parameters!Field.Value)</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!Farm_Product_Name.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=IIF(IsNothing(Parameters!FarmProducts.Value), Fields!Farm_Product_Name.Value, Parameters!FarmProducts.Value)</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!QBO_Customer_DisplayName.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=IIF(IsNothing(Parameters!QBOCustomerDisplayName.Value), Fields!QBO_Customer_DisplayName.Value, Parameters!QBOCustomerDisplayName.Value)</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="ReportTitle">
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>B</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>20pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>oldly Grown Harvest Work Order Records</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>18pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Left>1.25313in</Left>
+            <Height>0.5in</Height>
+            <Width>4.74687in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>0.4in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.60291in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.32in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.8125in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.66125in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.54688in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.55in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.55in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.4in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.4in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.45in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.48021in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.53646in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.6in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.6in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.29167in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.39062in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.63021in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Target Hvst Date</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Date</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Field</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Farm Product  </Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Farm Product Spanish</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox35">
+                          <rd:DefaultName>Textbox35</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Variety</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>SO Date Time Due</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>SO Date Time Pick Up</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox23">
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Orig BedFt Actual</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Target Hrvest Qty</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox25">
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Hrvest UoM</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox12">
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Actual Harvest Qty</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Method Name</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Start Date Time</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox21">
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest End Date Time</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox27">
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Team Lead</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox29">
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Team Size</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox37">
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>SOLine</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Harvest Notes</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TargetHarvestDate">
+                          <rd:DefaultName>TargetHarvestDate</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!Target_Harvest_Date.Value,"MM/dd")</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Date">
+                          <rd:DefaultName>Harvest_Date</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!Harvest_Date.Value,"MM/dd")</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Field_from_Planting">
+                          <rd:DefaultName>Field_from_Planting</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Field_from_Planting.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Farm_Product_Name">
+                          <rd:DefaultName>Farm_Product_Name</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Farm_Product_Name.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Farm_Product_Name___Spanish">
+                          <rd:DefaultName>Farm_Product_Name___Spanish</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Farm_Product_Name___Spanish.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Variety">
+                          <rd:DefaultName>Variety</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Variety.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="SODueDateTime">
+                          <rd:DefaultName>SODueDateTime</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!Sales_Order_Due_Date.Value,"g")</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="SOPickUpDateTime">
+                          <rd:DefaultName>SOPickUpDateTime</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!Sales_Order_Pickup_Date.Value,"g")</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Field_Planting_Bed_Ft">
+                          <rd:DefaultName>Field_Planting_Bed_Ft</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Field_Planting_Bed_Ft.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Target_Harvest_Qty">
+                          <rd:DefaultName>Target_Harvest_Qty</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Target_Harvest_Qty.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Qty_Unit_of_Measure">
+                          <rd:DefaultName>Harvest_Qty_Unit_of_Measure</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Harvest_Qty_Unit_of_Measure.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Quantity_Harvested">
+                          <rd:DefaultName>Quantity_Harvested</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Quantity_Harvested.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Method">
+                          <rd:DefaultName>Harvest_Method</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Harvest_Method.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Start___DateTime">
+                          <rd:DefaultName>Start___DateTime</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Start___DateTime.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="End___DateTime">
+                          <rd:DefaultName>End___DateTime</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!End___DateTime.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Team_Lead">
+                          <rd:DefaultName>Harvest_Team_Lead</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Harvest_Team_Lead.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Team_Size">
+                          <rd:DefaultName>Harvest_Team_Size</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Harvest_Team_Size.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="SOLineNo">
+                          <rd:DefaultName>SOLineNo</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Right(Fields!Sales_Order_Line.Value, Len(Fields!Sales_Order_Line.Value) - InStr(Fields!Sales_Order_Line.Value, "-"))</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Harvest_Notes">
+                          <rd:DefaultName>Harvest_Notes</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Harvest_Notes.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <RepeatColumnHeaders>true</RepeatColumnHeaders>
+            <RepeatRowHeaders>true</RepeatRowHeaders>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>HarvestRecordsv2</DataSetName>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!Field_from_Planting.Value</Value>
+              </SortExpression>
+              <SortExpression>
+                <Value>=Fields!Farm_Product_Name.Value</Value>
+              </SortExpression>
+            </SortExpressions>
+            <Top>0.79562in</Top>
+            <Left>0.14979in</Left>
+            <Height>0.5in</Height>
+            <Width>9.72271in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Image Name="Image1">
+            <Source>Embedded</Source>
+            <Value>BGF4colorhorizontallogo</Value>
+            <Sizing>FitProportional</Sizing>
+            <Height>0.5in</Height>
+            <Width>1.25313in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox9">
+            <rd:DefaultName>Textbox9</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="Start Date: " &amp; Parameters!StartDate.Value &amp; " through " &amp; Parameters!EndDate.Value</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.11979in</Top>
+            <Left>6.25709in</Left>
+            <Height>0.25in</Height>
+            <Width>4.15833in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox10">
+            <rd:DefaultName>Textbox9</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="Field(s): " &amp; IIF(IsNothing(Parameters!Field.Value) OR Parameters!Field.Value = "", "All", Parameters!Field.Value)&amp;" - Farm Products(s): " &amp; IIF(IsNothing(Parameters!FarmProducts.Value) OR Parameters!FarmProducts.Value = "", "All", Parameters!FarmProducts.Value) &amp;" - Customer(s): " &amp; IIF(IsNothing(Parameters!QBOCustomerDisplayName.Value) OR Parameters!QBOCustomerDisplayName.Value = "", "All", Parameters!QBOCustomerDisplayName.Value)</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.51389in</Top>
+            <Left>4.09375in</Left>
+            <Height>0.25in</Height>
+            <Width>6.32167in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>2.60938in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>10.41542in</Width>
+      <Page>
+        <PageFooter>
+          <Height>0.60813in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="ExecutionTime">
+              <rd:DefaultName>ExecutionTime</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.02778in</Top>
+              <Left>0.14979in</Left>
+              <Height>0.25in</Height>
+              <Width>1.52083in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox39">
+              <rd:DefaultName>Textbox39</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ReportName</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.06944in</Top>
+              <Left>3.54563in</Left>
+              <Height>0.20833in</Height>
+              <Width>4.10333in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox40">
+              <rd:DefaultName>Textbox40</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Proprietary and Confidential Boldly Grown Farm LLC</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.28313in</Top>
+              <Left>3.54563in</Left>
+              <Height>0.25in</Height>
+              <Width>4.10333in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox41">
+              <rd:DefaultName>Textbox41</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.01389in</Top>
+              <Left>8.74875in</Left>
+              <Height>0.25in</Height>
+              <Width>1.66667in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
+        <InteractiveHeight>8.5in</InteractiveHeight>
+        <InteractiveWidth>11in</InteractiveWidth>
+        <LeftMargin>0.175in</LeftMargin>
+        <RightMargin>0.175in</RightMargin>
+        <TopMargin>0.175in</TopMargin>
+        <BottomMargin>0.175in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="StartDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Today()</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Start Date</Prompt>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="EndDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=DateAdd(DateInterval.Day,7,Today())</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>End Date</Prompt>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="Field">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Field</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Fields</DataSetName>
+          <ValueField>Field_Name</ValueField>
+          <LabelField>Field_Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="FarmProducts">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>Farm Products</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>FarmProducts</DataSetName>
+          <ValueField>Farm_Product_Name</ValueField>
+          <LabelField>Farm_Product_Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="QBOCustomerDisplayName">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>QBO Customer</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>QBOCustomers</DataSetName>
+          <ValueField>Display_Name</ValueField>
+          <LabelField>Display_Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <cl:ComponentMetadata>
+        <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>StartDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EndDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Field</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>FarmProducts</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>QBOCustomerDisplayName</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="BGF4colorhorizontallogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+</Report>
