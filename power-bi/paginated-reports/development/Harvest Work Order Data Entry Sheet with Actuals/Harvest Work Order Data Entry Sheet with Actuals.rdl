@@ -11,7 +11,7 @@
       <am:Name>PBIRB</am:Name>
       <am:Version>15.7.1814.616</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-08-07T17:11:20.8185036Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-08-11T21:31:05.8737312Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -22,7 +22,7 @@
         <DataProvider>PBIDATASET</DataProvider>
         <ConnectString>Data Source=pbiazure://api.powerbi.com/;Identity Provider="https://login.microsoftonline.com/organizations, https://analysis.windows.net/powerbi/api, f0b72488-7082-488a-a7e8-eada97bd842d";Initial Catalog=sobe_wowvirtualserver-242d4046-acdd-47ee-a71c-7280c9fb8b63;Integrated Security=ClaimsToken</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>b74a13c5-5e84-4143-a94a-f47421a4ec10</rd:DataSourceID>
+      <rd:DataSourceID>19312c3b-861e-41cb-bd06-309fc4a5d7e2</rd:DataSourceID>
       <rd:PowerBIWorkspaceName>Harvest, Production and Sales</rd:PowerBIWorkspaceName>
       <rd:PowerBIDatasetName>Core Model - Sales, Harvest, Field Planting, Pack Run, Storage, Shipping</rd:PowerBIDatasetName>
     </DataSource>
@@ -401,17 +401,6 @@
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>Harvest Record</DimensionName>
-                      <HierarchyName>Sales Order Line</HierarchyName>
-                      <HierarchyUniqueName>[Harvest Record].[Sales Order Line]</HierarchyUniqueName>
-                      <LevelName>Sales Order Line</LevelName>
-                      <UniqueName>[Harvest Record].[Sales Order Line].[Sales Order Line]</UniqueName>
-                    </ID>
-                    <ItemCaption>Sales Order Line</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>Harvest Record</DimensionName>
                       <HierarchyName>QBO Customer DisplayName</HierarchyName>
                       <HierarchyUniqueName>[Harvest Record].[QBO Customer DisplayName]</HierarchyUniqueName>
                       <LevelName>QBO Customer DisplayName</LevelName>
@@ -467,12 +456,12 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[Sales Order Line], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</Statement>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
         </rd:DesignerState>
-        <CommandText>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[Sales Order Line], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</CommandText>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('Harvest Record'[Target Harvest Date], 'Harvest Record'[Field from Planting], 'Harvest Record'[Farm Product Name], 'Harvest Record'[Farm Product Name - Spanish], 'Harvest Record'[Variety], 'Harvest Record'[Sales Order Due Date], 'Harvest Record'[Sales Order Pickup Date], 'Harvest Record'[Field Planting Bed Ft], 'Harvest Record'[Harvest Qty Unit of Measure], 'Harvest Record'[Target Harvest Qty], 'Harvest Record'[Quantity Harvested], 'Harvest Record'[Harvest Method], 'Harvest Record'[Start - DateTime], 'Harvest Record'[End - DateTime], 'Harvest Record'[Harvest Team Lead], 'Harvest Record'[Harvest Team Size], 'Harvest Record'[Sales Order Line Identifier], 'Harvest Record'[QBO Customer DisplayName], 'Harvest Record'[Customer Notes], 'Harvest Record'[Harvest Notes], 'Harvest Record'[Harvest Date])</CommandText>
       </Query>
       <Fields>
         <Field Name="Target_Harvest_Date">
@@ -542,10 +531,6 @@
         <Field Name="Sales_Order_Line_Identifier">
           <rd:TypeName>System.String</rd:TypeName>
           <DataField>Harvest Record[Sales Order Line Identifier]</DataField>
-        </Field>
-        <Field Name="Sales_Order_Line">
-          <rd:TypeName>System.String</rd:TypeName>
-          <DataField>Harvest Record[Sales Order Line]</DataField>
         </Field>
         <Field Name="QBO_Customer_DisplayName">
           <rd:TypeName>System.String</rd:TypeName>
@@ -1935,7 +1920,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Right(Fields!Sales_Order_Line.Value, Len(Fields!Sales_Order_Line.Value) - InStr(Fields!Sales_Order_Line.Value, "-"))</Value>
+                                  <Value>=Right(Fields!Sales_Order_Line_Identifier.Value, Len(Fields!Sales_Order_Line_Identifier.Value) - InStr(Fields!Sales_Order_Line_Identifier.Value, "-"))</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontSize>8pt</FontSize>
